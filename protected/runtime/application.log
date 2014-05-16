@@ -1,0 +1,204 @@
+2014/05/16 15:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adk".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('adk')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=adk
+---
+2014/05/16 15:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiic".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('yiic')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=yiic
+---
+2014/05/16 15:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiic".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('yiic')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=yiic
+---
+2014/05/16 15:04:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yii".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('yii')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=yii
+---
+2014/05/16 15:10:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/ask".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/ask')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin/ask
+---
+2014/05/16 15:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:10:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:10:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:10:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin
+---
+2014/05/16 15:14:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/contact".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/contact
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ask/admin
+---
+2014/05/16 15:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/contact".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/contact
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ask/admin
+---
+2014/05/16 15:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/index
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ask/admin
+---
+2014/05/16 15:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/contact".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/contact
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ask/update&id=14
+---
