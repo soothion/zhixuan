@@ -39,25 +39,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'ask-grid',
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+        'type'=>'striped bordered condensed',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'id',
-		'cid',
-		'uid',
-		'content',
-		'recommend',
-		'verify',
-		/*
-		'agree',
-		'tag',
-		'addtime',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
 )); ?>
+

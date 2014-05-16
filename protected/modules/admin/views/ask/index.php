@@ -5,16 +5,27 @@
 $this->breadcrumbs=array(
 	'Asks',
 );
-
-$this->menu=array(
-	array('label'=>'Create Ask', 'url'=>array('create')),
-	array('label'=>'Manage Ask', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Asks</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+        'type'=>'striped bordered condensed',
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+        'columns'=>array(
+            array('name'=>'id', 'header'=>'#'),
+            array('name'=>'cid', 'header'=>'分类'),
+            array(
+                'name'=>'content', 
+                'header'=>'内容',
+             
+                ),
+            array('name'=>'recommend', 'header'=>'推荐'),
+            array('name'=>'verify', 'header'=>'审核'),
+            array('name'=>'agree', 'header'=>'赞同'),
+            array('name'=>'tag', 'header'=>'标签'),
+            array(
+                'header'=>'操作',
+                'class'=>'bootstrap.widgets.TbButtonColumn',
+                'template'=>'{update}{delete}'
+            ),
+        ),
 )); ?>

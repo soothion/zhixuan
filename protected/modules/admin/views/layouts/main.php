@@ -6,36 +6,42 @@
 	<meta name="language" content="en" />
 
 	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/style.css" media="screen, projection" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
+<?php
+Yii::app()->bootstrap->register();//载入boostrap
+?>
 
-<div class="container" id="page">
+<div class="container">
 
 	<div id="header">
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
+            <?php $this->widget('bootstrap.widgets.TbNavbar', array(
+                'type'=>'inverse', // null or 'inverse'
+                'brand'=>'智选后台管理系统',
+                'brandUrl'=>'#',
+                'collapse'=>true, // requires bootstrap-responsive.css
+                'items'=>array(
+                    array(
+                        'class'=>'bootstrap.widgets.TbMenu',
+                        'items'=>array(
+                            array('label'=>'课程管理', 'url'=>'ask/index', 'items'=>array(
+                                array('label'=>'课程列表', 'url'=>'ask/create'),
+                                array('label'=>'课程添加', 'url'=>'#'),
+                            )),
+                            array('label'=>'问答管理', 'url'=>'#'),
+                            array('label'=>'经验管理', 'url'=>'#'),
+                        ),
+                    ),
+                ),
+            )); ?>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
