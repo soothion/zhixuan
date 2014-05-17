@@ -15,7 +15,4 @@ $this->menu=array(
 	array('label'=>'Manage Ask', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Update Ask <?php echo $model->id; ?></h1>
-
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

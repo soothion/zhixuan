@@ -6,9 +6,10 @@
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'ask-form',
 	'enableAjaxValidation'=>false,
+	'htmlOptions'=>array('class'=>'well'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -16,55 +17,32 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'cid'); ?>
-		<?php echo $form->textField($model,'cid'); ?>
-		<?php echo $form->error($model,'cid'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'uid'); ?>
-		<?php echo $form->textField($model,'uid'); ?>
-		<?php echo $form->error($model,'uid'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textAreaRow($model,'content',array('class'=>'span8', 'rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'recommend'); ?>
-		<?php echo $form->textField($model,'recommend'); ?>
+		<?php echo $form->textFieldRow($model,'recommend'); ?>
 		<?php echo $form->error($model,'recommend'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'verify'); ?>
-		<?php echo $form->textField($model,'verify'); ?>
+		<?php echo $form->textFieldRow($model,'verify'); ?>
 		<?php echo $form->error($model,'verify'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'agree'); ?>
-		<?php echo $form->textField($model,'agree'); ?>
+		<?php echo $form->textFieldRow($model,'agree'); ?>
 		<?php echo $form->error($model,'agree'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'tag'); ?>
-		<?php echo $form->textArea($model,'tag',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textFieldRow($model,'tag'); ?>
 		<?php echo $form->error($model,'tag'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'addtime'); ?>
-		<?php echo $form->textField($model,'addtime'); ?>
-		<?php echo $form->error($model,'addtime'); ?>
-	</div>
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'label'=>$model->isNewRecord ? 'Create' : 'Save')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
