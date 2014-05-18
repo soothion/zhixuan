@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 <?php $this->widget('bootstrap.widgets.TbGridView', array(
         'type'=>'striped bordered condensed',
-	'dataProvider'=>$dataProvider,
+	    'dataProvider'=>$dataProvider,
         'columns'=>array(
             array('name'=>'id', 'header'=>'#'),
             array('name'=>'cid', 'header'=>'分类'),
@@ -25,7 +25,6 @@ $this->breadcrumbs=array(
             array(
                 'header'=>'操作',
                 'class'=>'bootstrap.widgets.TbButtonColumn',
-                'template'=>'{update}{delete}'
             ),
         ),
 )); ?>

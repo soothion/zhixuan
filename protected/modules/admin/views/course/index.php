@@ -12,9 +12,22 @@ $this->menu=array(
 );
 ?>
 
-<h1>Courses</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+	'type'=>'striped bordered condensed',
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+    'columns'=>array(
+	    array('name'=>'id', 'header'=>'#'),
+	    array('name'=>'title', 'header'=>'标题'),
+	    // array('name'=>'pic', 'header'=>'图片'),
+	    array('name'=>'click', 'header'=>'浏览'),
+	    array('name'=>'recommend', 'header'=>'推荐'),
+	    array('name'=>'price', 'header'=>'价格'),
+	    array('name'=>'agree', 'header'=>'赞同'),
+	    array('name'=>'thank', 'header'=>'感谢'),
+	    array(
+	        'header'=>'操作',
+	        'class'=>'bootstrap.widgets.TbButtonColumn',
+	    ),
+	)	
+));
+?>

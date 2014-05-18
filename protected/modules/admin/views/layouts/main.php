@@ -33,14 +33,17 @@ Yii::app()->bootstrap->register();//载入boostrap
                         'class'=>'bootstrap.widgets.TbMenu',
                         'items'=>array(
                             array('label'=>'课程管理', 'url'=>'ask', 'items'=>array(
-                                array('label'=>'课程列表', 'url'=>array('/admin/ask/index')),
-                                array('label'=>'课程添加', 'url'=>array('/admin/ask/create')),
+                                array('label'=>'课程列表', 'url'=>array('/admin/course/index')),
+                                array('label'=>'课程添加', 'url'=>array('/admin/course/create')),
                             )),
                             array('label'=>'问答管理', 'url'=>'#', 'items'=>array(
                                 array('label'=>'问答列表', 'url'=>array('/admin/ask/index')),
                                 array('label'=>'问答添加', 'url'=>array('/admin/ask/create')),
                             )),
-                            array('label'=>'经验管理', 'url'=>'#'),
+                            array('label'=>'经验管理', 'url'=>'#', 'items'=>array(
+                                array('label'=>'经验列表', 'url'=>array('/admin/experience/index')),
+                                array('label'=>'经验添加', 'url'=>array('/admin/experience/create')),
+                            )),
                         ),
                     ),
                 ),
