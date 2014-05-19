@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2014-05-16 17:59:11
+-- Generation Time: 2014-05-19 13:16:03
 -- 服务器版本： 5.5.37-0ubuntu0.12.04.1
 -- PHP Version: 5.3.10-1ubuntu3.11
 
@@ -4638,29 +4638,24 @@ INSERT INTO `zx_admin` (`id`, `username`, `password`, `logintime`, `loginip`, `l
 --
 
 CREATE TABLE IF NOT EXISTS `zx_ads` (
-`tid` int(10) unsigned NOT NULL,
+`id` int(10) unsigned NOT NULL,
   `title` varchar(80) DEFAULT NULL,
-  `classid` int(4) DEFAULT NULL,
   `dateline` varchar(80) DEFAULT NULL,
-  `fpic` varchar(80) DEFAULT NULL,
-  `links` varchar(80) DEFAULT NULL,
-  `sid` int(5) DEFAULT NULL,
-  `language` smallint(4) DEFAULT '0',
-  `fpic2` varchar(80) DEFAULT NULL,
-  `city` int(4) DEFAULT NULL
+  `pic` varchar(80) DEFAULT NULL,
+  `links` varchar(80) DEFAULT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=115 ;
 
 --
 -- 转存表中的数据 `zx_ads`
 --
 
-INSERT INTO `zx_ads` (`tid`, `title`, `classid`, `dateline`, `fpic`, `links`, `sid`, `language`, `fpic2`, `city`) VALUES
-(111, '3', 3, '1366773956', 'attachments/2013/06/22/0daba0a6588e5342f79c79898d055f83.jpg', '###', 100, 1, NULL, NULL),
-(110, '2', 2, '1366773938', 'attachments/2013/06/22/2ddd1fd0a586007db220b3d9c6755a26.jpg', '###', 100, 1, NULL, NULL),
-(109, '1', 1, '1366773923', 'images/link_video.jpg', 'learn.php', 100, 1, NULL, NULL),
-(112, '1', 1, '1371874738', 'attachments/2013/07/01/5330f651429af99fa05425a9a676f602.jpg', 'http://www.zhixuan12580.com/learn_detail.php?id=15', 100, 1, NULL, NULL),
-(113, '十八课', 1, '1374128927', 'attachments/2013/10/16/3e740cdda0070a368f657b67f6d025e4.jpg', 'http://www.zhixuan12580.com/learn_detail.php?id=21', 100, 1, NULL, NULL),
-(114, '快的方法', 1, '1387215176', 'attachments/2014/03/01/062bdd4189591e3b34190dc2feb17bae.jpg', 'http://product.dangdang.com/23412553.html', 100, 1, NULL, NULL);
+INSERT INTO `zx_ads` (`id`, `title`, `dateline`, `pic`, `links`) VALUES
+(111, '3', '1366773956', 'attachments/2013/06/22/0daba0a6588e5342f79c79898d055f83.jpg', '###'),
+(110, '2', '1366773938', 'attachments/2013/06/22/2ddd1fd0a586007db220b3d9c6755a26.jpg', '###'),
+(109, '1', '1366773923', 'images/link_video.jpg', 'learn.php'),
+(112, '1', '1371874738', 'attachments/2013/07/01/5330f651429af99fa05425a9a676f602.jpg', 'http://www.zhixuan12580.com/learn_detail.php?id=15'),
+(113, '十八课', '1374128927', 'attachments/2013/10/16/3e740cdda0070a368f657b67f6d025e4.jpg', 'http://www.zhixuan12580.com/learn_detail.php?id=21'),
+(114, '快的方法', '1387215176', 'attachments/2014/03/01/062bdd4189591e3b34190dc2feb17bae.jpg', 'http://product.dangdang.com/23412553.html');
 
 -- --------------------------------------------------------
 
@@ -6145,6 +6140,45 @@ INSERT INTO `zx_ask` (`id`, `cid`, `uid`, `content`, `recommend`, `verify`, `agr
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `zx_comment`
+--
+
+CREATE TABLE IF NOT EXISTS `zx_comment` (
+`id` int(11) NOT NULL,
+  `uid` int(11) NOT NULL,
+  `type` enum('ask','course','experience','') CHARACTER SET utf8 NOT NULL,
+  `content` varchar(200) CHARACTER SET utf8 NOT NULL,
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+
+--
+-- 转存表中的数据 `zx_comment`
+--
+
+INSERT INTO `zx_comment` (`id`, `uid`, `type`, `content`, `addtime`) VALUES
+(1, 5, 'course', '????????', '2014-05-19 03:09:59'),
+(2, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:06'),
+(3, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:16'),
+(4, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:23'),
+(5, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:25'),
+(6, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:27'),
+(7, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:29'),
+(8, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:30'),
+(9, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:32'),
+(10, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:34'),
+(11, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:36'),
+(12, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:38'),
+(13, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:40'),
+(14, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:42'),
+(15, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:44'),
+(16, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:46'),
+(17, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:48'),
+(18, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:49'),
+(19, 3, 'course', '这是评论测试信息', '2014-05-19 03:11:51');
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `zx_course`
 --
 
@@ -6405,7 +6439,7 @@ CREATE TABLE IF NOT EXISTS `zx_users` (
 --
 
 INSERT INTO `zx_users` (`id`, `username`, `password`, `logintime`, `loginip`, `logincount`, `thumb`, `flag`, `email`, `sex`, `name`, `major`, `company`, `job`, `age`, `tel`, `qq`, `msn`, `config`) VALUES
-(55, 'popo123456', '75495214727afd0a0481d7c3027a8400', '1338158138', '', 1, '', 2, '99221470@qq.com', '男', '真实姓名', '专业描述', '就职单位', '职位', '22', '手机', 'QQ', 'MSN', '0|0|1|0|0|0|0|0'),
+(55, 'popo123456', '75495214727afd0a0481d7c3027a8400', '1338158138', '11.11.11.11', 1, 'upload/0203/413a2s1d32.jpg', 2, '99221470@qq.com', '男', '真实姓名', '专业描述', '就职单位', '职位', '22', '手机', 'QQ', 'MSN', '0|0|1|0|0|0|0|0'),
 (58, '拉面', '25f9e794323b453885f5181f1b624d0b', '1338543962', '', 1, NULL, 1, 'meidusha456@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (59, '刘翔', 'e10adc3949ba59abbe56e057f20f883e', '1338544018', '', 1, NULL, 1, '582690773@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (61, '疾风', '25f9e794323b453885f5181f1b624d0b', '1338545040', '', 1, NULL, 1, 'hayate123@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
@@ -6668,9 +6702,9 @@ INSERT INTO `zx_users` (`id`, `username`, `password`, `logintime`, `loginip`, `l
 (340, '刘仁娜', '25f9e794323b453885f5181f1b624d0b', '1346306478', '', 1, NULL, 1, 'liurenna0916@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (341, '李锦州', '25f9e794323b453885f5181f1b624d0b', '1346319398', '', 1, NULL, 1, 'lijinzhou0324@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (342, '徐华', '25f9e794323b453885f5181f1b624d0b', '1346332838', '', 1, NULL, 1, 'xuhua123123@yeah.net', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
-(343, '沈慧', '25f9e794323b453885f5181f1b624d0b', '1346335807', '', 1, NULL, 1, 'shenhui3344@126.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
-(344, 'liwei880106', 'ff9cf5629c39137c3c279eb176fd030e', '1346389344', '', 1, NULL, 1, 'liwei880106@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1');
+(343, '沈慧', '25f9e794323b453885f5181f1b624d0b', '1346335807', '', 1, NULL, 1, 'shenhui3344@126.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1');
 INSERT INTO `zx_users` (`id`, `username`, `password`, `logintime`, `loginip`, `logincount`, `thumb`, `flag`, `email`, `sex`, `name`, `major`, `company`, `job`, `age`, `tel`, `qq`, `msn`, `config`) VALUES
+(344, 'liwei880106', 'ff9cf5629c39137c3c279eb176fd030e', '1346389344', '', 1, NULL, 1, 'liwei880106@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (345, 'gomenasai', 'bb5aef25eb5cab74b799f8381d09de03', '1346468397', '', 1, NULL, 1, '1655700618@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (346, '展望', '25f9e794323b453885f5181f1b624d0b', '1346651533', '', 1, NULL, 1, 'zhanwang0453@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (347, '任翠', '25f9e794323b453885f5181f1b624d0b', '1346656510', '', 1, NULL, 1, 'rencui1314@126.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
@@ -6942,9 +6976,9 @@ INSERT INTO `zx_users` (`id`, `username`, `password`, `logintime`, `loginip`, `l
 (613, '康', '25f9e794323b453885f5181f1b624d0b', '1354418430', '', 1, NULL, 1, 'zhouweikang0523@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (614, 'qingguang', '25f9e794323b453885f5181f1b624d0b', '1354421018', '', 1, NULL, 1, 'ningqingguang0113@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (615, '嘉义', '25f9e794323b453885f5181f1b624d0b', '1354443491', '', 1, NULL, 1, 'hejiayi08000@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
-(616, '江夏', '25f9e794323b453885f5181f1b624d0b', '1354501447', '', 1, NULL, 1, 'jiangxia09563@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
-(617, '伍乐', '25f9e794323b453885f5181f1b624d0b', '1354514582', '', 1, NULL, 1, 'wule2578@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1');
+(616, '江夏', '25f9e794323b453885f5181f1b624d0b', '1354501447', '', 1, NULL, 1, 'jiangxia09563@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1');
 INSERT INTO `zx_users` (`id`, `username`, `password`, `logintime`, `loginip`, `logincount`, `thumb`, `flag`, `email`, `sex`, `name`, `major`, `company`, `job`, `age`, `tel`, `qq`, `msn`, `config`) VALUES
+(617, '伍乐', '25f9e794323b453885f5181f1b624d0b', '1354514582', '', 1, NULL, 1, 'wule2578@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (618, 'duanmuxian', '25f9e794323b453885f5181f1b624d0b', '1354527192', '', 1, NULL, 1, 'duanmuxian123@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (619, '卓然', '25f9e794323b453885f5181f1b624d0b', '1354586283', '', 1, NULL, 1, 'zhaozhuoran78@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (620, '元宵', '8a880e5daa8cafec7f2fc8412b994133', '1354590705', '', 1, NULL, 1, 'xiaomingming@goldwind.cn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
@@ -7219,9 +7253,9 @@ INSERT INTO `zx_users` (`id`, `username`, `password`, `logintime`, `loginip`, `l
 (893, 'joyopod', 'a43cbd82610d35d106b00d944036d5c2', '1366630500', '', 1, NULL, 1, '960slj@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (894, '张赣', 'f5865d8c72a8eb84ce3908fff6a5658e', '1366693718', '', 1, NULL, 1, '583268495@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (895, 'zhuzhq', 'e388c1c5df4933fa01f6da9f92595589', '1366732719', '', 1, NULL, 2, 'bigsee@163.com', NULL, '朱歌', '互联网从业五年', '强峰网络发展有限公司', '', '', '', '', '', '1|1|1|1|1|1'),
-(896, '3055646', 'c904f7a4bffe838e7599ceb712f28898', '1366795017', '', 1, 'uploadfile/2013/04/24/f0a61f08b1e4830f51890760356d4cb9.jpg', 1, 'liyande@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
-(897, 'jslzb', 'f17c0a1523cc9fb86a585a4a5333c6b5', '1366953358', '', 1, NULL, 1, '535400567@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1');
+(896, '3055646', 'c904f7a4bffe838e7599ceb712f28898', '1366795017', '', 1, 'uploadfile/2013/04/24/f0a61f08b1e4830f51890760356d4cb9.jpg', 1, 'liyande@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1');
 INSERT INTO `zx_users` (`id`, `username`, `password`, `logintime`, `loginip`, `logincount`, `thumb`, `flag`, `email`, `sex`, `name`, `major`, `company`, `job`, `age`, `tel`, `qq`, `msn`, `config`) VALUES
+(897, 'jslzb', 'f17c0a1523cc9fb86a585a4a5333c6b5', '1366953358', '', 1, NULL, 1, '535400567@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (898, '风向逆转', 'b6fd133f8840dc88ba750b49948d80d5', '1366978537', '', 1, 'uploadfile/2013/04/28/124916380191a527e707428968dd1e31.jpg', 1, 'doyboy@126.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (899, '厚书', 'be7eb3f6fdca3ee99b77d8aeac5ed216', '1367069903', '', 1, NULL, 1, 'bell20998@126.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
 (900, 'Jason', '9352f5485b82ec9d207956eb1e63b551', '1367138821', '', 1, NULL, 1, '42001934@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1|1|1|1|1|1'),
@@ -7985,7 +8019,7 @@ ALTER TABLE `zx_admin`
 -- Indexes for table `zx_ads`
 --
 ALTER TABLE `zx_ads`
- ADD PRIMARY KEY (`tid`);
+ ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `zx_answer`
@@ -7997,6 +8031,12 @@ ALTER TABLE `zx_answer`
 -- Indexes for table `zx_ask`
 --
 ALTER TABLE `zx_ask`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `zx_comment`
+--
+ALTER TABLE `zx_comment`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -8120,7 +8160,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
 -- AUTO_INCREMENT for table `zx_ads`
 --
 ALTER TABLE `zx_ads`
-MODIFY `tid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=115;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=115;
 --
 -- AUTO_INCREMENT for table `zx_answer`
 --
@@ -8131,6 +8171,11 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=559;
 --
 ALTER TABLE `zx_ask`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1255;
+--
+-- AUTO_INCREMENT for table `zx_comment`
+--
+ALTER TABLE `zx_comment`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `zx_course`
 --
