@@ -606,3 +606,1610 @@ Stack trace:
 REQUEST_URI=/zhixuan/index.php?r=site/login
 HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
 ---
+2014/05/19 13:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:36:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:46:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:46:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:46:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 13:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/19 14:38:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "course".' in /var/www/zhixuan/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(270): CController->missingAction('course')
+#1 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('course')
+#2 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index/course')
+#3 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/zhixuan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=index/course
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/19 14:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "course".' in /var/www/zhixuan/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(270): CController->missingAction('course')
+#1 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('course')
+#2 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index/course')
+#3 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/zhixuan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=index/course
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/19 14:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "course".' in /var/www/zhixuan/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(270): CController->missingAction('course')
+#1 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('course')
+#2 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index/course')
+#3 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/zhixuan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=index/course
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/19 14:53:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "course".' in /var/www/zhixuan/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(270): CController->missingAction('course')
+#1 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('course')
+#2 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index/course')
+#3 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/zhixuan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=index/course
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/19 14:59:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "course".' in /var/www/zhixuan/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(270): CController->missingAction('course')
+#1 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('course')
+#2 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index/course')
+#3 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/zhixuan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=index/course
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/19 14:59:35 [error] [exception.CException] exception 'CException' with message 'CourseController cannot find the requested view "index".' in /var/www/zhixuan/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/zhixuan/protected/controllers/CourseController.php(7): CController->render('index')
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): CourseController->actionIndex()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('course')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=course
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/19 15:10:07 [error] [exception.CException] exception 'CException' with message 'AskController cannot find the requested view "index".' in /var/www/zhixuan/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/zhixuan/protected/controllers/AskController.php(7): CController->render('index')
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): AskController->actionIndex()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('ask')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=ask
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=course
+---
+2014/05/19 15:10:53 [error] [exception.CException] exception 'CException' with message 'ExperienceController cannot find the requested view "index".' in /var/www/zhixuan/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/zhixuan/protected/controllers/ExperienceController.php(7): CController->render('index')
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): ExperienceController->actionIndex()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('experience')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=experience
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/19 15:10:59 [error] [exception.CException] exception 'CException' with message 'ExperienceController cannot find the requested view "index".' in /var/www/zhixuan/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/zhixuan/protected/controllers/ExperienceController.php(7): CController->render('index')
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): ExperienceController->actionIndex()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('experience')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=experience
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=course
+---
+2014/05/19 15:26:59 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.enctype" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWidgetFactory.php(161): CComponent->__set('enctype', 'multipart/form-...')
+#1 /var/www/zhixuan/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'bootstrap.widge...', Array)
+#2 /var/www/zhixuan/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/zhixuan/protected/modules/admin/views/course/_form.php(14): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#5 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#6 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#7 /var/www/zhixuan/protected/modules/admin/views/course/update.php(19): CController->renderPartial('_form', Array)
+#8 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#9 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#10 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#11 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#12 /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php(103): CController->render('update', Array)
+#13 [internal function]: CourseController->actionUpdate('1')
+#14 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#15 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#16 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/zhixuan/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('update')
+#25 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#26 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/zhixuan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/course
+---
+2014/05/19 15:27:00 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.enctype" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWidgetFactory.php(161): CComponent->__set('enctype', 'multipart/form-...')
+#1 /var/www/zhixuan/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'bootstrap.widge...', Array)
+#2 /var/www/zhixuan/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/zhixuan/protected/modules/admin/views/course/_form.php(14): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#5 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#6 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#7 /var/www/zhixuan/protected/modules/admin/views/course/update.php(19): CController->renderPartial('_form', Array)
+#8 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#9 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#10 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#11 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#12 /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php(103): CController->render('update', Array)
+#13 [internal function]: CourseController->actionUpdate('1')
+#14 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#15 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#16 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/zhixuan/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('update')
+#25 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#26 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/zhixuan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/course
+---
+2014/05/19 15:27:00 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.enctype" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWidgetFactory.php(161): CComponent->__set('enctype', 'multipart/form-...')
+#1 /var/www/zhixuan/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'bootstrap.widge...', Array)
+#2 /var/www/zhixuan/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/zhixuan/protected/modules/admin/views/course/_form.php(14): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#5 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#6 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#7 /var/www/zhixuan/protected/modules/admin/views/course/update.php(19): CController->renderPartial('_form', Array)
+#8 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#9 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#10 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#11 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#12 /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php(103): CController->render('update', Array)
+#13 [internal function]: CourseController->actionUpdate('1')
+#14 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#15 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#16 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/zhixuan/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('update')
+#25 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#26 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/zhixuan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/course
+---
+2014/05/19 15:27:45 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:27:54 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:28:05 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:35:07 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:35:26 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:37:11 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:38:20 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:47:27 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:47:50 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:48:34 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:48:34 [error] [php] move_uploaded_file(upload/2014/05/19/1400485714_9015.jpg): failed to open stream: No such file or directory (/var/www/zhixuan/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 unknown(0): CourseController->actionUpdate()
+#1 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#5 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#8 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (105)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:49:13 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:49:13 [error] [php] move_uploaded_file(./upload/2014/05/19/1400485753_3032.jpg): failed to open stream: No such file or directory (/var/www/zhixuan/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 unknown(0): CourseController->actionUpdate()
+#1 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#5 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#8 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (105)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:49:53 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:49:53 [error] [php] move_uploaded_file(./upload/2014/05/19/1400485793_7290.jpg): failed to open stream: Permission denied (/var/www/zhixuan/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 unknown(0): CourseController->actionUpdate()
+#1 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#5 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#8 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (105)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:50:18 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:50:18 [error] [php] move_uploaded_file(upload/2014/05/19/1400485818_3819.jpg): failed to open stream: Permission denied (/var/www/zhixuan/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 unknown(0): CourseController->actionUpdate()
+#1 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#5 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#8 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (105)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:50:47 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:59:47 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 15:59:47 [error] [php] Undefined variable: mode (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#3 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#6 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#9 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:00:16 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:00:16 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:00:56 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:00:56 [error] [php] move_uploaded_file(upload/2014/05/19/1400486456.jpg): failed to open stream: No such file or directory (/var/www/zhixuan/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 unknown(0): CourseController->actionUpdate()
+#1 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#5 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#8 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (107)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:01:11 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:01:31 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:01:31 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:27 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:27 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:29 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:29 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:30 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:30 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:48 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:48 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:50 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:02:50 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:05:11 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:05:11 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:05:50 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/controllers/IndexController.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/
+in /var/www/zhixuan/protected/controllers/IndexController.php (7)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:16:23 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:16:23 [error] [php] mkdir(): Permission denied (/var/www/zhixuan/protected/modules/admin/controllers/CourseController.php:106)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#4 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#7 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#10 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (106)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:16:37 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:21:30 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/var/www/zhixuan/framework/web/helpers/CHtml.php:98)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/helpers/CHtml.php(153): renderAttributes()
+#1 /var/www/zhixuan/framework/web/helpers/CHtml.php(426): tag()
+#2 /var/www/zhixuan/protected/modules/admin/views/course/_form.php(46): image()
+#3 /var/www/zhixuan/framework/web/CBaseController.php(126): require()
+#4 /var/www/zhixuan/framework/web/CBaseController.php(95): CourseController->renderInternal()
+#5 /var/www/zhixuan/framework/web/CController.php(869): CourseController->renderFile()
+#6 /var/www/zhixuan/protected/modules/admin/views/course/update.php(19): CourseController->renderPartial()
+#7 /var/www/zhixuan/framework/web/CBaseController.php(126): require()
+#8 /var/www/zhixuan/framework/web/CBaseController.php(95): CourseController->renderInternal()
+#9 /var/www/zhixuan/framework/web/CController.php(869): CourseController->renderFile()
+#10 /var/www/zhixuan/framework/web/CController.php(782): CourseController->renderPartial()
+#11 /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php(115): CourseController->render()
+#12 unknown(0): CourseController->actionUpdate()
+#13 /var/www/zhixuan/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#14 /var/www/zhixuan/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#15 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#16 /var/www/zhixuan/framework/web/filters/CFilterChain.php(133): CourseController->runAction()
+#17 /var/www/zhixuan/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/zhixuan/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#19 /var/www/zhixuan/framework/web/filters/CInlineFilter.php(58): CourseController->filterAccessControl()
+#20 /var/www/zhixuan/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#21 /var/www/zhixuan/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/zhixuan/framework/web/CController.php(265): CourseController->runActionWithFilters()
+#23 /var/www/zhixuan/framework/web/CWebApplication.php(282): CourseController->run()
+#24 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#25 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=admin/course/update&id=1
+in /var/www/zhixuan/protected/modules/admin/views/course/_form.php (46)
+in /var/www/zhixuan/protected/modules/admin/views/course/update.php (19)
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (115)
+2014/05/19 16:26:06 [error] [php] mkdir(): No such file or directory (/var/www/zhixuan/protected/controllers/IndexController.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/
+in /var/www/zhixuan/protected/controllers/IndexController.php (7)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:26:26 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:53:22 [error] [php] include(Course.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/protected/controllers/IndexController.php(10): spl_autoload_call()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#4 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/controllers/IndexController.php (10)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:54:19 [error] [php] include(Course.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/protected/controllers/IndexController.php(10): spl_autoload_call()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#4 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/controllers/IndexController.php (10)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:54:20 [error] [php] include(Course.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/protected/controllers/IndexController.php(10): spl_autoload_call()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#4 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/controllers/IndexController.php (10)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:54:20 [error] [php] include(Course.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/protected/controllers/IndexController.php(10): spl_autoload_call()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#4 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/controllers/IndexController.php (10)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:54:20 [error] [php] include(Course.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/protected/controllers/IndexController.php(10): spl_autoload_call()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#4 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/controllers/IndexController.php (10)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:54:21 [error] [php] include(Course.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/protected/controllers/IndexController.php(10): spl_autoload_call()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#4 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/controllers/IndexController.php (10)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:54:21 [error] [php] include(Course.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/protected/controllers/IndexController.php(10): spl_autoload_call()
+#1 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#2 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#4 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#5 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/controllers/IndexController.php (10)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 16:59:09 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in /var/www/zhixuan/protected/modules/admin/controllers/CourseController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:07:43 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(11): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (11)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:08:32 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:8)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(11): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (8)
+in /var/www/zhixuan/protected/controllers/IndexController.php (11)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:08:32 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:8)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(11): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (8)
+in /var/www/zhixuan/protected/controllers/IndexController.php (11)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:08:32 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:8)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(11): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (8)
+in /var/www/zhixuan/protected/controllers/IndexController.php (11)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:08:33 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:8)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(11): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (8)
+in /var/www/zhixuan/protected/controllers/IndexController.php (11)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:08:33 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:8)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(11): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (8)
+in /var/www/zhixuan/protected/controllers/IndexController.php (11)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:08:33 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:8)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(11): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (8)
+in /var/www/zhixuan/protected/controllers/IndexController.php (11)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:10:28 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(12): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (12)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:11:32 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(12): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (12)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:11:33 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(12): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (12)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:11:33 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(12): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (12)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:11:33 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(12): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (12)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:11:33 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(12): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (12)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:12:05 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(18): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (18)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:12:05 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(18): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (18)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:12:05 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(18): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (18)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:12:06 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(18): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (18)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:12:06 [error] [php] Trying to get property of non-object (/var/www/zhixuan/protected/views/index/index.php:7)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(18): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (7)
+in /var/www/zhixuan/protected/controllers/IndexController.php (18)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:18:13 [error] [php] Undefined variable: freeCourse (/var/www/zhixuan/protected/views/index/index.php:15)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(20): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (15)
+in /var/www/zhixuan/protected/controllers/IndexController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:33:56 [error] [php] Undefined variable: v (/var/www/zhixuan/protected/views/index/index.php:42)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(30): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (42)
+in /var/www/zhixuan/protected/controllers/IndexController.php (30)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:33:57 [error] [php] Undefined variable: v (/var/www/zhixuan/protected/views/index/index.php:42)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(30): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (42)
+in /var/www/zhixuan/protected/controllers/IndexController.php (30)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:33:57 [error] [php] Undefined variable: v (/var/www/zhixuan/protected/views/index/index.php:42)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(30): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (42)
+in /var/www/zhixuan/protected/controllers/IndexController.php (30)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:33:58 [error] [php] Undefined variable: v (/var/www/zhixuan/protected/views/index/index.php:42)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(30): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (42)
+in /var/www/zhixuan/protected/controllers/IndexController.php (30)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:33:58 [error] [php] Undefined variable: v (/var/www/zhixuan/protected/views/index/index.php:42)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(30): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (42)
+in /var/www/zhixuan/protected/controllers/IndexController.php (30)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:33:58 [error] [php] Undefined variable: v (/var/www/zhixuan/protected/views/index/index.php:42)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/IndexController.php(30): IndexController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=index
+in /var/www/zhixuan/protected/views/index/index.php (42)
+in /var/www/zhixuan/protected/controllers/IndexController.php (30)
+in /var/www/zhixuan/index.php (13)
+2014/05/19 17:34:11 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/index/index.php(42): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/IndexController.php(30): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=index
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=index
+---
+2014/05/19 17:34:11 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/index/index.php(42): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/IndexController.php(30): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=index
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=index
+---
+2014/05/19 17:34:11 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/index/index.php(42): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/IndexController.php(30): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=index
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=index
+---
+2014/05/19 17:34:12 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/index/index.php(42): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/IndexController.php(30): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=index
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=index
+---
+2014/05/19 17:34:12 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/index/index.php(42): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/IndexController.php(30): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=index
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=index
+---
+2014/05/19 17:34:12 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/index/index.php(42): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/IndexController.php(30): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=index
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=index
+---

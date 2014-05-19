@@ -17,10 +17,7 @@ $this->breadcrumbs=array(
 		'title',
 		'content',
 		'des',
-		array(
-				'label'=>'图片',
-				'value'=>CHtml::image($model->pic),
-			),
+                'pic',
 		'click',
 		'recommend',
 		'language',

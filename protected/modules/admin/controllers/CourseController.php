@@ -94,8 +94,20 @@ class CourseController extends Controller
 		if(isset($_POST['Course']))
 		{
 			$model->attributes=$_POST['Course'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                        $pic = CUploadedFile::getInstance($model,'pic');   //获得一个CUploadedFile的实例  
+                        if(is_object($pic)&&get_class($pic) === 'CUploadedFile'){   // 判断实例化是否成功  
+                            $model->pic = 'upload/'.date('Ym').'/'.time().'.'.$pic->extensionName;   //定义文件保存的名称  
+                        }else{  
+                            $model->pic = 'upload/noPic.jpg';   // 若果失败则应该是什么图片  
+                        }  
+                        if($model->save()){
+                            if(is_object($pic)&&get_class($pic) === 'CUploadedFile'){  
+                                if(!is_dir(dirname($model->pic)))
+                                    mkdir(dirname($model->pic), 0777);
+                                $pic->saveAs($model->pic);    // 上传图片  
+                            } 
+                            $this->redirect(array('update','id'=>$model->id));
+                        }		
 		}
 
 		$this->render('update',array(

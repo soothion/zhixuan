@@ -9,7 +9,7 @@
 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'course-form',
 	'enableAjaxValidation'=>false,
-	'htmlOptions'=>array('class'=>'well'),
+	'htmlOptions'=>array('class'=>'well','enctype'=>'multipart/form-data'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -42,7 +42,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'pic'); ?>
-		<?php echo $form->textField($model,'pic',array('size'=>60,'maxlength'=>80)); ?>
+		<?php echo CHtml::activeFileField($model,'pic',array('size'=>60,'maxlength'=>80)); ?>
+                <?php if(!empty($model->pic)) echo CHtml::image($model->pic,null,array('width'=>'200px'))?>
 		<?php echo $form->error($model,'pic'); ?>
 	</div>
 

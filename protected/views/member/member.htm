@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/global.css" rel="stylesheet" type="text/css" />
+    <link href="style/member.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+<div class="wrapper">
+ <div class="logo"><a href="index.htm"><img src="images/Logo.png" /> </a> <img src="images/slogan.png" class="slogan"/>
+ </div>
+ <ul class="globalNav">
+  <li><a href="course.htm">创业课程</a></li>
+  <li><a href="ask-list.htm">有问必答</a></li>
+  <li><a href="experience-detail.htm">经验专栏</a></li>
+
+ 
+ </ul>
+ <div class="searchBar">
+     <p class="searchType" onclick="OnClickDownMuen()">
+     <label id="DownText">课程</label> 
+   </p>
+   <p class="keyword"><input type="text" /></p>
+   <p class="btnSearch"><input name="" type="image" src="images/Seach.png" /></p> 
+   
+   <div class="dropdown" id="MuenNavDown" style=" display:none">
+   <p class="dropMenu" onclick="OnClickDownMuenText('课程')"><a href="#">课程</a></p>
+   <p class="dropMenu" onclick="OnClickDownMuenText('问题')"><a href="#">问题</a></p>
+   <p class="dropMenu" onclick="OnClickDownMuenText('专栏')"><a href="#">专栏</a></p>
+  </div>
+ </div>
+ <script type="text/javascript">
+     function OnClickDownMuen() {
+         if (document.getElementById("MuenNavDown").style.display == "none") {
+             document.getElementById("MuenNavDown").style.display = ""
+         }
+         else {
+             document.getElementById("MuenNavDown").style.display = "none"
+         }
+     }
+     function OnClickDownMuenText(Tages) {
+         document.getElementById("DownText").innerHTML = Tages;
+         document.getElementById("MuenNavDown").style.display = "none"
+     }
+ </script>
+ </div>
+</div>
+
+<div class="InTitle"><h1>会员空间</h1></div>
+
+<div class="MenberContent" id="contentWrapper">
+ <div class="MenberInfo">
+  <div class="Lefts"><img src="Images/Tou.png" /></div>
+  <div class="Rights">
+   <ul class="MenberInfoText">
+    <li class="TT1">
+     <p class="PP1"><span>高级会员</span> 袁荣</p>
+     <p class="PP2">
+      <a href="#"><img src="images/T1.png" /></a><a href="#"><img src="images/T2.png" /></a>
+     </p>
+    </li>
+    <li class="TT2">积分:500 <a href="#">查看积分规则</a></li>
+    <li class="TT3">
+     <a href="#">我的资料</a>
+     <a href="#">我的积分</a>
+     <a href="#">我的主页</a>
+     <a href="#">消息(1)</a>
+    </li>
+   </ul>
+  </div>
+ </div>
+
+ <ul class="MenberEditTitle">
+  <li class="TT1"><a href="###">编辑个人资料</a></li>
+  <li><a href="###">绑定设置</a></li>
+ </ul>
+
+ <div class="MenberEdit">
+  <div class="lefts">
+   <ul class="MenberEditBian">
+    <li class="TT1">
+     <p class="PP1">更改头像：</p>
+     <p class="PP2"><img src="images/Tou.png" /></p>
+     <p class="PP3"> 
+      <input type="button" value="选择文件" class="BtnFile" />
+      <br/>
+      仅支持JPG,GIF,BMP,JPRG,PNG格式， 
+      大小不超过1M
+     </p>
+    </li>
+    <li class="TT2">
+     <p class="PP1">用户名：</p><p class="PP2">袁荣</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+
+    <li class="TT3">
+     <p class="PP1">邮箱：</p><p class="PP2">aaronyuen@163.com</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+    <li class="TT4">
+     <p class="PP2">隐藏</p><p class="PP1"><input type="checkbox" /></p>
+    </li>
+
+    <li class="TT2">
+     <p class="PP1">密码：</p><p class="PP2"><a href="#">更改</a></p>
+    </li> 
+   </ul> 
+  </div>
+  <div class="Rights">
+   <ul class="MenberEditBian"> 
+    <li class="TT2">
+     <p class="PP1">真实姓名：</p><p class="PP2">袁荣</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+
+    <li class="TT2">
+     <p class="PP1">一句话描述：</p><p class="PP2">乐于助人</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+      
+    <li class="TT5">
+     <p class="PP1">专业描述：</p><p class="PP2">十五年策划经验 </p><p class="PP3"><a href="#">更改</a></p>
+    </li> 
+
+    <li class="TT3">
+     <p class="PP1">就职单位：</p><p class="PP2">未填写</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+    <li class="TT4">
+     <p class="PP2">隐藏</p><p class="PP1"><input type="checkbox" /></p>
+    </li>
+
+    <li class="TT3">
+     <p class="PP1">职位：</p><p class="PP2">未填写</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+    <li class="TT4">
+     <p class="PP2">隐藏</p><p class="PP1"><input type="checkbox" /></p>
+    </li>
+
+    <li class="TT3">
+     <p class="PP1">年龄：</p><p class="PP2">未填写</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+    <li class="TT4">
+     <p class="PP2">隐藏</p><p class="PP1"><input type="checkbox" /></p>
+    </li>
+
+    <li class="TT3">
+     <p class="PP1">手机：</p><p class="PP2">未填写</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+    <li class="TT4">
+     <p class="PP2">隐藏</p><p class="PP1"><input type="checkbox" /></p>
+    </li>
+
+    <li class="TT3">
+     <p class="PP1">QQ：</p><p class="PP2">未填写</p><p class="PP3"><a href="#">更改</a></p>
+    </li>
+    <li class="TT4">
+     <p class="PP2">隐藏</p><p class="PP1"><input type="checkbox" /></p>
+    </li>
+   </ul> 
+  
+  </div>
+ </div>
+
+  
+ <ul class="MenberEditTitle">
+  <li class="TT1"><a href="###">编辑个人资料</a></li>
+  <li><a href="###">绑定设置</a></li>
+ </ul>
+
+ <ul class="MenberEditShare">
+  <li class="TT1">新浪微博 </li><li class="TT2">@智选非商学院  <a href="#">取消绑定</a></li>
+  <li class="TT1">腾讯QQ </li><li class="TT2"><a href="#" class="AA1">绑定</a></li>
+  <li class="TT1">人人网 </li><li class="TT2"><a href="#" class="AA1">绑定</a></li>
+  <li class="TT1">支付宝 </li><li class="TT2"><a href="#" class="AA1">绑定</a></li>
+ </ul>
+
+
+
+
+
+</div>
+
+
+
+
+<div class="ClearFoot">&nbsp;</div>
+<div id="footer">
+ <div class="wrapper">
+ 
+  <p class="botNav">
+   <a href="#">关于智选</a><a href="#">使用帮助</a><a href="#">意见反馈</a><a href="#">加入我们</a>
+  </p>
+  <p class="copyright">沪ICP备11022737</p>
+
+</div>
+</div> 
+</body>
+</html>
