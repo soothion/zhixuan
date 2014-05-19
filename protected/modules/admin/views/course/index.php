@@ -27,6 +27,7 @@ $this->menu=array(
 	    array(
 	        'header'=>'操作',
 	        'class'=>'bootstrap.widgets.TbButtonColumn',
+                'template'=>'{update}{delete}'
 	    ),
 	)	
 ));

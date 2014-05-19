@@ -6,9 +6,10 @@
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'ads-form',
 	'enableAjaxValidation'=>false,
+        'htmlOptions'=>array('class'=>'well'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -22,51 +23,21 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'classid'); ?>
-		<?php echo $form->textField($model,'classid'); ?>
-		<?php echo $form->error($model,'classid'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'dateline'); ?>
 		<?php echo $form->textField($model,'dateline',array('size'=>60,'maxlength'=>80)); ?>
 		<?php echo $form->error($model,'dateline'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'fpic'); ?>
-		<?php echo $form->textField($model,'fpic',array('size'=>60,'maxlength'=>80)); ?>
-		<?php echo $form->error($model,'fpic'); ?>
+		<?php echo $form->labelEx($model,'pic'); ?>
+		<?php echo $form->textField($model,'pic',array('size'=>60,'maxlength'=>80)); ?>
+		<?php echo $form->error($model,'pic'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'links'); ?>
 		<?php echo $form->textField($model,'links',array('size'=>60,'maxlength'=>80)); ?>
 		<?php echo $form->error($model,'links'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'sid'); ?>
-		<?php echo $form->textField($model,'sid'); ?>
-		<?php echo $form->error($model,'sid'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'language'); ?>
-		<?php echo $form->textField($model,'language'); ?>
-		<?php echo $form->error($model,'language'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fpic2'); ?>
-		<?php echo $form->textField($model,'fpic2',array('size'=>60,'maxlength'=>80)); ?>
-		<?php echo $form->error($model,'fpic2'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'city'); ?>
-		<?php echo $form->textField($model,'city'); ?>
-		<?php echo $form->error($model,'city'); ?>
 	</div>
 
 	<div class="row buttons">

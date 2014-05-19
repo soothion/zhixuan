@@ -12,9 +12,13 @@ $this->menu=array(
 );
 ?>
 
-<h1>Answers</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+        'type'=>'striped bordered condensed',
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+        'columns'=>array(
+            array('name'=>'id','header'=>'#'),
+            array('name'=>'content','header'=>'内容'),
+            array('name'=>'uid','header'=>'用户'),
+            array('header'=>'操作','class'=>'bootstrap.widgets.TbButtonColumn','template'=>'{update}{delete}'),
+        ),
 )); ?>

@@ -12,9 +12,14 @@ $this->menu=array(
 );
 ?>
 
-<h1>Ads</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+        'type'=>'striped bordered condensed',
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+        'columns'=>array(
+            array('name'=>'id','header'=>'#'),
+            array('name'=>'title','header'=>'标题'),
+            array('name'=>'links','header'=>'链接地址'),
+            array('name'=>'dateline','header'=>'过期时间'),
+            array('header'=>'操作','class'=>'bootstrap.widgets.TbButtonColumn','template'=>'{update}{delete}'),
+        ),
 )); ?>

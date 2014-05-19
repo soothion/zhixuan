@@ -507,3 +507,102 @@ Stack trace:
 REQUEST_URI=/zhixuan/index.php?r=admin/course/view&id=1
 HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/course/index
 ---
+2014/05/19 10:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:00:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:00:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:00:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:02:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:02:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---
+2014/05/19 10:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php?r=site/login
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=admin/ads/index
+---

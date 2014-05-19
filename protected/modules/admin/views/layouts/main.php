@@ -32,18 +32,25 @@ Yii::app()->bootstrap->register();//载入boostrap
                     array(
                         'class'=>'bootstrap.widgets.TbMenu',
                         'items'=>array(
-                            array('label'=>'课程管理', 'url'=>'ask', 'items'=>array(
+                            array('label'=>'用户管理', 'url'=>array('/admin/users/index')),
+                            array('label'=>'课程管理', 'url'=>'/admin/course/index', 'items'=>array(
                                 array('label'=>'课程列表', 'url'=>array('/admin/course/index')),
                                 array('label'=>'课程添加', 'url'=>array('/admin/course/create')),
                             )),
-                            array('label'=>'问答管理', 'url'=>'#', 'items'=>array(
+                            array('label'=>'问答管理', 'url'=>'/admin/ask/index', 'items'=>array(
                                 array('label'=>'问答列表', 'url'=>array('/admin/ask/index')),
                                 array('label'=>'问答添加', 'url'=>array('/admin/ask/create')),
                             )),
-                            array('label'=>'经验管理', 'url'=>'#', 'items'=>array(
+                            array('label'=>'答案管理', 'url'=>array('/admin/answer/index')),
+                            array('label'=>'经验管理', 'url'=>'/admin/experience/index', 'items'=>array(
                                 array('label'=>'经验列表', 'url'=>array('/admin/experience/index')),
                                 array('label'=>'经验添加', 'url'=>array('/admin/experience/create')),
                             )),
+                            array('label'=>'广告管理', 'url'=>'/admin/ads/index', 'items'=>array(
+                                array('label'=>'广告列表', 'url'=>array('/admin/ads/index')),
+                                array('label'=>'广告添加', 'url'=>array('/admin/ads/create')),
+                            )),
+                            array('label'=>'评论管理', 'url'=>array('/admin/comment/index')),
                         ),
                     ),
                 ),
