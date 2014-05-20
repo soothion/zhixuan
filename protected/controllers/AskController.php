@@ -23,9 +23,11 @@ class AskController extends Controller
                 else $filter=array(0,0);
                 $askCriteria -> limit = 6;
                 $askCriteria -> order = 'recommend desc, addtime desc, id desc';
-                $askList = Course::model() -> findAll($askCriteria);
-                $askCount=Course::model()->count();
-                var_dump($askList[0]->user);die;
+                $askCount=Ask::model()->count();
+                $pages=new CPagination($askCount);
+                $pages->pageSize=20;
+                $pages->applyLimit($askCriteria); 
+                $askList = Ask::model() -> findAll($askCriteria);
                 //获取所有分类
                 $type=  AskType::model()->findAll();
                  //渲染视图
@@ -34,6 +36,11 @@ class AskController extends Controller
                     'askList'=>$askList,
                     'askCount'=>$askCount,
                     'type'=>$type,
+                    'pages'=>$pages,
                         ));
 	}
+
+    public function actionAsk(){
+        echo 'success';
+    }
 }

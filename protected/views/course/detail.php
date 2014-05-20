@@ -43,9 +43,6 @@
  </form>
 </div>
 <ul class="commentListing"></ul>
-<style>
-    .list-page li{list-style: none;float:left;padding:5px;border:none;}
-</style>
 <script>
 $(document).ready(function(){
     $.get("<?php echo Yii::app()->createUrl('course/comment', array('id'=>$course->id))?>",function(result){

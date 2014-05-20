@@ -5616,3 +5616,130 @@ REQUEST_URI=/zhixuan/index.php?r=ask
 in /var/www/zhixuan/protected/views/ask/index.php (55)
 in /var/www/zhixuan/protected/controllers/AskController.php (37)
 in /var/www/zhixuan/index.php (13)
+2014/05/20 11:49:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\wamp\www\zhixuan\framework\db\CDbConnection.php:381
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\wamp\www\zhixuan\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\wamp\www\zhixuan\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\wamp\www\zhixuan\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Course))
+#7 D:\wamp\www\zhixuan\protected\models\Course.php(31): CActiveRecord::model('Course')
+#8 D:\wamp\www\zhixuan\protected\controllers\IndexController.php(10): Course::model()
+#9 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): IndexController->actionIndex()
+#10 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\zhixuan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/20 11:50:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zhixuan.xz_ask_type' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `xz_ask_type`.
+in D:\wamp\www\zhixuan\protected\views\index\index.php (44)
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (30)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/05/20 11:50:14 [error] [exception.CDbException] exception 'CDbException' with message 'The table "xz_ask_type" for active record class "AskType" cannot be found in the database.' in D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(AskType))
+#1 D:\wamp\www\zhixuan\framework\db\ar\CActiveFinder.php(215): CActiveRecord::model('AskType')
+#2 D:\wamp\www\zhixuan\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), 'type')
+#3 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct(Object(Ask), 'type')
+#4 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(141): CActiveRecord->getRelated('type')
+#5 D:\wamp\www\zhixuan\protected\views\index\index.php(44): CActiveRecord->__get('type')
+#6 D:\wamp\www\zhixuan\framework\web\CBaseController.php(126): require('D:\wamp\www\zhi...')
+#7 D:\wamp\www\zhixuan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\www\zhi...', Array, true)
+#8 D:\wamp\www\zhixuan\framework\web\CController.php(869): CBaseController->renderFile('D:\wamp\www\zhi...', Array, true)
+#9 D:\wamp\www\zhixuan\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 D:\wamp\www\zhixuan\protected\controllers\IndexController.php(30): CController->render('index', Array)
+#11 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): IndexController->actionIndex()
+#12 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\zhixuan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('')
+#16 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#17 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php
+---
+2014/05/20 13:39:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detail".' in D:\wamp\www\zhixuan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(270): CController->missingAction('detail')
+#1 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('detail')
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('ask/detail')
+#3 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=ask/detail&id=699
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/20 15:02:13 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in D:\wamp\www\zhixuan\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(143): CComponent->__get('title')
+#1 D:\wamp\www\zhixuan\protected\views\ask\index.php(54): CActiveRecord->__get('title')
+#2 D:\wamp\www\zhixuan\framework\web\CBaseController.php(126): require('D:\wamp\www\zhi...')
+#3 D:\wamp\www\zhixuan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\www\zhi...', Array, true)
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(869): CBaseController->renderFile('D:\wamp\www\zhi...', Array, true)
+#5 D:\wamp\www\zhixuan\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 D:\wamp\www\zhixuan\protected\controllers\AskController.php(36): CController->render('index', Array)
+#7 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): AskController->actionIndex()
+#8 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\zhixuan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('ask')
+#13 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=ask
+HTTP_REFERER=http://localhost/zhixuan/index.php
+---
+2014/05/20 15:04:07 [error] [php] Object of class Users could not be converted to string (D:\wamp\www\zhixuan\protected\views\ask\index.php:55)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(869): AskController->renderFile()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(782): AskController->renderPartial()
+#2 D:\wamp\www\zhixuan\protected\controllers\AskController.php(36): AskController->render()
+#3 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): AskController->actionIndex()
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\zhixuan\framework\web\CController.php(286): AskController->runAction()
+#6 D:\wamp\www\zhixuan\framework\web\CController.php(265): AskController->runActionWithFilters()
+#7 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): AskController->run()
+#8 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=ask
+in D:\wamp\www\zhixuan\protected\views\ask\index.php (55)
+in D:\wamp\www\zhixuan\protected\controllers\AskController.php (36)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/05/20 15:04:07 [error] [php] Object of class Users could not be converted to string (D:\wamp\www\zhixuan\protected\views\ask\index.php:55)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(869): AskController->renderFile()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(782): AskController->renderPartial()
+#2 D:\wamp\www\zhixuan\protected\controllers\AskController.php(36): AskController->render()
+#3 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): AskController->actionIndex()
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\zhixuan\framework\web\CController.php(286): AskController->runAction()
+#6 D:\wamp\www\zhixuan\framework\web\CController.php(265): AskController->runActionWithFilters()
+#7 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): AskController->run()
+#8 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=ask
+in D:\wamp\www\zhixuan\protected\views\ask\index.php (55)
+in D:\wamp\www\zhixuan\protected\controllers\AskController.php (36)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/05/20 15:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ask".' in D:\wamp\www\zhixuan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(270): CController->missingAction('ask')
+#1 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('ask')
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('ask/ask')
+#3 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=ask/ask
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=ask&filter=6-0
+---

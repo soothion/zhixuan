@@ -398,3 +398,5 @@ ul.ProblemSText li.TT2 input{}
 .post .askModule .replyBox{}
 
 
+/*分页*/
+ .list-page li{list-style: none;float:left;padding:5px;border:none;}

@@ -16,13 +16,15 @@
      <li class="TT1">
       <p class="PP1">提交分类</p>
       <p class="PP2">
-       <select><option>请选择</option></select>
+       <select name="type" id="ask-type"><option>请选择</option><?php foreach ($type as $v) {?>
+        <option value="<?php echo $v->id?>"><?php echo $v->title?></option>
+       <?php }?></select>
       </p> 
      </li>
      <li class="TT1">
       <p class="PP1">添加标签</p>
       <p class="PP2">
-       <input type="text" />
+       <input type="text" name="tag" id="ask-tag"/>
       </p>
      </li>
      <li class="TT2">多个标签请用空格隔开。</li>
@@ -31,9 +33,24 @@
       有问必答，24小时内给予解惑。
      </li>
      <li class="TT4"> 
-      <input type="button" value="提交" />
+      <input type="button" value="提交" id="ask-submit"/>
      </li>
     </ul>
+    <script>
+        $(document).ready(function(){
+          $('#ask-submit').click(function(){
+              var content=UE.getEditor('editor').getContent();
+              var type=$('#ask-type').val();
+              var tag=$('#ask-tag').val();
+              var data={"content":content,"type":type,"tag":tag};
+
+              $.post("<?php echo Yii::app()->createUrl('ask/ask')?>", data, function(data){
+                 location.reload();
+              });
+
+          });
+        })
+    </script>
    </div>
   </div> 
   <div class="questHeader">
@@ -51,8 +68,8 @@
   <div class="questWrapper">
     <ul class="questListing">
       <li>
-        <h3><a href="answer-detail.htm"><?php echo $v->title?></a></h3>
-        <p class="intro"> <span><?php echo ($v->user);die;?></span> 
+        <h3><a href="<?php echo Yii::app()->createUrl('ask/detail',array('id'=>$v->id));?>"><?php echo Helper::truncate_utf8_string($v->content,32)?></a></h3>
+        <p class="intro"> <span><?php echo ($v->user->username);?></span> 
             发布于 <?php echo date('Y-m-d H:m:s',  strtotime($v->addtime))?> 
             分类：<span><?php echo $v->type->title?></span> 
             标签：<span><?php echo $v->tag?></span> 
@@ -63,18 +80,19 @@
   </div>
      <?php }?>
 
-  <div class="Pages">
-  <a href="#">上一页</a>
-   <a href="#">1</a>
-   <a href="#">2</a>
-   <a href="#">3</a>
-   <a href="#">4</a>
-   <a href="#">5</a>
-   <a href="#">6</a>
-   ...
-   <a href="#">12</a>
-   <a href="#">下一页</a>
-  </div>
+<?php
+    $this->widget('CLinkPager', array(
+        'header' => '',
+        'firstPageLabel' => '首页',
+        'lastPageLabel' => '末页',
+        'prevPageLabel' => '上一页',
+        'nextPageLabel' => '下一页',
+        'pages' => $pages,
+        'maxButtonCount' => 6,
+        'htmlOptions' => array('class' => 'list-page Pages'),
+            )
+    );
+?>
 
 
 
