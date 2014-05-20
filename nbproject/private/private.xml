@@ -3,9 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/var/www/zhixuan/protected/models/CourseType.php</file>
+            <file>file:/var/www/zhixuan/protected/views/course/detail.php</file>
+            <file>file:/var/www/zhixuan/protected/models/Comment.php</file>
             <file>file:/var/www/zhixuan/protected/controllers/IndexController.php</file>
+            <file>file:/var/www/zhixuan/protected/views/course/comment.php</file>
+            <file>file:/var/www/zhixuan/protected/views/course/index.php</file>
             <file>file:/var/www/zhixuan/protected/views/index/index.php</file>
             <file>file:/var/www/zhixuan/protected/controllers/CourseController.php</file>
+            <file>file:/var/www/zhixuan/protected/models/Course.php</file>
+            <file>file:/var/www/zhixuan/protected/views/layouts/main.php</file>
+            <file>file:/var/www/zhixuan/protected/modules/admin/views/answer/_form.php</file>
         </group>
     </open-files>
 </project-private>

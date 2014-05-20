@@ -1,66 +1,31 @@
 <div class="InTitle"><h1>创业课程</h1></div>
-
 <div class="IndexContent" id="contentWrapper">
  <div class="mainPanel">
    <div class="courseCommended">
-  <div class="courseCover"><img src="images/course_cover_comm.jpg" width="642" height="296" /></div>
-  <div class="intro"> <h3><a href="#">创业技巧：张梓祥的第一桶金</a></h3>
-   <div class="desp">
-    简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简   </div>
-   <div class="voteCtrl">有启发(2)</div>
+<div class="courseCover"><img src="<?php echo $recommendCourse->pic;?>" width="642" height="296" /></div>
+  <div class="intro"> <h3><a href="<?php echo Yii::app()->createUrl('course/detail',array('id'=>$recommendCourse->id))?>"><?php echo $recommendCourse->title?></a></h3>
+   <div class="desp"><?php echo $recommendCourse->des;?></div>
+   <div class="voteCtrl">有启发(<?php echo $recommendCourse->agree;?>)</div>
   </div>
   </div>
   <ul class="courseNav">
-   <li class="TT1"><span>所有课程(32)</span><span>最近课程(3)</span><span>最热课程</span></li>
-   <li class="TT2">分类：创业技巧  创业故事</li>
+   <li class="TT1"><span>所有课程(<?php echo $courseCount?>)</span></li>
+   <li class="TT2">分类：
+       <?php foreach($type as $v){
+       echo '<a href="'.Yii::app()->createUrl('course', array('filter'=>$v->id.'-'.$filter[1])).'">'.$v->title.'</a> ';
+         }?></li>
    <li class="TT2">标签：</li>
   </ul>
   <ul class="courseListing">
-  <li>
-    <div class="courseCover"><a href="#"><img src="images/course_cover_thumb.jpg" /></a></div>
+      <?php foreach($courseList as $k=>$v){?>
+   <li class="<?php if(!($k%2==0)) echo 'br';?>">
+       <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail',array('id'=>$v->id))?>"><img src="<?php echo $v->pic?>" /></a></div>
     <div class="intro">
-    <span class="isFree">免费</span> <h3><a href="#">创业公开课：生意的本质</a></h3>     
+    <span class="isFree"><?php echo ($v->free)==1?'免费':'收费';?></span> <h3><a href="<?php echo Yii::app()->createUrl('course/detail',array('id'=>$v->id))?>"><?php echo $v->title?></a></h3>     
     </div>
-    <div class="voteCtrl"><a href="#">有启发(2)</a></div>
-    </li>
-    <li class="br">
-    <div class="courseCover"><a href="#"><img src="images/course_cover_thumb.jpg" /></a></div>
-    <div class="intro">
-    <span class="isFree">免费</span> <h3><a href="#">创业公开课：生意的本质</a></h3>
-     
-    </div>
-    <div class="voteCtrl"><a href="#">有启发(2)</a></div>
+    <div class="voteCtrl">有启发(<?php echo $v->agree?>)</div>
    </li>
-   <li>
-    <div class="courseCover"><a href="#"><img src="images/course_cover_thumb.jpg" /></a></div>
-    <div class="intro">
-    <span class="isFree">免费</span> <h3><a href="#">创业公开课：生意的本质</a></h3>     
-    </div>
-    <div class="voteCtrl"><a href="#">有启发(2)</a></div>
-    </li>
-    <li class="br">
-    <div class="courseCover"><a href="#"><img src="images/course_cover_thumb.jpg" /></a></div>
-    <div class="intro">
-    <span class="isFree">免费</span> <h3><a href="#">创业公开课：生意的本质</a></h3>
-     
-    </div>
-    <div class="voteCtrl"><a href="#">有启发(2)</a></div>
-   </li>
-   <li>
-    <div class="courseCover"><a href="#"><img src="images/course_cover_thumb.jpg" /></a></div>
-    <div class="intro">
-    <span class="isFree">免费</span> <h3><a href="#">创业公开课：生意的本质</a></h3>     
-    </div>
-    <div class="voteCtrl"><a href="#">有启发(2)</a></div>
-    </li>
-    <li class="br">
-    <div class="courseCover"><a href="#"><img src="images/course_cover_thumb.jpg" /></a></div>
-    <div class="intro">
-    <span class="isFree">免费</span> <h3><a href="#">创业公开课：生意的本质</a></h3>
-     
-    </div>
-    <div class="voteCtrl"><a href="#">有启发(2)</a></div>
-   </li>
+      <?php }?>
   </ul> 
 
   </div>

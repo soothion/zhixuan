@@ -6,7 +6,9 @@
  * The followings are the available columns in table '{{comment}}':
  * @property integer $id
  * @property integer $uid
- * @property string $type
+ * @property integer $aid
+ * @property integer $cid
+ * @property integer $eid
  * @property string $content
  * @property string $addtime
  */
@@ -38,13 +40,12 @@ class Comment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('uid, type, content, addtime', 'required'),
-			array('uid', 'numerical', 'integerOnly'=>true),
-			array('type', 'length', 'max'=>10),
+			array('uid, content', 'required'),
+			array('uid, aid, cid, eid', 'numerical', 'integerOnly'=>true),
 			array('content', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, uid, type, content, addtime', 'safe', 'on'=>'search'),
+			array('id, uid, aid, cid, eid, content, addtime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +57,10 @@ class Comment extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'user'=>array(self::BELONGS_TO, 'Users', 'uid'),
+                    'course'=>array(self::BELONGS_TO, 'Course', 'cid'),
+                    'ask'=>array(self::BELONGS_TO, 'Ask', 'aid'),
+                    'experience'=>array(self::BELONGS_TO, 'Experience', 'eid'),
 		);
 	}
 
@@ -67,7 +72,9 @@ class Comment extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'uid' => 'Uid',
-			'type' => 'Type',
+			'aid' => 'Aid',
+			'cid' => 'Cid',
+			'eid' => 'Eid',
 			'content' => 'Content',
 			'addtime' => 'Addtime',
 		);
@@ -86,7 +93,9 @@ class Comment extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('uid',$this->uid);
-		$criteria->compare('type',$this->type,true);
+		$criteria->compare('aid',$this->aid);
+		$criteria->compare('cid',$this->cid);
+		$criteria->compare('eid',$this->eid);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('addtime',$this->addtime,true);
 

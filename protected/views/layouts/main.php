@@ -6,8 +6,8 @@
 	<meta name="language" content="en" />
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/global.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/component.css" />
-
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/component.css" />             
+        <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 

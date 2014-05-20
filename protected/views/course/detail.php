@@ -1,117 +1,74 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-    <link href="style/global.css" rel="stylesheet" type="text/css" />
-    <link href="style/component.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div id="header">
-<div class="wrapper">
- <div class="logo"><a href="index.htm"><img src="images/Logo.png" /> </a> <img src="images/slogan.png" class="slogan"/>
- </div>
- <ul class="globalNav">
-  <li><a href="course.htm">创业课程</a></li>
-  <li><a href="ask-list.htm">有问必答</a></li>
-  <li><a href="experience-detail.htm">经验专栏</a></li>
-
- 
- </ul>
- <div class="searchBar">
-     <p class="searchType" onclick="OnClickDownMuen()">
-     <label id="DownText">课程</label> 
-   </p>
-   <p class="keyword"><input type="text" /></p>
-   <p class="btnSearch"><input name="" type="image" src="images/Seach.png" /></p> 
-   
-   <div class="dropdown" id="MuenNavDown" style=" display:none">
-   <p class="dropMenu" onclick="OnClickDownMuenText('课程')"><a href="#">课程</a></p>
-   <p class="dropMenu" onclick="OnClickDownMuenText('问题')"><a href="#">问题</a></p>
-   <p class="dropMenu" onclick="OnClickDownMuenText('专栏')"><a href="#">专栏</a></p>
-  </div>
- </div>
- <script type="text/javascript">
-     function OnClickDownMuen() {
-         if (document.getElementById("MuenNavDown").style.display == "none") {
-             document.getElementById("MuenNavDown").style.display = ""
-         }
-         else {
-             document.getElementById("MuenNavDown").style.display = "none"
-         }
-     }
-     function OnClickDownMuenText(Tages) {
-         document.getElementById("DownText").innerHTML = Tages;
-         document.getElementById("MuenNavDown").style.display = "none"
-     }
- </script>
- </div>
-</div>
-
-
-
 <div class="IndexContent" id="contentWrapper">
 <div class="InTitleInfo"> 
  <p class="skipNav">
-  <a href="#"><img src="images/WLeft.png" /></a>
-  <a href="#"><img src="images/WCenter.png" /></a>
-  <a href="#"><img src="images/WRightr.png" /></a>
- </p> <h1>创业课程－人脉运用的十个技巧</h1>
+     <a href="<?php if($prev) echo Yii::app()->createUrl('course/detail', array('id'=>$prev->id))?>"><img src="images/WLeft.png" /></a>
+  <a href="<?php echo Yii::app()->createUrl('course/detail', array('id'=>$course->id))?>"><img src="images/WCenter.png" /></a>
+  <a href="<?php if($next) echo Yii::app()->createUrl('course/detail', array('id'=>$next->id))?>"><img src="images/WRightr.png" /></a>
+ </p> <h1><?php echo $course->title?></h1>
 
 </div>
  <div class="mainPanel">
-   <div class="videoWindow"><img src="images/Pro.jpg" /></div>
+     <div class="videoWindow"><img src="<?php echo $course->pic?>" width="642px" /></div>
    <div class="videoIntro">
     <div class="overview">
      <p class="PP1">
-      <span>时长：8分钟</span>   <span>分类：创业技巧</span>    <span>标签：门面房</span>     </p>
+      <span>时长：<?php echo $course->time;?></span>   <span>分类：<?php echo $course->type->title;?></span>    <span>标签：<?php echo $course->tag?></span>     </p>
      <p class="PP3">
       <a href="#"><img src="images/GG1.png" /></a>
       <a href="#"><img src="images/GG2.png" /></a>     </p>
      <p class="PP2">分享：</p>
     </div>
     <div class="desp">
-     简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简    </div>
+     <?php echo $course->des?> 
+    </div>
     <div class="interaction">
-     <span class="SP1"><a href="#">有启发(2)</a></span>
+     <span class="SP1"><a href="#">有启发(<?php echo $course->agree?>)</a></span>
      <span class="SP2"><a href="#">收藏(28)</a></span>    </div>
    </div>
    
    <div class="courseDiscus">
-    <h3>本课讨论主题：人脉建设的要点。</h3>
+    <h3>本课讨论主题：<?php echo $course->theme;?></h3>
     <div class="overview">
      <p class="PP1">已有98名用户发表观点</p>
      <p class="PP2"><a href="#">点击查看</a>观点也有价值，只有付费用户才能查看。</p>
     </div>
    </div>
-   <div class="replyBoard">
-    <h3 >发表观点</h3>
-    <p class="txtArea"><textarea></textarea></p>
-    <p class="ctrl"> 
-     <input type="button" class="btnGuan" value="提交观点" />
-    </p>
-   </div>
-   <ul class="commentListing">
-    <li class="clearfix">
-    <div class="userPhoto"><img src="images/MTou.png" /></div>
-    <div class="comment clearfix">
-     <p class="userInfo"><span>金铭</span>  发表于  2012-08-14 12:38:30       </p>
-     <p class="con">
-      去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB 
-     </p>
-    </div>
-    </li>
-       <li class="clearfix">
-    <div class="userPhoto"><img src="images/MTou.png" /></div>
-    <div class="comment clearfix">
-     <p class="userInfo"><span>金铭</span>  发表于  2012-08-14 12:38:30       </p>
-     <p class="con">
-      去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB 
-     </p>
-    </div>
-    </li>
-    </ul>
-
+<div class="replyBoard">
+ <h3 >发表观点</h3>
+ <form action="" method="post" id="comment-form">
+ <p class="txtArea"><textarea name="content"></textarea></p>
+ <p class="ctrl"> 
+  <span class="comment-msg"></span><input type="button" class="btnGuan" value="提交观点" />
+ </p>
+ </form>
+</div>
+<ul class="commentListing"></ul>
+<style>
+    .list-page li{list-style: none;float:left;padding:5px;border:none;}
+</style>
+<script>
+$(document).ready(function(){
+    $.get("<?php echo Yii::app()->createUrl('course/comment', array('id'=>$course->id))?>",function(result){
+        $('.commentListing').html(result);
+    });
+    $('.btnGuan').click(function(){
+         $.ajax({  
+                "type":"POST",  
+                "url":"<?php echo Yii::app()->createUrl('course/comment', array('id'=>$course->id))?>",  
+                "data":$("#comment-form").serialize(),  
+                "success":function(data){$(".commentListing").html(data);},  
+                });  
+    })
+    $('.list-page a').live('click',function(){
+            $.ajax({  
+                    "type":"get",  
+                    "url":$(this).attr('href'),  
+                    "success":function(data){$(".commentListing").html(data);},  
+                   });  
+            return false;       
+    })
+})
+</script>
    </div>
  <div class="sideBar"> 
   <ul class="CourseLogin block"  id="MenberLogins">

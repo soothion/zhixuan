@@ -1,10 +1,15 @@
+ <script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ueditor/lang/zh-cn/zh-cn.js"></script>
 <div class="InTitle"><h1>有问必答</h1></div>
-
 <div class="IndexContent" id="contentWrapper">
  <div class="mainPanel">
   <div class="ProblemEdit">
    <div class="Lefts"> 
-    <textarea id="source"  class="xheditor-mini"   name="source" style="  width:420px; height:auto; border:0px;" rows="4" cols="80"></textarea>
+    <script id="editor" type="text/plain" style="width:420px;height:125px;"></script>
+    <script type="text/javascript">
+    var ue = UE.getEditor('editor');
+    </script>
    </div>
    <div class="Rights">
     <ul class="ProblemSelect">
@@ -33,151 +38,30 @@
   </div> 
   <div class="questHeader">
    <p class="questNav">
-    <a href="#">所有困惑(129)</a>
-    <a href="#">已解答(120)</a>
-    <a href="#">正在解答(9)</a>
-    <a href="#">最新解答(9) </a>
+       <a href="<?php echo Yii::app()->createUrl('ask',array('filter'=>'0-0'))?>">所有困惑(<?php echo $askCount?>)</a>
    </p>
    <p class="questCategory">
-    分类：创业准备  行业动态  项目分析  商业模式  经营运作  营销推广  人力资源  财务帐目  融资贷款  股权分配<br/>
+    分类：<?php foreach($type as $v){
+       echo '<a href="'.Yii::app()->createUrl('ask', array('filter'=>$v->id.'-'.$filter[1])).'">'.$v->title.'</a> ';
+         }?><br/>
     标签：
    </p>
   </div>
+     <?php foreach($askList as $v){?>
   <div class="questWrapper">
     <ul class="questListing">
       <li>
-        <h3><a href="answer-detail.htm">在三线城市开个淘宝摄影室如何？</a></h3>
-        <p class="intro"> <span>金铭</span> 发布于 2012-08-14 12:38:30  分类：<span>项目分析</span> 标签：<span>淘宝  三线城市</span> 评论 (0) </p>
-        <p class="ctrl"> <span class="SP1"><a href="#">同感受 (0)</a></span> <span class="SP2"><a href="#">向提问者询问</a></span> </p>
+        <h3><a href="answer-detail.htm"><?php echo $v->title?></a></h3>
+        <p class="intro"> <span><?php echo ($v->user);die;?></span> 
+            发布于 <?php echo date('Y-m-d H:m:s',  strtotime($v->addtime))?> 
+            分类：<span><?php echo $v->type->title?></span> 
+            标签：<span><?php echo $v->tag?></span> 
+            评论 (<?php echo count($v->comment)?>) </p>
+        <p class="ctrl"> <span class="SP1"><a href="#">同感受 (<?php echo $v->agree;?>)</a></span> <span class="SP2"><a href="#">回复</a></span> </p>
       </li>
     </ul>
-    <div class="replyListing">   
-    <div class="userPhoto"><img src="images/MTou.png" /></div>
-    <div class="comment clearfix">
-     <p class="userInfo"><span>金铭</span>  发表于  2012-08-14 12:38:30       </p>
-     <p class="con">
-      去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB     </p>
-    </div>
-   
-    </div>
-    <div class="interaction clearfix">
-   <span class="i1"><a href="#">有启发 (0)</a></span> 
-   <span class="i2"><a href="#">收藏</a></span>
-   <span class="fr"><a href="#">向解惑者追问</a></span>
   </div>
-   <div class="btnProblemDiv">
-   <span><a href="#">我来解惑</a></span>
-  </div>
-  </div>
-<div class="questWrapper">
-  <ul class="questListing">
-    <li>
-      <h3><a href="answer-detail.htm">在三线城市开个淘宝摄影室如何？</a></h3>
-      <p class="intro"> <span>金铭</span> 发布于 2012-08-14 12:38:30  分类：<span>项目分析</span> 标签：<span>淘宝  三线城市</span> 评论 (0) </p>
-      <p class="ctrl"> <span class="SP1"><a href="#">同感受 (0)</a></span> <span class="SP2"><a href="#">向提问者询问</a></span> </p>
-    </li>
-  </ul>
-  <div class="replyListing">   
-    <div class="userPhoto"><img src="images/MTou.png" /></div>
-    <div class="comment clearfix">
-     <p class="userInfo"><span>金铭</span>  发表于  2012-08-14 12:38:30       </p>
-     <p class="con">
-      去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB     </p>
-    </div>
-   
-    </div>
-    <div class="interaction clearfix">
-   <span class="i1"><a href="#">有启发 (0)</a></span> 
-   <span class="i2"><a href="#">收藏</a></span>
-   <span class="fr"><a href="#">向解惑者追问</a></span>
-  </div>
-   <div class="btnProblemDiv">
-   <span><a href="#">我来解惑</a></span>
-  </div>
-  </div>
-  <div class="questWrapper">
-    <ul class="questListing">
-      <li>
-        <h3><a href="answer-detail.htm">在三线城市开个淘宝摄影室如何？</a></h3>
-        <p class="intro"> <span>金铭</span> 发布于 2012-08-14 12:38:30  分类：<span>项目分析</span> 标签：<span>淘宝  三线城市</span> 评论 (0) </p>
-        <p class="ctrl"> <span class="SP1"><a href="#">同感受 (0)</a></span> <span class="SP2"><a href="#">向提问者询问</a></span> </p>
-      </li>
-    </ul>
-    <div class="replyListing">   
-    <div class="userPhoto"><img src="images/MTou.png" /></div>
-    <div class="comment clearfix">
-     <p class="userInfo"><span>金铭</span>  发表于  2012-08-14 12:38:30       </p>
-     <p class="con">
-      去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB     </p>
-    </div>
-   
-    </div>
-    <div class="interaction clearfix">
-   <span class="i1"><a href="#">有启发 (0)</a></span> 
-   <span class="i2"><a href="#">收藏</a></span>
-   <span class="fr"><a href="#">向解惑者追问</a></span>
-  </div>
-   <div class="btnProblemDiv">
-   <span><a href="#">我来解惑</a></span>
-  </div>
-  </div>
-  <div class="questWrapper">
-    <ul class="questListing">
-      <li>
-        <h3><a href="answer-detail.htm">在三线城市开个淘宝摄影室如何？</a></h3>
-        <p class="intro"> <span>金铭</span> 发布于 2012-08-14 12:38:30  分类：<span>项目分析</span> 标签：<span>淘宝  三线城市</span> 评论 (0) </p>
-        <p class="ctrl"> <span class="SP1"><a href="#">同感受 (0)</a></span> <span class="SP2"><a href="#">向提问者询问</a></span> </p>
-      </li>
-    </ul>
-    <div class="replyListing">   
-    <div class="userPhoto"><img src="images/MTou.png" /></div>
-    <div class="comment clearfix">
-     <p class="userInfo"><span>金铭</span>  发表于  2012-08-14 12:38:30       </p>
-     <p class="con">
-      去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB     </p>
-    </div>
-   
-    </div>
-    <div class="interaction clearfix">
-   <span class="i1"><a href="#">有启发 (0)</a></span> 
-   <span class="i2"><a href="#">收藏</a></span>
-   <span class="fr"><a href="#">向解惑者追问</a></span>
-  </div>
-   <div class="btnProblemDiv">
-   <span><a href="#">我来解惑</a></span>
-  </div>
-  </div>
-  <div class="questWrapper">
-  <ul class="questListing">  
-  <li>
-    <h3><a href="answer-detail.htm">在三线城市开个淘宝摄影室如何？</a></h3>
-    <p class="intro">
-     <span>金铭</span> 发布于 2012-08-14 12:38:30  分类：<span>项目分析</span>  标签：<span>淘宝  三线城市</span>   评论 (0)     
-    </p> 
-    <p class="ctrl">
-     <span class="SP1"><a href="#">同感受 (0)</a></span>
-     <span class="SP2"><a href="#">向提问者询问</a></span>
-    </p>
-   </li>
- </ul>
- <div class="replyListing">   
-    <div class="userPhoto"><img src="images/MTou.png" /></div>
-    <div class="comment clearfix">
-     <p class="userInfo"><span>金铭</span>  发表于  2012-08-14 12:38:30       </p>
-     <p class="con">
-      去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB去LBS听上去LBS听上去LBS听上去LB     </p>
-    </div>
-   
-    </div>
-    <div class="interaction clearfix">
-   <span class="i1"><a href="#">有启发 (0)</a></span> 
-   <span class="i2"><a href="#">收藏</a></span>
-   <span class="fr"><a href="#">向解惑者追问</a></span>
-  </div>
-   <div class="btnProblemDiv">
-   <span><a href="#">我来解惑</a></span>
-  </div>
-  </div>
+     <?php }?>
 
   <div class="Pages">
   <a href="#">上一页</a>

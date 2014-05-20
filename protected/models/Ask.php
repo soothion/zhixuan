@@ -59,6 +59,9 @@ class Ask extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'user'=>array(self::BELONGS_TO,'Users','uid'),
+                    'comment'=>array(self::HAS_MANY,'Comment','aid'),
+                    'type'=>array(self::BELONGS_TO,'AskType','tid'),
 		);
 	}
 

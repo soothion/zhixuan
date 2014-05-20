@@ -39,23 +39,16 @@
   <ul class="questListing">
 <?php foreach($ask as $v){?>
    <li>
-    <h3><a href="answer-detail.htm"><?php echo $v->content;?></a></h3>
+    <h3><a href="<?php echo Yii::app()->createUrl('ask/detail',array('id'=>$v->id))?>"><?php echo Helper::truncate_utf8_string($v->content,32);?></a></h3>
     <p class="intro">
-     <span>金铭</span> 发布于 2012-08-14 12:38:30  分类：<span>项目分析</span>  标签：<span><?php echo $v->tag;?></span>   评论 (0)     
+     <span><?php echo $v->user->username;?></span> 发布于 <?php echo date('Y-m-d H:m:s',strtotime($v->addtime));?>  分类：<span><?php echo $v->type->title;?></span>  标签：<span><?php echo $v->tag;?></span>   评论 (<?php echo count($v->comment);?>)     
     </p> 
    </li>
-<?php }?>
-    <li>
-    <h3><a href="answer-detail.htm">在三线城市开个淘宝摄影室如何？</a></h3>
-    <p class="intro">
-     <span>金铭</span> 发布于 2012-08-14 12:38:30  分类：<span>项目分析</span>  标签：<span>淘宝  三线城市</span>   评论 (0)     
-    </p> 
-   </li>
-   
+<?php }?>  
   </ul>
 
 
-  <div class="InbtnProblemDiv"><a href="answer-detail.htm">更多</a></div>
+      <div class="InbtnProblemDiv"><a href="<?php echo Yii::app()->createUrl('ask')?>">更多</a></div>
   </div>
  </div>
  <div class="sideBar">
