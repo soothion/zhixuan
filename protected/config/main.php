@@ -40,6 +40,7 @@ return array(
                 ),
 		'user'=>array(
 			// enable cookie-based authentication
+                        'class'=>'User',
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
@@ -62,7 +63,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=zhixuan',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'root',
 			'charset' => 'utf8',
                         'tablePrefix' => 'zx_',
 		),

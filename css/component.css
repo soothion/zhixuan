@@ -36,7 +36,7 @@ ul.courseListing li .voteCtrl a:hover{ color:#C7000D;}
 .qaModule h2 span{font-size:14px; color:#9fa0a0; padding:0 20px;}
 ul.questListing{ margin-bottom:20px; font-family:微软雅黑;  width:642px; height:auto;}
 ul.questListing li{ padding-bottom:15px; background-color:#EFEFEF; width:612px; height:auto; padding-left:15px; padding-right:15px;}
-ul.questListing h3{ font-size:18px; width:612px; height:30px; line-height:30px; padding-top:5px;}
+ul.questListing h3{ font-size:18px; width:612px; height:auto; line-height:30px; padding-top:5px;}
 ul.questListing li .intro{ color:#A2A2A2; line-height:25px; height:25px; clear:both; overflow:hidden; width:612px;}
 ul.questListing li .intro span{ color:#595757;}
 ul.questListing li .ctrl{ color:#929292; height:25px; line-height:25px; clear:both; overflow:hidden; width:612px;}
@@ -177,7 +177,7 @@ ul.ProblemSelect li.TT4 input{ border:0px; border-style:none; margin:0px; paddin
 
 .questListing{font-family:微软雅黑;  width:642px; height:auto; clear:both; overflow:hidden;}
 .questListing li{ padding-bottom:5px; background-color:#EFEFEF; width:612px; height:auto; padding-left:15px; padding-right:15px;  overflow:hidden;}
-ul.questListing h3{ font-size:18px; width:612px; height:30px; line-height:30px; padding-top:5px;}
+ul.questListing h3{ font-size:18px; width:612px; height:auto; line-height:30px; padding-top:5px;}
 ul.questListing li.TT1 p.PP1 h2{ font-weight:lighter; list-style:none; font-size:18px; margin:0px; padding:0px;}
 
 .questListing .intro{ color:#A2A2A2; line-height:25px; height:25px; clear:both; overflow:hidden; width:612px;}
@@ -219,7 +219,7 @@ ul.questListing li.TT1 p.PP1 h2{ font-weight:lighter; list-style:none; font-size
  
 
 
-.interaction{ font-family:微软雅黑;  color:#929292; margin-left:20px; clear:both; overflow:hidden; height:35px; line-height:35px;}
+.interaction{ font-family:微软雅黑;  color:#929292; clear:both; overflow:hidden; height:35px; line-height:35px;}
 .interaction span.i1{ padding-right:15px; float:left; padding-left:18px;background:url(../images/Q.png) left center no-repeat;}
 .interaction span.SP2{ padding-right:15px; float:left; padding-left:18px;background:url(../images/Q2.png) left center no-repeat;}
 .interaction span.i2{ padding-right:15px; float:left; padding-left:18px;background:url(../images/Q3.png) left center no-repeat;}

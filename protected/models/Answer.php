@@ -38,7 +38,7 @@ class Answer extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('addtime', 'required'),
+			array('aid ,content,uid', 'required'),
 			array('aid, uid', 'numerical', 'integerOnly'=>true),
 			array('content', 'safe'),
 			// The following rule is used by search().
@@ -55,6 +55,8 @@ class Answer extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'user'=>array(self::BELONGS_TO,'Users','uid'),
+                    'ask'=>array(self::BELONGS_TO,'Ask','aid'),
 		);
 	}
 

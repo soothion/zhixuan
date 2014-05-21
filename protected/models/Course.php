@@ -75,6 +75,7 @@ class Course extends CActiveRecord
 		return array(
                      'user'=>array(self::BELONGS_TO, 'Users', 'uid'),
                      'type'=>array(self::BELONGS_TO,'CourseType','tid'),
+                    'comment'=>array(self::HAS_MANY,'Comment','cid'),
 		);
 	}
 

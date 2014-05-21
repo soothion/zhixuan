@@ -6,6 +6,7 @@
  * The followings are the available columns in table '{{ask}}':
  * @property integer $id
  * @property integer $cid
+ * @property integer $tid
  * @property integer $uid
  * @property string $content
  * @property integer $recommend
@@ -42,12 +43,12 @@ class Ask extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cid, addtime', 'required'),
-			array('cid, uid, recommend, verify, agree', 'numerical', 'integerOnly'=>true),
+			array('tid, uid', 'required'),
+			array('cid, tid, uid, recommend, verify, agree', 'numerical', 'integerOnly'=>true),
 			array('content, tag', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, cid, uid, content, recommend, verify, agree, tag, addtime', 'safe', 'on'=>'search'),
+			array('id, cid, tid, uid, content, recommend, verify, agree, tag, addtime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,6 +63,7 @@ class Ask extends CActiveRecord
                     'user'=>array(self::BELONGS_TO,'Users','uid'),
                     'comment'=>array(self::HAS_MANY,'Comment','aid'),
                     'type'=>array(self::BELONGS_TO,'AskType','tid'),
+                    'answer'=>array(self::HAS_MANY,'Answer','aid'),
 		);
 	}
 
@@ -73,6 +75,7 @@ class Ask extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'cid' => 'Cid',
+			'tid' => 'Tid',
 			'uid' => 'Uid',
 			'content' => 'Content',
 			'recommend' => 'Recommend',
@@ -96,6 +99,7 @@ class Ask extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('cid',$this->cid);
+		$criteria->compare('tid',$this->tid);
 		$criteria->compare('uid',$this->uid);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('recommend',$this->recommend);
