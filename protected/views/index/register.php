@@ -1,88 +1,43 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/Validform_v5.3.2_min.js"></script>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-    <link href="style/global.css" rel="stylesheet" type="text/css" />
-    <link href="style/member.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div id="header">
-<div class="wrapper">
- <div class="logo"><a href="index.htm"><img src="images/Logo.png" /> </a> <img src="images/slogan.png" class="slogan"/>
- </div>
- <ul class="globalNav">
-  <li><a href="course.htm">创业课程</a></li>
-  <li><a href="ask-list.htm">有问必答</a></li>
-  <li><a href="experience-detail.htm">经验专栏</a></li>
+<script>
+$(document).ready(function(){
+  $(".regForm1").Validform({
+    tiptype:3,
+    showAllError:true,
+    ajaxPost:true
+  });
 
- 
- </ul>
- <div class="searchBar">
-     <p class="searchType" onclick="OnClickDownMuen()">
-     <label id="DownText">课程</label> 
-   </p>
-   <p class="keyword"><input type="text" /></p>
-   <p class="btnSearch"><input name="" type="image" src="images/Seach.png" /></p> 
-   
-   <div class="dropdown" id="MuenNavDown" style=" display:none">
-   <p class="dropMenu" onclick="OnClickDownMuenText('课程')"><a href="#">课程</a></p>
-   <p class="dropMenu" onclick="OnClickDownMuenText('问题')"><a href="#">问题</a></p>
-   <p class="dropMenu" onclick="OnClickDownMuenText('专栏')"><a href="#">专栏</a></p>
-  </div>
- </div>
- <script type="text/javascript">
-     function OnClickDownMuen() {
-         if (document.getElementById("MuenNavDown").style.display == "none") {
-             document.getElementById("MuenNavDown").style.display = ""
-         }
-         else {
-             document.getElementById("MuenNavDown").style.display = "none"
-         }
-     }
-     function OnClickDownMuenText(Tages) {
-         document.getElementById("DownText").innerHTML = Tages;
-         document.getElementById("MuenNavDown").style.display = "none"
-     }
- </script>
- </div>
-</div>
+    $(".regForm2").Validform({
+    tiptype:3,
+    showAllError:true,
+    ajaxPost:true
+  });
+})
 
+</script>
+<style>
+#Validform_msg{display: none;}
+.submit{background:#C8000D;color:#FFF;border:none;width:70px;}
+ table{border-spacing:10px;}
+ table tr{border:#EFEFEF 1px solid;}
+ input{width:300px;}
+ .Validform_wrong{color:red;}
+ .Validform_right{color:green;}
+</style>
+<div class="mainPanel">
 <div class="InTitle"><h1>一般会员注册（原提问者）</h1></div>
-
 <div class="MenberContent" id="contentWrapper">
- <ul class="MenberLoginWrite">
-  <li class="TT1">
-   <p class="PP1">*用户名：</p>
-   <p class="PP2"><input type="text" /></p> 
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-  <li class="TT1">
-   <p class="PP1">*邮箱：</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-  <li class="TT1">
-   <p class="PP1">*密码：</p>
-   <p class="PP2"><input type="password" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-   
-  <li class="TT1">
-   <p class="PP1">*确认密码：</p>
-   <p class="PP2"><input type="password" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT2"> 
-   <input type="button" value="提交" class="BtnJiao" />
-  </li>
-  <li class="TT3"><a href="#">已注册用户？ 立即登录>></a></li>
- </ul>   
-
+<form class="regForm1" action="<?php echo Yii::app()->createUrl('index/register',array('level'=>1))?>" method="post">
+<table>
+<tr><td colspan="2" class="info1"></td></tr>
+<tr><td>*用户名：</td><td><input type="text" name="username" datatype="s4-18" errormsg="用户名至少4个字符,最多16个字符！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>*邮  箱：</td><td><input type="text" name="email"  datatype="e" errormsg="请输入正确的邮箱!"/></td><td class="Validform_checktip"></td></tr>
+<tr><td>*密  码：</td><td><input type="text" name="password" datatype="s6-18" errormsg="密码至少6个字符,最多16个字符！"/></td><td class="Validform_checktip"></td></tr>
+<tr><td>*重复密码：</td><td><input type="text" datatype="*" recheck="password" errormsg="两次密码不一致！"/></td><td class="Validform_checktip"></td></tr>
+<tr><td></td><td><input type="submit" value="注册" class="formSubmit1 submit"/></td><td class="Validform_checktip"></td></tr>
+</table> 
+</form>
  <div class="MenberLoginWText">
   你现在只是<span>一般会员</span>，可以<span>提问，评论，购买课程</span>。<br/>
   进一步完善资料，成为高级学员。<br/>
@@ -90,113 +45,24 @@
  </div>
  
  <div class="InTitle"><h1>高级会员注册（原解惑者）</h1></div>
-
-
- <ul class="MenberLoginWrite">
-  <li class="TT1">
-   <p class="PP1">*用户名：</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">*邮箱：</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">*密码：</p>
-   <p class="PP2"><input type="password" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">*确认密码：</p>
-   <p class="PP2"><input type="password" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">&nbsp;真实姓名：</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">*一句话描述：</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5">例如：十年市场营销经验，请限在10字以内。</li>
-
-
-  <li class="TT6">
-   <p class="PP1">*专业描述：</p>
-   <p class="PP2"><textarea></textarea></p>
-  </li>
-  <li class="TT7"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">&nbsp; 就职单位：</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">&nbsp; 职位：	</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">&nbsp;年龄：</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">&nbsp; 手机：	</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT1">
-   <p class="PP1">&nbsp;  QQ：	</p>
-   <p class="PP2"><input type="text" /></p>
-  </li>
-  <li class="TT5"><!--备注文字--></li>
-
-
-  <li class="TT2">
-   <input type="button" value="提交" class="BtnJiao" />
-  </li>
-  <li class="TT4">登录后，您可进入个人空间在个人资料中上传头像、修改资料。</li>
- </ul> 
-
-
+<form class="regForm2" action="<?php echo Yii::app()->createUrl('index/register',array('level'=>2))?>" method="post">
+<table>
+<tr><td colspan="2" class="info1"></td></tr>
+<tr><td>*用户名：</td><td><input type="text" name="username" datatype="s4-18" errormsg="用户名至少4个字符,最多16个字符！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>*邮  箱：</td><td><input type="text" name="email"  datatype="e" errormsg="请输入正确的邮箱!"/></td><td class="Validform_checktip"></td></tr>
+<tr><td>*密  码：</td><td><input type="text" name="password" datatype="s6-18" errormsg="密码至少6个字符,最多16个字符！"/></td><td class="Validform_checktip"></td></tr>
+<tr><td>*重复密码：</td><td><input type="text" datatype="*" recheck="password" errormsg="两次密码不一致！"/></td><td class="Validform_checktip"></td></tr>
+<tr><td>*真名姓名：</td><td><input type="text" name="name" datatype="s4-10" errormsg="请认真赶写!" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>*一句话描述：</td><td><input type="text" name="username" datatype="s4-100" errormsg="描述至少4个字符,最多100个字符！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>专业：</td><td><input type="text" name="major" ignore="ignore" datatype="s4-18" errormsg="专业至少4个字符,最多16个字符！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>就职公司：</td><td><input type="text" name="company" ignore="ignore" datatype="s4-18" errormsg="公司至少4个字符,最多16个字符！" /></td class="Validform_checktip"><td></td></tr>
+<tr><td>职位：</td><td><input type="text" name="username" ignore="ignore" datatype="s4-18" errormsg="职位名至少4个字符,最多16个字符！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>年龄：</td><td><input type="text" name="age" ignore="ignore" datatype="n1-3" errormsg="请认真填写！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>手机：</td><td><input type="text" name="tel" ignore="ignore" datatype="m" errormsg="请填写正确手机号！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td>QQ：</td><td><input type="text" name="qq" ignore="ignore" datatype="n5-12" errormsg="请填写正确QQ号！" /></td><td class="Validform_checktip"></td></tr>
+<tr><td></td><td><input type="submit" value="注册" class="submit"/></td><td></td></tr>
+<tr><td colspan="2">登录后，您可进入个人空间在个人资料中上传头像、修改资料。</td></tr>
+</table> 
+</form>
 </div>
-
-
-<div class="ClearFoot2">&nbsp;</div>
-<div id="footer">
- <div class="wrapper">
- 
-  <p class="botNav">
-   <a href="#">关于智选</a><a href="#">使用帮助</a><a href="#">意见反馈</a><a href="#">加入我们</a>
-  </p>
-  <p class="copyright">沪ICP备11022737</p>
-
 </div>
-</div> 
-</body>
-</html>

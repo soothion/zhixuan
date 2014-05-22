@@ -100,6 +100,9 @@ class IndexController extends Controller {
         }
     }
 
+    public function actionRegister(){
+        $this->render('register');
+    }
     public function actionLogout() {
         Yii::app()->user->logout();
         $this->redirect('index');

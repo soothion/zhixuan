@@ -5743,3 +5743,28 @@ Stack trace:
 REQUEST_URI=/zhixuan/index.php?r=ask/ask
 HTTP_REFERER=http://localhost/zhixuan/index.php?r=ask&filter=6-0
 ---
+2014/05/21 12:38:56 [error] [exception.CException] exception 'CException' with message 'IndexController cannot find the requested view "regester".' in D:\wamp\www\zhixuan\framework\web\CController.php:878
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(782): CController->renderPartial('regester', NULL, true)
+#1 D:\wamp\www\zhixuan\protected\controllers\IndexController.php(104): CController->render('regester')
+#2 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): IndexController->actionRegester()
+#3 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('regester')
+#7 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('index/regester')
+#8 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=index/regester&id=24
+---
+2014/05/21 12:39:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "regester".' in D:\wamp\www\zhixuan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(270): CController->missingAction('regester')
+#1 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('regester')
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('index/regester')
+#3 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=index/regester&id=24
+---
