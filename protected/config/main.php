@@ -63,11 +63,10 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=zhixuan',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'root',
 			'charset' => 'utf8',
                         'tablePrefix' => 'zx_',
 		),
-
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

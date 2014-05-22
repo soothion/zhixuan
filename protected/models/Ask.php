@@ -64,6 +64,7 @@ class Ask extends CActiveRecord
                     'comment'=>array(self::HAS_MANY,'Comment','aid'),
                     'type'=>array(self::BELONGS_TO,'AskType','tid'),
                     'answer'=>array(self::HAS_MANY,'Answer','aid'),
+                    'love'=>array(self::HAS_MANY,'Love','aid'),
 		);
 	}
 

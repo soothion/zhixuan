@@ -65,7 +65,12 @@
                 echo '<a href="' . Yii::app()->createUrl('ask', array('filter' => $v->id . '-' . $filter[1])) . '">' . $v->title . '</a> ';
             }
             ?><br/>
-            标签：
+            标签：            
+                <?php
+            foreach ($tag as $v) {
+                echo '<a href="' . Yii::app()->createUrl('ask', array('filter' => $filter[0] . '-' . $v)) . '">' . $v . '</a> ';
+            }
+            ?>
         </p>
     </div>
     <?php foreach ($askList as $v) { ?>
@@ -78,7 +83,7 @@
                         分类：<span><?php echo $v->type->title ?></span> 
                         标签：<span><?php echo $v->tag ?></span> 
                         评论 (<?php echo count($v->comment) ?>) </p>
-                    <p class="ctrl"> <span class="SP1"><a href="javascript:;" value="<?php echo $v->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $v->agree; ?></span>)</a></span> <span class="SP2"><a href="#">回复</a></span> </p>
+                    <p class="ctrl"> <span class="SP1"><a href="javascript:;" value="<?php echo $v->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $v->agree; ?></span>)</a></span> <span class="SP2"><a href="<?php echo Yii::app()->createUrl('ask/detail', array('id' => $v->id)); ?>">回复</a></span> </p>
                 </li>
             </ul>
         </div>

@@ -5,8 +5,10 @@
  *
  * The followings are the available columns in table '{{users}}':
  * @property integer $id
+ * @property string $level
  * @property string $username
  * @property string $password
+ * @property string $introduction
  * @property string $logintime
  * @property string $loginip
  * @property integer $logincount
@@ -52,10 +54,12 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, logintime, loginip', 'required'),
+			array('username, password, introduction, logintime, loginip', 'required'),
 			array('logincount, flag', 'numerical', 'integerOnly'=>true),
+			array('level', 'length', 'max'=>1),
 			array('username, major', 'length', 'max'=>20),
 			array('password, loginip', 'length', 'max'=>40),
+			array('introduction', 'length', 'max'=>100),
 			array('logintime', 'length', 'max'=>35),
 			array('thumb, name, tel, qq, msn', 'length', 'max'=>80),
 			array('email, age', 'length', 'max'=>30),
@@ -64,7 +68,7 @@ class Users extends CActiveRecord
 			array('config', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, password, logintime, loginip, logincount, thumb, flag, email, sex, name, major, company, job, age, tel, qq, msn, config', 'safe', 'on'=>'search'),
+			array('id, level, username, password, introduction, logintime, loginip, logincount, thumb, flag, email, sex, name, major, company, job, age, tel, qq, msn, config', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -90,8 +94,10 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'level' => 'Level',
 			'username' => 'Username',
 			'password' => 'Password',
+			'introduction' => 'Introduction',
 			'logintime' => 'Logintime',
 			'loginip' => 'Loginip',
 			'logincount' => 'Logincount',
@@ -123,8 +129,10 @@ class Users extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('level',$this->level,true);
 		$criteria->compare('username',$this->username,true);
 		$criteria->compare('password',$this->password,true);
+		$criteria->compare('introduction',$this->introduction,true);
 		$criteria->compare('logintime',$this->logintime,true);
 		$criteria->compare('loginip',$this->loginip,true);
 		$criteria->compare('logincount',$this->logincount);

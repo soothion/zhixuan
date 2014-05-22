@@ -1,21 +1,27 @@
 <div class="InTitle"><h1>创业课程</h1></div>
 <div class="mainPanel">
     <div class="courseCommended">
-        <div class="courseCover"><img src="<?php echo $recommendCourse->pic; ?>" width="642" height="296" /></div>
+        <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $recommendCourse->id)) ?>"><img src="<?php echo $recommendCourse->pic; ?>" width="642" height="296" /></a></div>
         <div class="intro"> <h3><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $recommendCourse->id)) ?>"><?php echo $recommendCourse->title ?></a></h3>
             <div class="desp"><?php echo $recommendCourse->des; ?></div>
             <div class="voteCtrl">有启发(<?php echo $recommendCourse->agree; ?>)</div>
         </div>
     </div>
     <ul class="courseNav">
-        <li class="TT1"><span>所有课程(<?php echo $courseCount ?>)</span></li>
+        <li class="TT1"><span><a href="<?php echo Yii::app()->createUrl('course',array('filter'=>'0-0'))?>">所有课程(<?php echo $courseCount ?>)</span></li>
         <li class="TT2">分类：
             <?php
             foreach ($type as $v) {
                 echo '<a href="' . Yii::app()->createUrl('course', array('filter' => $v->id . '-' . $filter[1])) . '">' . $v->title . '</a> ';
             }
             ?></li>
-        <li class="TT2">标签：</li>
+        <li class="TT2">标签：
+            <?php
+            foreach ($tag as $v) {
+                echo '<a href="' . Yii::app()->createUrl('course', array('filter' => $filter[0]. '-' . $v)) . '">' . $v . '</a> ';
+            }
+            ?>
+        </li>
     </ul>
     <ul class="courseListing">
 <?php foreach ($courseList as $k => $v) { ?>
@@ -29,4 +35,17 @@
 <?php } ?>
     </ul> 
 
+        <?php
+    $this->widget('CLinkPager', array(
+        'header' => '',
+        'firstPageLabel' => '首页',
+        'lastPageLabel' => '末页',
+        'prevPageLabel' => '上一页',
+        'nextPageLabel' => '下一页',
+        'pages' => $pages,
+        'maxButtonCount' => 6,
+        'htmlOptions' => array('class' => 'list-page Pages'),
+            )
+    );
+    ?>
 </div>

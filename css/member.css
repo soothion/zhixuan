@@ -142,7 +142,7 @@ ul.MenberMessEdit li.TT2{ color:#343434; font-family:微软雅黑; font-size:15p
 ul.MenberMessEdit li.TT2 input{ margin:0px; padding:0px; border:0px; border-style:none; background:none; font-size:15px; margin-top:7px;}
 
 
-ul.PaymentInfo{ color:#424242; font-family:微软雅黑; padding-left:315px; width:305px; height:auto; clear:both; overflow:hidden;}
+ul.PaymentInfo{ color:#424242; font-family:微软雅黑;  width:305px; height:auto; clear:both; overflow:hidden;}
 ul.PaymentInfo li.TT1{ height:50px; clear:both; overflow:hidden; }
 ul.PaymentInfo li.TT1 p{ float:left; font-size:18px; height:50px; line-height:50px; padding-right:30px;}
 ul.PaymentInfo li.TT2{  padding-top:10px;border-top:1px solid #E77575; font-size:14px;width:305px; height:auto; clear:both; overflow:hidden;}
@@ -161,36 +161,36 @@ ul.PaymentInfo li.TT3 p.PP3{ color:#818181; float:right; line-height:20px; text-
 ul.PaymentInfo li.TT3 p.PP3 span.SP1{display:block;  padding-bottom:6px;  color:#818181; font-size:18px;} 
 ul.PaymentInfo li.TT3 p.PP3 input{ border:0px; border-style:none; background:none; font-size:18px;  margin:0px; padding:0px; }
 
-ul.PaymentInfo2{ color:#424242; font-family:微软雅黑; padding-left:290px; width:330px; height:auto; clear:both; overflow:hidden;}
+ul.PaymentInfo2{ color:#424242; font-family:微软雅黑;  width:330px; height:auto; clear:both; overflow:hidden;}
 ul.PaymentInfo2 a{color:#ffffff;}
-ul.PaymentInfo2 li.TT1{ margin-left:25px; height:50px; clear:both; overflow:hidden; }
+ul.PaymentInfo2 li.TT1{  height:50px; clear:both; overflow:hidden; }
 ul.PaymentInfo2 li.TT1 p{ float:left; font-size:18px; height:50px; line-height:50px; }
-ul.PaymentInfo2 li.TT2{ margin-left:25px;width:305px; height:auto; padding-bottom:5px; clear:both; overflow:hidden;border-bottom:1px solid #E77575; }
+ul.PaymentInfo2 li.TT2{ width:305px; height:auto; padding-bottom:5px; clear:both; overflow:hidden;border-bottom:1px solid #E77575; }
 ul.PaymentInfo2 li.TT2 p{ float:left;}
 ul.PaymentInfo2 li.TT2 p.PP1{ width:28px; }
 ul.PaymentInfo2 li.TT2 p.PP1 input{ width:25px; height:25px; margin:0px; padding:0px; }
 ul.PaymentInfo2 li.TT2 p.PP2{ font-size:18px; width:100px;} 
-ul.PaymentInfo2 li.TT3{ margin-left:25px;width:305px; height:auto; clear:both; overflow:hidden; }
+ul.PaymentInfo2 li.TT3{width:305px; height:auto; clear:both; overflow:hidden; }
 ul.PaymentInfo2 li.TT3 p{ margin-top:10px; font-size:14px; margin-right:8px; float:left; height:27px; line-height:27px;}
 ul.PaymentInfo2 li.TT3 p.PP1{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT3 p.PP2{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT3 p.PP3{ font-size:18px; background-color:#E60C13; color:White; padding-left:10px; width:100px;}
 ul.PaymentInfo2 li.TT3 p.PP4{ font-size:12px; clear:both; margin:0px; padding:0px; padding-bottom:6px; color:#929292;  height:20px; line-height:20px; padding-left:187px; width:123px; text-align:left;
                               border-bottom:1px solid #E77575;}
-ul.PaymentInfo2 li.TT4{ margin-top:15px; width:330px; height:40px; clear:both; overflow:hidden; background:url(../images/Dixian.jpg) right bottom no-repeat;}
+ul.PaymentInfo2 li.TT4{ margin-top:15px; width:330px; height:40px; clear:both; overflow:hidden; background:url(../images/Dixian.jpg) left bottom no-repeat;}
 ul.PaymentInfo2 li.TT4 p{ float:left; height:40px; line-height:40px;}
 ul.PaymentInfo2 li.TT4 p.PP1{ font-size:18px; width:25px;}
 ul.PaymentInfo2 li.TT4 p.PP2{ width:28px; }
 ul.PaymentInfo2 li.TT4 p.PP2 input{ width:25px; height:40px; margin:0px; padding:0px; }
 ul.PaymentInfo2 li.TT4 p.PP3{ font-size:18px; } 
-ul.PaymentInfo2 li.TT5{ margin-left:25px;width:305px; height:auto; clear:both; overflow:hidden; }
+ul.PaymentInfo2 li.TT5{ width:305px; height:auto; clear:both; overflow:hidden; }
 ul.PaymentInfo2 li.TT5 p{ margin-top:10px; font-size:14px; margin-right:8px; float:left; height:27px; line-height:27px;}
 ul.PaymentInfo2 li.TT5 p.PP1{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT5 p.PP2{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT5 p.PP3{ font-size:18px; background-color:#808080; color:White; padding-left:10px; width:100px;}
 ul.PaymentInfo2 li.TT5 p.PP4{ font-size:12px; clear:both; margin:0px; padding:0px; color:#929292;  height:20px; line-height:20px; padding-left:187px; width:123px; text-align:left;
                              }
-ul.PaymentInfo2 li.TT5 p.PP5{margin-left:25px; overflow:hidden; clear:both; margin:0px; padding:0px;  height:8px;  width:305px; text-align:left;
+ul.PaymentInfo2 li.TT5 p.PP5{overflow:hidden; clear:both; margin:0px; padding:0px;  height:8px;  width:305px; text-align:left;
                             border-bottom:2px solid #9A9A9A; }
 
 ul.MenberLoginWrite{font-family:微软雅黑; width:670px; padding-left:330px; height:auto; clear:both; overflow:hidden;}

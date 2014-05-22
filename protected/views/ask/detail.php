@@ -12,7 +12,6 @@
             </p>
             <p class="voteCtrl">
                 <span class="v1"><a href="javascript:;" value="<?php echo $ask->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $ask->agree ?></span>)</a></span>
-                <span class="v2"><a href="#">向提问者询问</a></span>
             </p>
         </li>
     </ul>
@@ -27,8 +26,7 @@
                 </div>
                 <div class="interaction clearfix">
                     <span class="i1"><a href="javascript:;" value="<?php echo $v->id?>" type="answer" class="zhixuanAgree">有启发 (<span><?php echo $v->agree ?></span>)</a></span> 
-                    <span class="i2"><a href="#">收藏</a></span>
-                    <span class="fr"><a href="#">向解惑者追问</a></span>
+                    <span class="i2"><a <a href="javascript:;" value="<?php echo $v->id?>" type="answer" class="zhixuanLove">收藏(<span><?php echo count($v->love)?></span>)</a></span>
                 </div>
             </li>        
         <?php } ?>
@@ -121,16 +119,4 @@ $(document).ready(function() {
         </script>   
     </div>
 
-    <div class="labelReaderModule">
-        <div class="head clearfix"> <span class="hotLabelTit"><a href="#" onclick="slider()">热门标签</a></span> <h2>标签阅读 <span>最新5条</span></h2></div>
-        <div id="hotLabel" style="display:none;">
-            <a href="#">小吃店</a> <a href="#">三线市场</a> <a href="#">学校</a> <a href="#">淘宝</a> <a href="#">礼品</a>  <a href="#">小吃店</a> <a href="#">三线市场</a> <a href="#">学校</a> <a href="#">淘宝</a> <a href="#">礼品</a><a href="#">小吃店</a> <a href="#">三线市场</a> <a href="#">学校</a> <a href="#">淘宝</a> <a href="#">礼品</a>  <a href="#">小吃店</a> <a href="#">三线市场</a> <a href="#">学校</a> <a href="#">淘宝</a> <a href="#">礼品</a><a href="#">小吃店</a> <a href="#">三线市场</a> <a href="#">学校</a> <a href="#">淘宝</a> <a href="#">礼品</a>  <a href="#">小吃店</a> <a href="#">三线市场</a> <a href="#">学校</a> <a href="#">淘宝</a> <a href="#">礼品</a></div>
-        <ul class="relevantInfoListing">
-            <li class="TT2"><a href="#"> 技术人员怎么核定绩效工资？ </a></li>
-            <li class="TT2"><a href="#"> 技术人员怎么核定绩效工资？ </a></li>
-            <li class="TT2"><a href="#"> 技术人员怎么核定绩效工资？ </a></li>
-            <li class="TT2"><a href="#"> 技术人员怎么核定绩效工资？ </a></li>
-            <li class="TT2"><a href="#"> 技术人员怎么核定绩效工资？ </a></li>
-        </ul>
-    </div> 
 </div>

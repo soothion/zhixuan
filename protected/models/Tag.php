@@ -1,21 +1,18 @@
 <?php
 
 /**
- * This is the model class for table "{{answer}}".
+ * This is the model class for table "{{tag}}".
  *
- * The followings are the available columns in table '{{answer}}':
- * @property integer $id
- * @property integer $aid
- * @property string $content
- * @property integer $uid
- * @property string $addtime
+ * The followings are the available columns in table '{{tag}}':
+ * @property string $course
+ * @property string $ask
  */
-class Answer extends CActiveRecord
+class Tag extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Answer the static model class
+	 * @return Tag the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,7 +24,7 @@ class Answer extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{answer}}';
+		return '{{tag}}';
 	}
 
 	/**
@@ -38,12 +35,11 @@ class Answer extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('aid ,content,uid', 'required'),
-			array('aid, uid', 'numerical', 'integerOnly'=>true),
-			array('content', 'safe'),
+			array('course, ask', 'required'),
+			array('course, ask', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, aid, content, uid, addtime', 'safe', 'on'=>'search'),
+			array('course, ask', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,9 +51,6 @@ class Answer extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'user'=>array(self::BELONGS_TO,'Users','uid'),
-                    'ask'=>array(self::BELONGS_TO,'Ask','aid'),
-                    'love'=>array(self::HAS_MANY,'Love','aid'),
 		);
 	}
 
@@ -67,11 +60,8 @@ class Answer extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'aid' => 'Aid',
-			'content' => 'Content',
-			'uid' => 'Uid',
-			'addtime' => 'Addtime',
+			'course' => 'Course',
+			'ask' => 'Ask',
 		);
 	}
 
@@ -86,11 +76,8 @@ class Answer extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('aid',$this->aid);
-		$criteria->compare('content',$this->content,true);
-		$criteria->compare('uid',$this->uid);
-		$criteria->compare('addtime',$this->addtime,true);
+		$criteria->compare('course',$this->course,true);
+		$criteria->compare('ask',$this->ask,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

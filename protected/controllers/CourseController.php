@@ -13,7 +13,7 @@ class CourseController extends Controller {
         $courseCriteria = new CDbCriteria();
         if (isset($_GET['filter'])) {
             $filter = explode('-', $_GET['filter']);
-            if (!(int) $filter[0] == 0) {
+            if (!(int) $filter[0] == '0') {
                 $courseCriteria->addCondition("tid=:tid");
                 $courseCriteria->params[':tid'] = $filter[0];
             }
@@ -22,21 +22,29 @@ class CourseController extends Controller {
                 $courseCriteria->params[':tag'] = '%' . $filter[1] . '%';
             }
         } else
-            $filter = '0-0';
+            $filter = array(0,0);
         $courseCriteria->limit = 6;
         $courseCriteria->order = 'recommend desc, addtime desc, id desc';
+        $courseCount = Course::model()->count($courseCriteria);
+        $pages = new CPagination($courseCount);
+        $pages->pageSize = 6;
+        $pages->applyLimit($courseCriteria);
         $courseList = Course::model()->findAll($courseCriteria);
         $courseCount = Course::model()->count();
 
         //获取所有分类
         $type = CourseType::model()->findAll();
+        
+        $tag=  explode(' ', Tag::model()->find()->course);
         //渲染视图
         $this->render('index', array(
             'filter' => $filter,
             'recommendCourse' => $recommendCourse,
             'courseList' => $courseList,
             'courseCount' => $courseCount,
+            'pages'=>$pages,
             'type' => $type,
+            'tag'=>$tag,
         ));
     }
 
@@ -62,6 +70,8 @@ class CourseController extends Controller {
         $commentCDbCriteria->params = array(':id' => $id);
         $commentCDbCriteria->order = 'addtime';
         $comment = Comment::model()->findAll($commentCDbCriteria);
+        
+        $this->data['course']=$course;
         $this->render('detail', array(
             'course' => $course,
             'next' => $next,
@@ -78,7 +88,7 @@ class CourseController extends Controller {
             $comment = new Comment;
             $comment->content = $_POST['content'];
             $comment->cid = $id;
-            $comment->uid = 58;
+            $comment->uid = Yii::app()->user->id;
             $comment->save();
         }
         $commentCDbCriteria = new CDbCriteria();
@@ -93,6 +103,14 @@ class CourseController extends Controller {
         $this->renderPartial('comment', array(
             'comment' => $comment,
             'pages' => $pages,
+        ));
+    }
+    
+    public function actionOrder(){
+        $id=$_GET['id'];
+        $course=  Course::model()->findByPk($id);
+        $this->render('order',array(
+            'course'=>$course,
         ));
     }
 

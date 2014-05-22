@@ -1,21 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "{{answer}}".
+ * This is the model class for table "{{love}}".
  *
- * The followings are the available columns in table '{{answer}}':
+ * The followings are the available columns in table '{{love}}':
  * @property integer $id
- * @property integer $aid
- * @property string $content
  * @property integer $uid
+ * @property integer $aid
+ * @property integer $cid
+ * @property integer $eid
  * @property string $addtime
  */
-class Answer extends CActiveRecord
+class Love extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Answer the static model class
+	 * @return Love the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,7 +28,7 @@ class Answer extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{answer}}';
+		return '{{love}}';
 	}
 
 	/**
@@ -38,12 +39,11 @@ class Answer extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('aid ,content,uid', 'required'),
-			array('aid, uid', 'numerical', 'integerOnly'=>true),
-			array('content', 'safe'),
+			array('uid', 'required'),
+			array('uid, aid, cid, eid', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, aid, content, uid, addtime', 'safe', 'on'=>'search'),
+			array('id, uid, aid, cid, eid, addtime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,9 +55,6 @@ class Answer extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'user'=>array(self::BELONGS_TO,'Users','uid'),
-                    'ask'=>array(self::BELONGS_TO,'Ask','aid'),
-                    'love'=>array(self::HAS_MANY,'Love','aid'),
 		);
 	}
 
@@ -68,9 +65,10 @@ class Answer extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'aid' => 'Aid',
-			'content' => 'Content',
 			'uid' => 'Uid',
+			'aid' => 'Aid',
+			'cid' => 'Cid',
+			'eid' => 'Eid',
 			'addtime' => 'Addtime',
 		);
 	}
@@ -87,9 +85,10 @@ class Answer extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('aid',$this->aid);
-		$criteria->compare('content',$this->content,true);
 		$criteria->compare('uid',$this->uid);
+		$criteria->compare('aid',$this->aid);
+		$criteria->compare('cid',$this->cid);
+		$criteria->compare('eid',$this->eid);
 		$criteria->compare('addtime',$this->addtime,true);
 
 		return new CActiveDataProvider($this, array(

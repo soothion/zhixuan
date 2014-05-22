@@ -19,13 +19,15 @@ class AskController extends Controller {
             $filter = array(0, 0);
         $askCriteria->limit = 6;
         $askCriteria->order = 'recommend desc, addtime desc, id desc';
-        $askCount = Ask::model()->count();
+        $askCount = Ask::model()->count($askCriteria);
         $pages = new CPagination($askCount);
         $pages->pageSize = 20;
         $pages->applyLimit($askCriteria);
         $askList = Ask::model()->findAll($askCriteria);
         //获取所有分类
         $type = AskType::model()->findAll();
+        
+        $tag=  explode(' ', Tag::model()->find()->ask);
         //渲染视图
         $this->render('index', array(
             'filter' => $filter,
@@ -33,19 +35,23 @@ class AskController extends Controller {
             'askCount' => $askCount,
             'type' => $type,
             'pages' => $pages,
+            'tag'=>$tag,
         ));
     }
 
     public function actionAsk() {
-        $model = new Ask;
-        if (isset($_POST['content'])) {
-            $model->attributes = $_POST;
-            $model->uid = 58;
-            if ($model->validate() && $model->save()) //注2：$model->validate()就是在调用model.rules进行验证
-                echo '提交成功';
-            else
-                echo '提交失败';
-        }
+        if (isset(Yii::app()->user->id)) {
+            $model = new Ask;
+            if (isset($_POST['content'])) {
+                $model->attributes = $_POST;
+                $model->uid = 58;
+                if ($model->validate() && $model->save()) //注2：$model->validate()就是在调用model.rules进行验证
+                    echo '提交成功';
+                else
+                    echo '提交失败';
+            }
+        } else
+            echo '请登录后操作！';
     }
 
     public function actionDetail() {
@@ -57,26 +63,35 @@ class AskController extends Controller {
     }
 
     public function actionAnswer() {
-        $model = new Answer;
-        if (isset($_POST['content'])) {
-            $model->attributes = $_POST;
-            $model->uid = 58;
-            if ($model->validate() && $model->save()) //注2：$model->validate()就是在调用model.rules进行验证
-                echo '提交成功';
-            else
-                echo '提交失败';
-        }
+        if (isset(Yii::app()->user->id)) {
+            if (Yii::app()->user->level == 2) { 
+                $model = new Answer;
+                if (isset($_POST['content'])) {
+                    $model->attributes = $_POST;
+                    $model->uid = Yii::app()->user->id;
+                    if ($model->validate() && $model->save()) //注2：$model->validate()就是在调用model.rules进行验证
+                        echo '提交成功';
+                    else
+                        echo '提交失败';
+                }
+            } else
+                echo '您是普通会员，不能提交解答！';
+        } else
+            echo '请登录后操作！';
     }
 
     public function actionComment() {
         //获取评论信息
         $id = $_GET['id'];
         if (isset($_POST['content'])) {
-            $comment = new Comment;
-            $comment->content = $_POST['content'];
-            $comment->aid = $id;
-            $comment->uid = 58;
-            $comment->save();
+            if (Yii::app()->user->id) {
+                $comment = new Comment;
+                $comment->content = $_POST['content'];
+                $comment->aid = $id;
+                $comment->uid = Yii::app()->user->id;
+                $comment->save();
+            } else
+                echo '<script>alert("请登录后操作");</script>';
         }
         $commentCDbCriteria = new CDbCriteria();
         $commentCDbCriteria->addCondition('aid=:id');
@@ -92,6 +107,5 @@ class AskController extends Controller {
             'pages' => $pages,
         ));
     }
-    
 
 }

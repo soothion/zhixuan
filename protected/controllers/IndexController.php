@@ -31,50 +31,72 @@ class IndexController extends Controller {
 
     //赞同、有启发操作
     public function actionAgree() {
+        $message = '';
         switch ($_POST['type']) {
             case 'ask':
-                $id = $_POST['id'];
                 $model = Ask::model();
                 break;
             case 'course':
-                $id = $_POST['id'];
                 $model = Course::model();
                 break;
             case 'experience':
-                $id = $_POST['id'];
                 $model = Experience::model();
                 break;
             case 'answer':
-                $id = $_POST['id'];
                 $model = Answer::model();
                 break;
         }
-        $model->updateCounters(array('agree' => 1), "id=$id");
-        echo $model->findByPk($id)->agree;
+        $id = $_POST['id'];
+        if (isset(Yii::app()->session[$_POST['type']]) && in_array($id, Yii::app()->session[$_POST['type']])) {
+            $message.='<script>alert("您已经点过了！");</script>';
+        } else {
+            if (!Yii::app()->user->id) {
+                $message.='<script>alert("请先登录！");</script>';
+            } else {
+                $model->updateCounters(array('agree' => 1), "id=$id");
+                $arr = Yii::app()->session[$_POST['type']]?Yii::app()->session[$_POST['type']]:array();
+                array_push($arr, $id);
+                Yii::app()->session[$_POST['type']] = $arr;
+            }
+        }
+
+        echo $model->findByPk($id)->agree . $message;
     }
 
     //收藏操作
     public function actionLove() {
+
         switch ($_POST['type']) {
-            case 'ask':
-                $id = $_POST['id'];
-                $model = Ask::model();
-                break;
             case 'course':
-                $id = $_POST['id'];
-                $model = Course::model();
+                $attributes = array('cid' => $_POST['id']);
+                $condition = 'cid=' . $_POST['id'];
+                $attributes['cid'] = $_POST['id'];
                 break;
             case 'experience':
-                $id = $_POST['id'];
-                $model = Experience::model();
+                $attributes = array('eid' => $_POST['id']);
+                $condition = 'eid=' . $_POST['id'];
+                $attributes['eid'] = $_POST['id'];
                 break;
             case 'answer':
-                $id = $_POST['id'];
-                $model = Answer::model();
+                $attributes = array('aid' => $_POST['id']);
+                $condition = 'aid=' . $_POST['id'];
+                $attributes['aid'] = $_POST['id'];
                 break;
         }
-        $model->updateCounters(array('agree' => 1), "id=$id");
-        echo $model->findByPk($id)->agree;
+        $model = new Love;
+        $message = '';
+        if (Yii::app()->user->id) {
+            $attributes['uid'] = Yii::app()->user->id;
+            if (!$model->findAllByAttributes($attributes)) {
+                $model->attributes = $attributes;
+                $model->save();
+            } else {
+                $message.='<script>alert("您已经收藏过了！")</script>';
+            }
+        } else {
+            $message.='<script>alert("请先登录！")</script>';
+        }
+        echo $model->count($condition) . $message;
     }
 
     public function actionLogin() {
@@ -89,8 +111,8 @@ class IndexController extends Controller {
                 if ($model->login()) {
                     // Set ip and date attributes to update user record
                     $attributes = array(
-                        'last_loginip' => ip2long(Yii::app()->request->userHostAddress),
-                        'last_logindate' => date('Y-m-d H:i:s', time()),
+                        'loginip' => ip2long(Yii::app()->request->userHostAddress),
+                        'logintime' => date('Y-m-d H:i:s', time()),
                     );
                     echo '登录成功！' . '<script>location.reload();</script>';
                 }
@@ -100,9 +122,24 @@ class IndexController extends Controller {
         }
     }
 
-    public function actionRegister(){
-        $this->render('register');
+    public function actionRegister() {
+        if (isset($_POST['username'])) {
+            $user = new Users;
+            $user->attributes = $_POST;
+            $user->password = md5($user->password);
+            $user->loginip = Yii::app()->request->userHostAddress;
+            $user->logintime = date('Y-m-d H:i:s', time());
+            if ($user->validate() && $user->save()) {
+                //$user->login();
+                $this->redirect('index');
+            } else {
+                Yii::app()->user->setFlash('info', '注册失败！');
+                $this->redirect(Yii::app()->request->getUrlReferrer());
+            }
+        } else
+            $this->render('register');
     }
+
     public function actionLogout() {
         Yii::app()->user->logout();
         $this->redirect('index');

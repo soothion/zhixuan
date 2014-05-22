@@ -1,0 +1,1 @@
+<a href="<?php echo $ad->links?>" target="_blank"><img src="<?php echo $ad->pic?>" width="310px"/></a>
