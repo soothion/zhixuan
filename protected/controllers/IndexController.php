@@ -123,6 +123,7 @@ class IndexController extends Controller {
     }
 
     public function actionRegister() {
+        $this->layout='application.views.layouts.main1';
         if (isset($_POST['username'])) {
             $user = new Users;
             $user->attributes = $_POST;

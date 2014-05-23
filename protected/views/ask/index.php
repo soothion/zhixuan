@@ -86,6 +86,22 @@
                     <p class="ctrl"> <span class="SP1"><a href="javascript:;" value="<?php echo $v->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $v->agree; ?></span>)</a></span> <span class="SP2"><a href="<?php echo Yii::app()->createUrl('ask/detail', array('id' => $v->id)); ?>">回复</a></span> </p>
                 </li>
             </ul>
+            <?php if($v->answer){?>
+            <ul class="replyListing">
+                <li>
+                    <div class="userPhoto"><img src="<?php echo $v->answer[0]->user->thumb; ?>" width="40px" /></div>
+                    <div class="comment clearfix">
+                        <p class="userInfo"><span><?php echo $v->answer[0]->user->username ?></span>  发表于  <?php echo date('Y-m-d H:m:s', strtotime($ask->answer[0]->addtime)) ?></p>
+                        <p class="con">
+                            <?php echo $v->answer[0]->content ?> </p>
+                    </div>
+                    <div class="interaction clearfix">
+                        <span class="i1"><a href="javascript:;" value="<?php echo $v->answer[0]->id?>" type="answer" class="zhixuanAgree">有启发 (<span><?php echo $v->answer[0]->agree ?></span>)</a></span> 
+                        <span class="i2"><a <a href="javascript:;" value="<?php echo $v->answer[0]->id?>" type="answer" class="zhixuanLove">收藏(<span><?php echo count($v->answer[0]->love)?></span>)</a></span>
+                    </div>
+                </li>        
+            </ul>
+            <?php }?>
         </div>
     <?php } ?>
 

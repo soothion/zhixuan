@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2014-05-22 16:50:29
+-- Generation Time: 2014-05-23 16:52:51
 -- 服务器版本： 5.5.37-0ubuntu0.12.04.1
 -- PHP Version: 5.3.10-1ubuntu3.11
 
@@ -6525,6 +6525,22 @@ INSERT INTO `zx_love` (`id`, `uid`, `aid`, `cid`, `eid`, `addtime`) VALUES
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `zx_order`
+--
+
+CREATE TABLE IF NOT EXISTS `zx_order` (
+`id` int(11) NOT NULL,
+  `cid` int(11) NOT NULL,
+  `uid` int(11) NOT NULL,
+  `type` enum('1','2') NOT NULL,
+  `model` enum('1','2') NOT NULL,
+  `price` int(11) NOT NULL,
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `zx_tag`
 --
 
@@ -6569,7 +6585,7 @@ CREATE TABLE IF NOT EXISTS `zx_users` (
   `qq` varchar(80) DEFAULT NULL,
   `msn` varchar(80) DEFAULT NULL,
   `config` varchar(300) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1541 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1542 ;
 
 --
 -- 转存表中的数据 `zx_users`
@@ -8038,7 +8054,8 @@ INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introdu
 (1537, '1', 0, 'testtest1', 'xiaoxiaoyi', '', '2014-05-22 09:38:30', '127.0.0.1', 1, NULL, NULL, 'xiaoxiaoi2@sna.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (1538, '1', 0, 'doraprince1', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:48:00', '127.0.0.1', 1, NULL, NULL, 'asdfas@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (1539, '1', 0, 'doraprince2', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:49:37', '127.0.0.1', 1, NULL, NULL, 'asdasf@sina.com', NULL, '潘雷在在', '专业专业', '简讯职位', '职位职位', '100', '18617185201', '10628520', NULL, NULL),
-(1540, '1', 0, 'doraprince3', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:55:03', '127.0.0.1', 1, NULL, NULL, 'xiaoxiaoyi@sina.com', NULL, 'xioxiaoyi', '', '', '', '', '', '', '10628520', NULL);
+(1540, '1', 0, 'doraprince3', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:55:03', '127.0.0.1', 1, NULL, NULL, 'xiaoxiaoyi@sina.com', NULL, 'xioxiaoyi', '', '', '', '', '', '', '10628520', NULL),
+(1541, '1', 0, 'doraprince4', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-23 15:32:51', '127.0.0.1', 1, NULL, NULL, 'doraprince@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -8213,6 +8230,12 @@ ALTER TABLE `zx_love`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `zx_order`
+--
+ALTER TABLE `zx_order`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `zx_users`
 --
 ALTER TABLE `zx_users`
@@ -8363,10 +8386,15 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=147;
 ALTER TABLE `zx_love`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
+-- AUTO_INCREMENT for table `zx_order`
+--
+ALTER TABLE `zx_order`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `zx_users`
 --
 ALTER TABLE `zx_users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1541;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1542;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

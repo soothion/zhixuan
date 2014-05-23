@@ -58,63 +58,6 @@
         <?php endif ?>
         <div class="IndexContent" id="contentWrapper">
             <?php echo $content; ?>
-            <!--右侧栏开始-->
-            <div class="sideBar">
-                <div class="adBlock"><img src="images/corese_ad.png" width="308" height="270" /></div>
-
-                <ul class="CourseLogin block"  id="MenberLogins">
-                    <?php if (Yii::app()->user->isGuest) { ?>
-                        <form action="" method="" id="login-form">
-                            <span class="login-info"></span>
-                            <li class="TT1">用户名</li><li class="TT2"><input type="text" name="username"/></li>
-                            <li class="TT1">密&nbsp;&nbsp;&nbsp;&nbsp;码</li><li class="TT2"><input type="password" name="password"/></li>
-                            <li class="TT3">
-                                <a href="javascript:;" class="login-submit">登录  </a>   
-                                <a href="<?php echo Yii::app()->createUrl('index/register'); ?>">马上注册</a>     
-                                <a href="#">忘记密码？</a>
-                            </li>
-                            <li class="TT4">
-                                <p class="PP1">社交工具登录</p>
-                                <p class="PP2">
-                                    <a href="#"><img src="images/G1.png" /></a>
-                                    <a href="#"><img src="images/G2.png" /></a>
-                                </p> 
-                            </li>
-                        </form>
-                    <?php } else { ?>
-                        <div class="CourseLoginInfo" id="MenberInfos">
-                            <div class="Lefts"><a href="#"><img src="<?php echo Yii::app()->user->thumb ?>"width="55px" /></a></div>
-                            <div class="Rights"> 
-                                <ul class="CourseLoginInfoText">
-                                    <li class="TT1">
-                                        <p class="PP1"><span><?php if (Yii::app()->user->level == 1) echo '普通';if (Yii::app()->user->level == 2) echo '高级'; ?>会员</span> <?php echo Yii::app()->user->name ?></p> 
-                                    </li>
-
-                                    <li class="TT2">积分:<?php echo Yii::app()->user->score;?><br/><a href="#">查看积分规则</a></li>  
-                                </ul>
-                            </div>
-                                                    <div class="Centers">
-                            <a href="#">我的资料</a>
-                            <a href="#">我的积分</a>
-                            <a href="#">我的主页</a>
-                            <a href="#">消息(1)</a>
-                            <a href="<?php echo Yii::app()->createUrl('index/logout'); ?>">退出  </a> 
-                        </div>
-                        <?php } ?>
-
-                </ul>
-
-                   <?php 
-                   if($this->getAction()->getId()=='detail'&&Yii::app()->controller->id=='course')
-                   $this->widget('PriceWidget',array('course'=>$this->data['course'])); ?>
-                
-                <?php $this->widget('RecommendListWidget') ?>
-
-                <div class="adBlock">
-                    <?php $this->widget('AdWidget'); ?>
-                </div> 
-            </div>
-            <!--右侧栏结束-->
         </div>
         <div class="clear"></div>
 

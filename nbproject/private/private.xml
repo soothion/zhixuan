@@ -3,15 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/zhixuan/protected/views/course/detail.php</file>
             <file>file:/var/www/zhixuan/protected/controllers/IndexController.php</file>
-            <file>file:/var/www/zhixuan/protected/components/UserIdentity.php</file>
-            <file>file:/var/www/zhixuan/protected/views/ask/index.php</file>
-            <file>file:/var/www/zhixuan/protected/config/main.php</file>
-            <file>file:/var/www/zhixuan/protected/views/course/index.php</file>
-            <file>file:/var/www/zhixuan/protected/views/layouts/main.php</file>
-            <file>file:/var/www/zhixuan/protected/views/ask/detail.php</file>
-            <file>file:/var/www/zhixuan/protected/components/User.php</file>
+            <file>file:/var/www/zhixuan/protected/components/PriceWidget.php</file>
+            <file>file:/var/www/zhixuan/protected/components/views/price.php</file>
+            <file>file:/var/www/zhixuan/protected/controllers/CourseController.php</file>
         </group>
     </open-files>
 </project-private>

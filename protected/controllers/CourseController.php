@@ -107,7 +107,10 @@ class CourseController extends Controller {
     }
     
     public function actionOrder(){
+        if(!Yii::app()->user->id)
+        $this->redirect (array('index'));
         $id=$_GET['id'];
+        $type=$_GET['type'];
         $course=  Course::model()->findByPk($id);
         $this->render('order',array(
             'course'=>$course,
