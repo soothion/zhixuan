@@ -4,7 +4,7 @@
      
  </style>
  <div class="InTitle"><h1><?php echo Yii::app()->user->name;?>－正在购买:<?php echo $course->title?></h1></div>
- <form action="" method="post">
+ <form action="<?php echo Yii::app()->createUrl('corese/pay');?>" method="post">
 <div class="mainPanel">
  <ul class="PaymentInfo">
   <li class="TT1">
@@ -23,28 +23,35 @@
   </li>
 
   </ul>
-    
      <ul class="PaymentInfo2">
   <li class="TT1"><p>请选择一种支付方式</p></li>
   <li class="TT2">
-      <p class="PP1"><input type="radio" name="type" value="1"/></p>
+    <input type="hidden" name="id" value="<?php echo $_GET['id']?>"/>
+    <input type="hidden" name="type" value="<?php echo $_GET['type']?>"/>
+      <p class="PP1"><input type="radio" name="model" value="1"/></p>
     <p class="PP2">现金支付</p>
   </li>
   <li class="TT3">
    <p class="PP1">金额</p>
-   <p class="PP2">35元</p>
-   <p class="PP3"><a href="#">支付宝支付</a></p> 
+   <p class="PP2"><?php 
+   if($_GET['type']==1) echo $course->price;
+   else echo ($course->price)*2;
+   ?>元</p>
+   <p class="PP3">支付宝支付<</p> 
    <p class="PP4">即将进入支付宝页面</p>
   </li>
   <li class="TT4">
-   <p class="PP2"><input type="radio" name="type" value="2"/></p>
+   <p class="PP2"><input type="radio" name="model" value="2"/></p>
    <p class="PP3">积分支付</p>
   </li>
 
   <li class="TT5">
    <p class="PP1">积分</p>
-   <p class="PP2">100分</p>
-   <p class="PP3"><a href="#">积分支付</a></p> 
+   <p class="PP2"><?php 
+   if($_GET['type']==1) echo $course->price/Yii::app()->params['score']['toRMB'];
+   else echo ($course->price)*2/Yii::app()->params['score']['toRMB'];
+   ?>分</p>
+   <p class="PP3">积分支付</p> 
    <p class="PP4">点击将立即扣除积分</p>
   </li>
   

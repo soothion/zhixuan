@@ -91,7 +91,7 @@
                 <li>
                     <div class="userPhoto"><img src="<?php echo $v->answer[0]->user->thumb; ?>" width="40px" /></div>
                     <div class="comment clearfix">
-                        <p class="userInfo"><span><?php echo $v->answer[0]->user->username ?></span>  发表于  <?php echo date('Y-m-d H:m:s', strtotime($ask->answer[0]->addtime)) ?></p>
+                        <p class="userInfo"><span><?php echo $v->answer[0]->user->username ?></span>  发表于  <?php echo date('Y-m-d H:m:s', strtotime($v->answer[0]->addtime)) ?></p>
                         <p class="con">
                             <?php echo $v->answer[0]->content ?> </p>
                     </div>

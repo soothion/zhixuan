@@ -5797,3 +5797,50 @@ Stack trace:
 REQUEST_URI=/zhixuan/index.php?r=course/detail&id=23
 HTTP_REFERER=http://localhost/zhixuan/index.php?r=course/detail&id=23
 ---
+2014/05/24 02:25:43 [error] [php] Undefined variable: ask (D:\wamp\www\zhixuan\protected\views\ask\index.php:94)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(869): AskController->renderFile()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(782): AskController->renderPartial()
+#2 D:\wamp\www\zhixuan\protected\controllers\AskController.php(39): AskController->render()
+#3 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): AskController->actionIndex()
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\zhixuan\framework\web\CController.php(286): AskController->runAction()
+#6 D:\wamp\www\zhixuan\framework\web\CController.php(265): AskController->runActionWithFilters()
+#7 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): AskController->run()
+#8 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=ask
+in D:\wamp\www\zhixuan\protected\views\ask\index.php (94)
+in D:\wamp\www\zhixuan\protected\controllers\AskController.php (39)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/05/24 03:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pay".' in D:\wamp\www\zhixuan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(270): CController->missingAction('pay')
+#1 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('pay')
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('course/pay')
+#3 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=course/pay&id=24
+---
+2014/05/24 03:04:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pay".' in D:\wamp\www\zhixuan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(270): CController->missingAction('pay')
+#1 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('pay')
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('course/pay')
+#3 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=course/pay&id=24
+---
+2014/05/24 03:04:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pay".' in D:\wamp\www\zhixuan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(270): CController->missingAction('pay')
+#1 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('pay')
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('course/pay')
+#3 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=course/pay&id=24
+---

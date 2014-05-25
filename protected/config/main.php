@@ -63,7 +63,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=zhixuan',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'root',
+			'password' => '',
 			'charset' => 'utf8',
                         'tablePrefix' => 'zx_',
 		),
@@ -93,5 +93,15 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'soothion@sina.com',
+		'score'=>array(
+					'askCommit'=>5,
+					'courseCommit'=>5,
+					'experienceCommit'=>5,
+					'contribute'=>10,
+					'answer'=>10,
+					'toRMB'=>0.1,
+
+			),
+
 	),
 );

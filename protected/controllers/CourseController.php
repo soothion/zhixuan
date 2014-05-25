@@ -117,4 +117,24 @@ class CourseController extends Controller {
         ));
     }
 
+    public function pay(){
+        var_dump(Yii::app()->alipay);
+        die;
+        $id=$_POST['id'];
+        $model=$_POST['model'];//1为现金支付，2为积分支付
+        $type=$_POST['type'];//1为点播价购买，2为优先权价格购买
+        $course=  Course::model()->findByPk($id);
+        if($type==1)
+        {
+            $price=$course->price;
+        }
+        if($type==2)
+        {
+            $price=$course->price*2;
+        }
+        if($model==1){
+
+        }
+    }
+
 }
