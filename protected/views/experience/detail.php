@@ -15,8 +15,8 @@
     </div>
    </div>
  <ul class="pageNav">
-     <li>上一篇：<a href="<?php echo Yii::app()->createUrl('experience/detail',array('id'=>$prev->id));?>"><?php echo $prev->title?></a></li>
-    <li>下一篇：<a href="<?php echo Yii::app()->createUrl('experience/detail',array('id'=>$next->id));?>"><?php echo $next->title?></a></li>
+     <li>上一篇：<?php if($prev){?><a href="<?php echo Yii::app()->createUrl('experience/detail',array('id'=>$prev->id));?>"><?php echo $prev->title?></a><?php } else echo '沒有了';?></li>
+    <li>下一篇：<?php if($next){?><a href="<?php echo Yii::app()->createUrl('experience/detail',array('id'=>$next->id));?>"><?php echo $next->title?></a><?php } else echo '沒有了';?></li>
    </ul>
     <div class="replyModule">
         <h3>用户评论</h3>

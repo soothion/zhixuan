@@ -14,7 +14,7 @@
     <body>
         <div id="header">
             <div class="wrapper">
-                <div class="logo"><a href="<?php echo Yii::app()->createUrl('index') ?>"><img src="images/Logo.png" /> </a> <img src="images/slogan.png" class="slogan"/>
+                <div class="logo"><a href="<?php echo Yii::app()->createUrl('index') ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/Logo.png" /> </a> <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/slogan.png" class="slogan"/>
                 </div>
                 <ul class="globalNav">
                     <li><a href="<?php echo Yii::app()->createUrl('course') ?>">创业课程</a></li>
@@ -22,13 +22,13 @@
                     <li><a href="<?php echo Yii::app()->createUrl('experience') ?>">经验专栏</a></li>
                 </ul>
                 <div class="searchBar">
-                    <form action="<?php echo Yii::app()->createUrl('index/search')?>" method="post">
+                    <form action="http://baidu.com" method="get" id="search-form">
                         <input type="hidden" name="model" id="search-model" value="course"/>
                     <p class="searchType" onclick="OnClickDownMuen()">
                         <span id="DownText">课程</span> 
                     </p>
                         <p class="keyword"><input type="text" name="key" /></p>
-                    <p class="btnSearch"><input type="image" src="images/Seach.png" /></p> 
+                    <p class="btnSearch"><input type="image" src="/images/Seach.png" id="search-submit" /></p> 
 
                     <div class="dropdown" id="MuenNavDown" style=" display:none">
                         <p class="dropMenu" model="Course">课程</p>
@@ -46,6 +46,9 @@
                             $('#DownText').html($(this).html());
                             $('#search-model').val($(this).attr('model'));
                             $('#MuenNavDown').toggle();
+                        })
+                        $('#search-submit').click(function(){
+                            $('#search-form').submit();
                         })
                     })
 
@@ -79,8 +82,8 @@
                             <li class="TT4">
                                 <p class="PP1">社交工具登录</p>
                                 <p class="PP2">
-                                    <a href="#"><img src="images/G1.png" /></a>
-                                    <a href="#"><img src="images/G2.png" /></a>
+                                    <a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G1.png" /></a>
+                                    <a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G2.png" /></a>
                                 </p> 
                             </li>
                         </form>

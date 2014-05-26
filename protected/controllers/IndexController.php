@@ -147,8 +147,8 @@ class IndexController extends Controller {
     
     
     public function actionSearch(){
-        $model=$_POST['model'];
-        $key=$_POST['key'];
+        $model=$_GET['model'];
+        $key=$_GET['key'];
         $column='title';
         if($model=='Ask')
             $column='content';
@@ -163,6 +163,7 @@ class IndexController extends Controller {
         $this->render('search',array(
             'list'=>$list,
             'model'=>$model,
+            'pages'=>$pages,
         ));
     }
 

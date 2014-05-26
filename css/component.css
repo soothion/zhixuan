@@ -384,7 +384,7 @@ ul.ProblemSelect li.TT4 input{ border:0px; border-style:none; margin:0px; paddin
 .questHeader .questCategory a{color:#9A9A9A; }
 .questListing{font-family:微软雅黑;  width:642px; height:auto; clear:both; overflow:hidden;}
 .questListing li{ padding-bottom:5px; background-color:#EFEFEF; width:612px; height:auto; padding-left:15px; padding-right:15px;  overflow:hidden;}
-ul.questListing h3{ font-size:18px; width:612px; height:30px; line-height:30px; padding-top:5px;}
+ul.questListing h3{ font-size:18px; width:612px; height:auto; line-height:30px; padding-top:5px;}
 ul.questListing li.TT1 p.PP1 h2{ font-weight:lighter; list-style:none; font-size:18px; margin:0px; padding:0px;}
 
 .questListing .intro{ color:#A2A2A2; line-height:25px; height:25px; clear:both; overflow:hidden; width:612px;}

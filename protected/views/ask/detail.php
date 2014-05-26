@@ -1,40 +1,32 @@
 <script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ueditor/ueditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ueditor/ueditor.all.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ueditor/lang/zh-cn/zh-cn.js"></script>
-<div class="InTitle"><h1>有问必答</h1></div>
 
-<div class="mainPanel"> 
-    <ul class="questListing">
-        <li>
-            <h3><?php echo $ask->content; ?></h3>
-            <p class="intro">
-                <span><?php echo $ask->user->username; ?></span> 发布于 <?php echo date('Y-m-d H:m:s', strtotime($ask->addtime)) ?>  分类：<span><?php echo $ask->type->title ?></span>  标签：<span><?php echo $ask->tag ?></span>   评论 (<?php echo count($ask->comment) ?>)     
-            </p>
-            <p class="voteCtrl">
-                <span class="v1"><a href="javascript:;" value="<?php echo $ask->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $ask->agree ?></span>)</a></span>
-            </p>
-        </li>
-    </ul>
-    <ul class="replyListing">
-        <?php foreach ($ask->answer as $v) { ?>
-            <li>
-                <div class="userPhoto"><img src="<?php echo $v->user->thumb; ?>" width="40px" /></div>
-                <div class="comment clearfix">
-                    <p class="userInfo"><span><?php echo $v->user->username ?></span>  发表于  <?php echo date('Y-m-d H:m:s', strtotime($ask->addtime)) ?></p>
-                    <p class="con">
-                        <?php echo $v->content ?> </p>
-                </div>
-                <div class="interaction clearfix">
-                    <span class="i1"><a href="javascript:;" value="<?php echo $v->id?>" type="answer" class="zhixuanAgree">有启发 (<span><?php echo $v->agree ?></span>)</a></span> 
-                    <span class="i2"><a <a href="javascript:;" value="<?php echo $v->id?>" type="answer" class="zhixuanLove">收藏(<span><?php echo count($v->love)?></span>)</a></span>
-                </div>
-            </li>        
-        <?php } ?>
-    </ul>
-    <div class="btnProblemDivX">
-        <span class="SP1"><a href="javascript:;" class="toggleList">查看所有解惑</a></span>
-    </div>
-    <script type="text/javascript">
+<div class="InTitle">
+  <h1>有问必答</h1>
+</div>
+<div class="mainPanel">
+  <ul class="questListing">
+    <li>
+      <h3><?php echo CHtml::encode($ask->content); ?></h3>
+      <p class="intro"> <span><?php echo $ask->user->username; ?></span> 发布于 <?php echo date('Y-m-d H:m:s', strtotime($ask->addtime)) ?> 分类：<span><?php echo $ask->type->title ?></span> 标签：<span><?php echo $ask->tag ?></span> 评论 (<?php echo count($ask->comment) ?>) </p>
+      <p class="voteCtrl"> <span class="v1"><a href="javascript:;" value="<?php echo $ask->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $ask->agree ?></span>)</a></span> </p>
+    </li>
+  </ul>
+  <ul class="replyListing">
+    <?php foreach ($ask->answer as $v) { ?>
+    <li>
+      <div class="userPhoto"><img src="<?php echo $v->user->thumb; ?>" width="40px" /></div>
+      <div class="comment clearfix">
+        <p class="userInfo"><span><?php echo $v->user->username ?></span> 发表于 <?php echo date('Y-m-d H:m:s', strtotime($ask->addtime)) ?></p>
+        <p class="con"> <?php echo $v->content ?> </p>
+      </div>
+      <div class="interaction clearfix"> <span class="i1"><a href="javascript:;" value="<?php echo $v->id?>" type="answer" class="zhixuanAgree">有启发 (<span><?php echo $v->agree ?></span>)</a></span> <span class="i2"><a <a href="javascript:;" value="<?php echo $v->id?>" type="answer" class="zhixuanLove">收藏(<span><?php echo count($v->love)?></span>)</a></span> </div>
+    </li>
+    <?php } ?>
+  </ul>
+  <div class="btnProblemDivX"> <span class="SP1"><a href="javascript:;" class="toggleList">查看所有解惑</a></span> </div>
+  <script type="text/javascript">
 $(document).ready(function() {
     $('.replyListing li:gt(0)').hide();
     $('.toggleList').click(function() {
@@ -42,28 +34,24 @@ $(document).ready(function() {
     });
 })
     </script>
-
-    <div class="ProblemEditX">
-     <div class="Lefts"><!--<img src="images/EText.png" height="135px" width="420px" />-->
-            <script id="editor" type="text/plain" style="width:420px;height:82px;"></script>
-            <script type="text/javascript">
+  <div class="ProblemEditX">
+    <div class="Lefts"><!--<img src="images/EText.png" height="135px" width="420px" />--> 
+      <script id="editor" type="text/plain" style="width:420px;height:82px;"></script> 
+      <script type="text/javascript">
                 var ue = UE.getEditor('editor');
-            </script>
-        </div>
-        <div class="Rights">
-            <ul class="ProblemSText">  
-                <li class="TT1">
-                    只有高级会员（原解惑者）才能解
-                    惑。解惑将获得积分。<br/>
-                    积分可以用来购买课程。<br/>
-                    <a href="#">去升级会员？</a> 
-                </li>
-                <li class="TT2"> 
-                    <input type="button" class="btnJieHuo" value="提交解惑" id='answer-submit' />
-                </li>
-            </ul>
-
-            <script>
+            </script> 
+    </div>
+    <div class="Rights">
+      <ul class="ProblemSText">
+        <li class="TT1"> 只有高级会员（原解惑者）才能解
+          惑。解惑将获得积分。<br/>
+          积分可以用来购买课程。<br/>
+          <a href="#">去升级会员？</a> </li>
+        <li class="TT2">
+          <input type="button" class="btnJieHuo" value="提交解惑" id='answer-submit' />
+        </li>
+      </ul>
+      <script>
                 $(document).ready(function() {
                     $('#answer-submit').click(function() {
                         var content = UE.getEditor('editor').getContent();
@@ -76,21 +64,24 @@ $(document).ready(function() {
 
                     });
                 })
-            </script>
-        </div>
-    </div> 
-    <div class="replyModule">
-        <h3>用户评论</h3>
-        <form action="" method="post" id="comment-form">
-            <p class="txtArea">
-                <textarea name="content"></textarea>
-            </p>
-            <p class="ctrl">  <input type="button" class="btnTxt btnGuan" value="提交评论" /></p>
-        </form>
+            </script> 
     </div>
-    <div class="commentModule clearfix">
-        <ul class="commentListing"></ul>
-        <script>
+  </div>
+  <div class="replyModule">
+    <h3>用户评论</h3>
+    <form action="" method="post" id="comment-form">
+      <p class="txtArea">
+        <textarea name="content"></textarea>
+      </p>
+      <p class="ctrl">
+        <input type="button" class="btnTxt btnGuan" value="提交评论" />
+      </p>
+    </form>
+  </div>
+  <div class="commentModule clearfix">
+    <ul class="commentListing">
+    </ul>
+    <script>
             $(document).ready(function() {
                 $.get("<?php echo Yii::app()->createUrl('ask/comment', array('id' => $ask->id)) ?>", function(result) {
                     $('.commentListing').html(result);
@@ -116,7 +107,6 @@ $(document).ready(function() {
                     return false;
                 })
             })
-        </script>   
-    </div>
-
+        </script> 
+  </div>
 </div>
