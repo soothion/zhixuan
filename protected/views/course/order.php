@@ -4,7 +4,7 @@
      
  </style>
  <div class="InTitle"><h1><?php echo Yii::app()->user->name;?>－正在购买:<?php echo $course->title?></h1></div>
- <form action="<?php echo Yii::app()->createUrl('corese/pay');?>" method="post">
+ <form action="<?php echo Yii::app()->createUrl('course/pay');?>" method="post">
 <div class="mainPanel">
  <ul class="PaymentInfo">
   <li class="TT1">

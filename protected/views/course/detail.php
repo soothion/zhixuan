@@ -8,6 +8,7 @@
 </div>
 <div class="mainPanel">
     <div class="videoWindow">
+        <?php if($flag){?>
         <div id="video" style="position:relative;z-index: 100;width:600px;height:400px;float: left;"><div id="a1"></div></div>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ckplayer/ckplayer.js" charset="utf-8"></script>
         <script type="text/javascript">
@@ -26,7 +27,9 @@
             var support = ['iPad', 'iPhone', 'ios', 'android+false', 'msie10+false'];
             CKobject.embedHTML5('video', 'ckplayer_a1', 600, 400, video, flashvars, support);
         </script> 
-
+        <?php }else{?>
+        此课程需要购买后才能观看！
+        <?php }?>
     </div>
     <div class="videoIntro">
         <div class="overview">

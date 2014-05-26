@@ -22,17 +22,20 @@
                     <li><a href="<?php echo Yii::app()->createUrl('experience') ?>">经验专栏</a></li>
                 </ul>
                 <div class="searchBar">
+                    <form action="<?php echo Yii::app()->createUrl('index/search')?>" method="post">
+                        <input type="hidden" name="model" id="search-model" value="course"/>
                     <p class="searchType" onclick="OnClickDownMuen()">
-                        <label id="DownText">课程</label> 
+                        <span id="DownText">课程</span> 
                     </p>
-                    <p class="keyword"><input type="text" /></p>
-                    <p class="btnSearch"><input name="" type="image" src="images/Seach.png" /></p> 
+                        <p class="keyword"><input type="text" name="key" /></p>
+                    <p class="btnSearch"><input type="image" src="images/Seach.png" /></p> 
 
                     <div class="dropdown" id="MuenNavDown" style=" display:none">
-                        <p class="dropMenu">课程</p>
-                        <p class="dropMenu">问题</p>
-                        <p class="dropMenu">经验</p>
+                        <p class="dropMenu" model="Course">课程</p>
+                        <p class="dropMenu" model="Ask">问题</p>
+                        <p class="dropMenu" model="Experience">经验</p>
                     </div>
+                    </form>
                 </div>
                 <script type="text/javascript">
                     function OnClickDownMuen() {
@@ -40,9 +43,9 @@
                     }
                     $(document).ready(function(){
                         $('.dropMenu').click(function(){
-                            
-                            alert(123);
-                            $('#DownText').html('test');
+                            $('#DownText').html($(this).html());
+                            $('#search-model').val($(this).attr('model'));
+                            $('#MuenNavDown').toggle();
                         })
                     })
 
@@ -82,15 +85,16 @@
                             </li>
                         </form>
                     <?php } else { ?>
+                    <?php $user=Users::model()->findByPk(Yii::app()->user->id);?>
                         <div class="CourseLoginInfo" id="MenberInfos">
-                            <div class="Lefts"><a href="#"><img src="<?php echo Yii::app()->user->thumb ?>"width="55px" /></a></div>
+                            <div class="Lefts"><a href="#"><img src="<?php if($user->thumb) echo $user->thumb;else echo 'upload/noThumb.jpg' ?>"width="55px" /></a></div>
                             <div class="Rights"> 
                                 <ul class="CourseLoginInfoText">
                                     <li class="TT1">
-                                        <p class="PP1"><span><?php if (Yii::app()->user->level == 1) echo '普通';if (Yii::app()->user->level == 2) echo '高级'; ?>会员</span> <?php echo Yii::app()->user->name ?></p> 
+                                        <p class="PP1"><span><?php if ($user->level == 1) echo '普通';if ($user->level == 2) echo '高级'; ?>会员</span> <?php echo Yii::app()->user->name ?></p> 
                                     </li>
 
-                                    <li class="TT2">积分:<?php echo Yii::app()->user->score;?><br/><a href="#">查看积分规则</a></li>  
+                                    <li class="TT2">积分:<?php echo $user->score;?><br/><a href="#">查看积分规则</a></li>  
                                 </ul>
                             </div>
                                                     <div class="Centers">

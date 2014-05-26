@@ -132,10 +132,9 @@ class IndexController extends Controller {
             $user->logintime = date('Y-m-d H:i:s', time());
             if ($user->validate() && $user->save()) {
                 //$user->login();
-                $this->redirect('index');
+                $this->message('注册成功！',Yii::app()->createUrl('index'));
             } else {
-                Yii::app()->user->setFlash('info', '注册失败！');
-                $this->redirect(Yii::app()->request->getUrlReferrer());
+                $this->message('注册失败！');
             }
         } else
             $this->render('register');
@@ -144,6 +143,27 @@ class IndexController extends Controller {
     public function actionLogout() {
         Yii::app()->user->logout();
         $this->redirect('index');
+    }
+    
+    
+    public function actionSearch(){
+        $model=$_POST['model'];
+        $key=$_POST['key'];
+        $column='title';
+        if($model=='Ask')
+            $column='content';
+        $DB=$model::model();
+        $criteria=new CDbCriteria();
+        $criteria->addSearchCondition($column, $key);
+        $count=$DB->count($criteria);
+        $pages=new CPagination($count);
+        $pages->pageSize=20;
+        $pages->applyLimit($criteria);
+        $list=$DB->findAll($criteria);
+        $this->render('search',array(
+            'list'=>$list,
+            'model'=>$model,
+        ));
     }
 
 }
