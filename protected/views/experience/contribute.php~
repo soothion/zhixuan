@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/global.css" rel="stylesheet" type="text/css" />
+    <link href="style/component.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="xheditor-1.1.14/jquery/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="xheditor-1.1.14/xheditor-1.1.14-zh-cn.min.js"></script> 
+</head>
+<body>
+<div id="header">
+<div class="wrapper">
+ <div class="logo"><a href="index.htm"><img src="images/Logo.png" /> </a> <img src="images/slogan.png" class="slogan"/>
+ </div>
+ <ul class="globalNav">
+  <li><a href="course.htm">创业课程</a></li>
+  <li><a href="ask-list.htm">有问必答</a></li>
+  <li><a href="experience-list.htm">经验专栏</a></li>
+
+ 
+ </ul>
+ <div class="searchBar">
+     <p class="searchType" onclick="OnClickDownMuen()">
+     <label id="DownText">课程</label> 
+   </p>
+   <p class="keyword"><input type="text" /></p>
+   <p class="btnSearch"><input name="" type="image" src="images/Seach.png" /></p> 
+   
+   <div class="dropdown" id="MuenNavDown" style=" display:none">
+   <p class="dropMenu" onclick="OnClickDownMuenText('课程')"><a href="#">课程</a></p>
+   <p class="dropMenu" onclick="OnClickDownMuenText('问题')"><a href="#">问题</a></p>
+   <p class="dropMenu" onclick="OnClickDownMuenText('专栏')"><a href="#">专栏</a></p>
+  </div>
+ </div>
+ <script type="text/javascript">
+     function OnClickDownMuen() {
+         if (document.getElementById("MuenNavDown").style.display == "none") {
+             document.getElementById("MuenNavDown").style.display = ""
+         }
+         else {
+             document.getElementById("MuenNavDown").style.display = "none"
+         }
+     }
+     function OnClickDownMuenText(Tages) {
+         document.getElementById("DownText").innerHTML = Tages;
+         document.getElementById("MuenNavDown").style.display = "none"
+     }
+ </script>
+ </div>
+</div>
+
+<div class="InTitle"><h1>投稿</h1></div>
+<div id="contentWrapper">
+<ul class="ContributeInfo">
+ <li class="TT1">
+  欢迎大家分享自己的创业经营经验。 有时候，写下来之后，自己也会清楚一些，能帮到他人很好，能让他人看到，并有欲望联系你更好。 投稿会审核，审核的目的是，看一看是不是软文。可以把自己的项目放在文章中，但不能主观地吹嘘自己的项目有多好。 审核的第二个目的是，看一看是不是有价值。肯定要有观点，有体会，能给人启发。单纯的新闻，没意思，能看到的地方很多。
+ </li>
+ <li class="TT2">标题</li>
+ <li class="TT3"><input type="text" /></li>
+ <li class="TT2">正文</li>
+ <li class="TT4">
+ 
+  <textarea id="source"  class="xheditor-mini"   name="source" style=" width:710px; height:402px; border-bottom:1px solid #DDDDDD;" rows="4" cols="80"></textarea>
+ </li>
+</ul>
+
+<ul class="ContributeBiao">
+ <li class="TT1">添加标签</li>
+ <li class="TT2">
+  <p class="PP1"><input type="text" /></p>
+  <p class="PP2">多个标签请用空格隔开。</p>
+ </li>
+ <li class="TT3"> 
+   <input type="button" value="提交" class="BtnSave" />
+ </li>
+</ul><div class="clear"></div>
+
+</div> 
+
+<div id="footer">
+ <div class="wrapper">
+ 
+  <p class="botNav">
+   <a href="#">关于智选</a><a href="#">使用帮助</a><a href="#">意见反馈</a><a href="#">加入我们</a>
+  </p>
+  <p class="copyright">沪ICP备11022737</p>
+
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+

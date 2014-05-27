@@ -220,7 +220,17 @@ ul.MenberLoginWrite li.TT7{ padding-left:20px; float:left; margin-bottom:5px; wi
 .MenberLoginWText{ line-height:20px; color:#424242; font-family:微软雅黑; width:670px; padding-left:330px; height:auto;  padding-top:15px; padding-bottom:15px; border-bottom:2px solid #DDDDDD; border-top:2px solid #DDDDDD;}
 .MenberLoginWText span{ color:#C7000D;}
 
+/*找密码*/
+ 
+.head{height:45px;} 
+.head h1{height:45px; line-height:40px;  display:block;   padding:0 25px;  font-size:20px;  font-weight:bold; border-bottom:2px solid #0e4ca4;}
 
+.getPwdFlow{width:420px; margin-top:14px; margin-right:12px;}
+.getPwdFlow li{background:url(../images/flow_bg.png) no-repeat 2px -40px; float:left; _display:inline; margin-left:20px; padding-left:12px; height:28px; line-height:23px; color:#6A6A6A; font-size:14px;}
+.getPwdFlow li span{padding-right:16px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#fff; line-height:25px;}
+.getPwdFlow li.focus{background:url(../images/flow_bg.png) no-repeat 2px 0; color:#c7000d;}
+.getPwdFlow li.focus span{color:#fff;}
+.MenberContent .conWrap{padding:40px 0;}
 
 
 

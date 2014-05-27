@@ -3,7 +3,7 @@
  <div class="mainPanel">
  <div class="experienceTopModule">
   <div class="left">
-  <img src="<?php echo Yii::app()->request->baseUrl.'/'?>images/experience_cover.jpg" />
+      <a href="<?php echo Yii::app()->createUrl('experience/contribute')?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'?>images/experience_cover.jpg" /></a>
   </div>
   <div class="right">
    <div class="wrap">

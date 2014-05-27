@@ -5,7 +5,8 @@ class ExperienceController extends Controller {
     public function actionIndex() {
         $criteria = new CDbCriteria();
         $criteria->order = 'recommend desc, addtime desc, id desc';
-        $count = Experience::model()->count();
+        $criteria->addCondition('status=1');
+        $count = Experience::model()->count($criteria);
         $pages = new CPagination($count);
         $pages->pageSize = 10;
         $pages->applyLimit($criteria);
@@ -69,6 +70,28 @@ class ExperienceController extends Controller {
             'comment' => $comment,
             'pages' => $pages,
         ));
+    }
+    
+    
+    public function actionContribute(){
+        if(!$uid=Yii::app()->user->id)
+                $this->message('请先登录！',Yii::app()->createUrl('index'));
+        if(isset($_POST['experience']))
+        {
+            $model=new Experience;
+            $model->attributes=$_POST['experience'];
+            $model->uid=$uid;
+            $model->status=2;
+            if($model->save()){
+                $this->message('投稿成功,请等待管理员审核！');
+            }
+            else print_r($model->errors);
+        }
+        else{
+            $this->layout = 'application.views.layouts.main1';
+            $this->render('contribute');
+        }
+
     }
 
 }

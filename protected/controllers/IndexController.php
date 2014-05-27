@@ -167,5 +167,10 @@ class IndexController extends Controller {
             'key'=>$key,
         ));
     }
+    
+    public function actionReset(){
+        $this->layout='application.views.layouts.main1';
+        $this->render('reset');
+    }
 
 }

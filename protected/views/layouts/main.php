@@ -77,7 +77,7 @@
                             <li class="TT3">
                                 <a href="javascript:;" class="login-submit">登录  </a>   
                                 <a href="<?php echo Yii::app()->createUrl('index/register'); ?>">马上注册</a>     
-                                <a href="#">忘记密码？</a>
+                                <a href="<?php echo Yii::app()->createUrl('index/reset')?>">忘记密码？</a>
                             </li>
                             <li class="TT4">
                                 <p class="PP1">社交工具登录</p>
