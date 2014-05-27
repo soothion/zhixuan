@@ -2,7 +2,7 @@
 <div class="mainPanel">
     <div class="courseModule">
         <div class="courseCommended">
-            <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $recommendCourse->id)) ?>"><img src="<?php echo $recommendCourse->pic; ?>" width="642" height="296" /></a></div>
+            <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $recommendCourse->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$recommendCourse->pic; ?>" width="642" height="296" /></a></div>
             <div class="intro"> <h3><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $recommendCourse->id)) ?>"><?php echo $recommendCourse->title ?></a></h3>
                 <div class="desp"><?php echo $recommendCourse->des; ?></div>
                 <div class="voteCtrl"><a href="javascript:;" value="<?php echo $recommendCourse->id?>" type="course" class="zhixuanAgree">有启发(<span><?php echo $recommendCourse->agree; ?></span>)</a></div>
@@ -10,14 +10,14 @@
         </div>
         <ul class="courseListing">
             <li>
-                <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $freeCourse[0]->id)) ?>"><img src="<?php echo $freeCourse[0]->pic; ?>" /></a></div>
+                <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $freeCourse[0]->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$freeCourse[0]->pic; ?>" /></a></div>
                 <div class="intro">
                     <span class="isFree">免费</span> <h3><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $freeCourse[0]->id)) ?>"><?php echo $freeCourse[0]->title; ?></a></h3>     
                 </div>
                 <div class="voteCtrl"><a href="javascript:;" value="<?php echo $freeCourse[0]->id?>" type="course" class="zhixuanAgree">有启发(<span><?php echo $freeCourse[0]->agree; ?></span>)</a></div>
             </li>
             <li class="br">
-                <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $freeCourse[1]->id)) ?>"><img src="<?php echo $freeCourse[1]->pic; ?>" /></a></div>
+                <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $freeCourse[1]->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$freeCourse[1]->pic; ?>" /></a></div>
                 <div class="intro">
                     <span class="isFree">免费</span> <h3><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $freeCourse[1]->id)) ?>"><?php echo $freeCourse[1]->title; ?></a></h3>     
                 </div>

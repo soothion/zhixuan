@@ -1,8 +1,8 @@
 <div class="InTitleInfo"> 
     <p class="skipNav">
-        <a href="<?php if ($prev) echo Yii::app()->createUrl('course/detail', array('id' => $prev->id)) ?>"><img src="images/WLeft.png" /></a>
-        <a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $course->id)) ?>"><img src="images/WCenter.png" /></a>
-        <a href="<?php if ($next) echo Yii::app()->createUrl('course/detail', array('id' => $next->id)) ?>"><img src="images/WRightr.png" /></a>
+        <a href="<?php if ($prev) echo Yii::app()->createUrl('course/detail', array('id' => $prev->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'?>images/WLeft.png" /></a>
+        <a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $course->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'?>images/WCenter.png" /></a>
+        <a href="<?php if ($next) echo Yii::app()->createUrl('course/detail', array('id' => $next->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'?>images/WRightr.png" /></a>
     </p> <h1><?php echo $course->title ?></h1>
 
 </div>
@@ -36,8 +36,8 @@
             <p class="PP1">
                 <span>时长：<?php echo $course->time; ?></span>   <span>分类：<?php echo $course->type->title; ?></span>    <span>标签：<?php echo $course->tag ?></span>     </p>
             <p class="PP3">
-                <a href="#"><img src="images/GG1.png" /></a>
-                <a href="#"><img src="images/GG2.png" /></a>     </p>
+                <a href="#"><img src="<?php echo Yii::app()->request->baseUrl.'/'?>images/GG1.png" /></a>
+                <a href="#"><img src="<?php echo Yii::app()->request->baseUrl.'/'?>images/GG2.png" /></a>     </p>
             <p class="PP2">分享：</p>
         </div>
         <div class="desp">

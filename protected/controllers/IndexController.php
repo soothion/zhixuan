@@ -147,8 +147,8 @@ class IndexController extends Controller {
     
     
     public function actionSearch(){
-        $model=$_GET['model'];
-        $key=$_GET['key'];
+        $model=ucwords($_GET['model']);
+        $key=trim($_GET['key']);
         $column='title';
         if($model=='Ask')
             $column='content';
@@ -164,6 +164,7 @@ class IndexController extends Controller {
             'list'=>$list,
             'model'=>$model,
             'pages'=>$pages,
+            'key'=>$key,
         ));
     }
 

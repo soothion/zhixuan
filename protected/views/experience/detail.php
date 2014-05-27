@@ -4,7 +4,7 @@
  <div class="experienceDetail">
    <h3><?php echo $experience->title?></h3>
     <div class="cont clearfix">
-     <div class="photo"> <img src="<?php echo $experience->user->thumb?>" /></div>
+     <div class="photo"> <img src="<?php echo Yii::app()->request->baseUrl.'/'.$experience->user->thumb?>" /></div>
       <div class="author"><em><a href="#"><?php echo $experience->user->username;?></a></em>  <span>发表于 <?php echo date('Y-m-d H:m:s', strtotime($experience->addtime)) ?></span>       </div>
       <div class="detail">
           <?php echo $experience->content?>

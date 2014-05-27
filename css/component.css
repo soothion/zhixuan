@@ -46,7 +46,7 @@ ul.questListing li .ctrl span.SP2{ float:right;}
 .qaModule .InbtnProblemDiv{ font-size:14px; margin-bottom:35px; background-color:#EEEEEF; text-align:center; clear:both; line-height:30px;}
 .qaModule .InbtnProblemDiv a{ color:#58585B; display:block;  width:642px; height:30px;}
 .qaModule .InbtnProblemDiv a:hover{ background-color:#CD0101; color:white;}
-
+.searchResult ul.questListing li{margin-bottom:20px;}
 .adBlock{margin-bottom:22px;}
  
 ul.CourseLogin{ font-family:微软雅黑; width:310px; padding-top:10px; height:160px; clear:both; overflow:hidden; background-color:#EFEFEF;}

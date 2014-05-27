@@ -22,18 +22,18 @@
                     <li><a href="<?php echo Yii::app()->createUrl('experience') ?>">经验专栏</a></li>
                 </ul>
                 <div class="searchBar">
-                    <form action="http://baidu.com" method="get" id="search-form">
+                    <form action="<?php echo Yii::app()->createUrl('index/search')?>" method="get" id="search-form">
                         <input type="hidden" name="model" id="search-model" value="course"/>
                     <p class="searchType" onclick="OnClickDownMuen()">
                         <span id="DownText">课程</span> 
                     </p>
                         <p class="keyword"><input type="text" name="key" /></p>
-                    <p class="btnSearch"><input type="image" src="/images/Seach.png" id="search-submit" /></p> 
+                    <p class="btnSearch"><input type="image" src="<?php echo Yii::app()->request->baseUrl?>/images/Seach.png" id="search-submit" /></p> 
 
                     <div class="dropdown" id="MuenNavDown" style=" display:none">
-                        <p class="dropMenu" model="Course">课程</p>
-                        <p class="dropMenu" model="Ask">问题</p>
-                        <p class="dropMenu" model="Experience">经验</p>
+                        <p class="dropMenu" model="course">课程</p>
+                        <p class="dropMenu" model="ask">问题</p>
+                        <p class="dropMenu" model="experience">经验</p>
                     </div>
                     </form>
                 </div>
@@ -66,7 +66,7 @@
             <?php echo $content; ?>
             <!--右侧栏开始-->
             <div class="sideBar">
-                <div class="adBlock"><img src="images/corese_ad.png" width="308" height="270" /></div>
+                <div class="adBlock"><img src="<?php echo Yii::app()->request->baseUrl?>/images/corese_ad.png" width="308" height="270" /></div>
 
                 <ul class="CourseLogin block"  id="MenberLogins">
                     <?php if (Yii::app()->user->isGuest) { ?>
@@ -90,7 +90,7 @@
                     <?php } else { ?>
                     <?php $user=Users::model()->findByPk(Yii::app()->user->id);?>
                         <div class="CourseLoginInfo" id="MenberInfos">
-                            <div class="Lefts"><a href="#"><img src="<?php if($user->thumb) echo $user->thumb;else echo 'upload/noThumb.jpg' ?>"width="55px" /></a></div>
+                            <div class="Lefts"><a href="#"><img src="<?php echo  Yii::app()->request->baseUrl.'/'.$user->thumb;?>"width="55px" /></a></div>
                             <div class="Rights"> 
                                 <ul class="CourseLoginInfoText">
                                     <li class="TT1">

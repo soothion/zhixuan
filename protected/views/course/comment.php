@@ -1,6 +1,6 @@
     <?php foreach ($comment as $v) {?>
  <li class="clearfix">
-     <div class="userPhoto"><img src="<?php echo $v->user->thumb?$v->user->thumb:'upload/noThumb.jpg'?>" width="40px" height="40px"/></div>
+     <div class="userPhoto"><img src="<?php echo  Yii::app()->request->baseUrl.'/'.$v->user->thumb?>" width="40px" height="40px"/></div>
  <div class="comment clearfix">
      <p class="userInfo"><span><?php echo $v->user->username?></span>  发表于  <?php echo date('Y-m-d H:m:s',  strtotime($v->addtime));?>       </p>
   <p class="con">
