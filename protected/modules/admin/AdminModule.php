@@ -8,6 +8,7 @@ class AdminModule extends CWebModule
 		// you may place code here to customize the module or the application
 
 		// import the module-level models and components
+                $this->defaultController='index';
 		$this->setImport(array(
 			'admin.models.*',
 			'admin.components.*',
@@ -16,6 +17,9 @@ class AdminModule extends CWebModule
 
 	public function beforeControllerAction($controller, $action)
 	{
+                if ($controller->getId() != 'login' && Yii::app()->admin->id == '') {
+                    $controller->redirect($controller->createUrl('/admin/login'));
+                }
                 $controller -> layout = 'application.modules.admin.views.layouts.main';
 		if(parent::beforeControllerAction($controller, $action))
 		{

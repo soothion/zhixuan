@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2014-05-27 18:12:06
+-- Generation Time: 2014-05-28 18:01:10
 -- 服务器版本： 5.5.37-0ubuntu0.12.04.1
 -- PHP Version: 5.3.10-1ubuntu3.11
 
@@ -4651,25 +4651,26 @@ INSERT INTO `xz_ask_type` (`id`, `title`, `addtime`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `zx_admin`
+-- 表的结构 `zx_admins`
 --
 
-CREATE TABLE IF NOT EXISTS `zx_admin` (
+CREATE TABLE IF NOT EXISTS `zx_admins` (
 `id` int(11) NOT NULL,
   `username` char(20) NOT NULL,
   `password` varchar(40) NOT NULL,
   `logintime` varchar(35) NOT NULL,
   `loginip` varchar(40) NOT NULL,
   `logincount` int(11) NOT NULL DEFAULT '1'
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=47 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=48 ;
 
 --
--- 转存表中的数据 `zx_admin`
+-- 转存表中的数据 `zx_admins`
 --
 
-INSERT INTO `zx_admin` (`id`, `username`, `password`, `logintime`, `loginip`, `logincount`) VALUES
+INSERT INTO `zx_admins` (`id`, `username`, `password`, `logintime`, `loginip`, `logincount`) VALUES
 (17, 'admin', '21232f297a57a5a743894a0e4a801fc3', '1400216949', '127.0.0.1', 459),
-(46, 'yuanrong', '1a9a1ef441d94839d5e3e87e410d20a6', '1400075065', '14.18.242.96', 320);
+(46, 'yuanrong', '1a9a1ef441d94839d5e3e87e410d20a6', '1400075065', '14.18.242.96', 320),
+(47, 'soothion', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -6260,6 +6261,31 @@ INSERT INTO `zx_comment` (`id`, `uid`, `aid`, `cid`, `eid`, `content`, `addtime`
 (41, 1543, NULL, NULL, 146, 'asdf', '2014-05-26 10:04:11'),
 (42, 1543, NULL, NULL, 146, 'adfasdf', '2014-05-26 10:04:16'),
 (43, 1543, NULL, NULL, 146, 'asdfasdfasdf', '2014-05-26 10:05:07');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zx_config`
+--
+
+CREATE TABLE IF NOT EXISTS `zx_config` (
+`id` int(11) NOT NULL,
+  `title` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `keyword` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `des` varchar(250) CHARACTER SET utf8 NOT NULL,
+  `tag` varchar(250) CHARACTER SET utf8 NOT NULL,
+  `partner` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `seller_email` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `security_code` varchar(50) CHARACTER SET utf32 NOT NULL,
+  `copyright` varchar(50) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `zx_config`
+--
+
+INSERT INTO `zx_config` (`id`, `title`, `keyword`, `des`, `tag`, `partner`, `seller_email`, `security_code`, `copyright`) VALUES
+(1, '智选', '智选', '智选', '智选', '2088901946732788', 'shzhixuan12580@163.com', '1gkmskldwz03m6rnm0wpl53g41j52bd7', 'copyright ©2010-2013 ????');
 
 -- --------------------------------------------------------
 
@@ -8150,7 +8176,7 @@ INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introdu
 (1539, '1', 0, 'doraprince2', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:49:37', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdasf@sina.com', NULL, '潘雷在在', '专业专业', '简讯职位', '职位职位', '100', '18617185201', '10628520', NULL, NULL),
 (1540, '1', 0, 'doraprince3', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:55:03', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'xiaoxiaoyi@sina.com', NULL, 'xioxiaoyi', '', '', '', '', '', '', '10628520', NULL),
 (1541, '1', 0, 'doraprince4', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-23 15:32:51', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'doraprince@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1543, '1', 9916000, 'doraprince', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '火焰雨科技', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'xiaoxiaoyi@sina.com', NULL, '潘雷', '火焰雨科技', '火焰雨科技', 'PHP', '21', '18617185201', '10628520', NULL, NULL),
+(1543, '1', 9916000, 'doraprince', '05a671c66aefea124cc08b76ea6d30bb', '火焰雨科技', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, '10628520@qq.com', NULL, '潘雷', '火焰雨科技', '火焰雨科技', 'PHP', '21', '18617185201', '10628520', NULL, NULL),
 (1544, '1', 0, '65465132', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-26 18:10:22', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdf@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
@@ -8278,9 +8304,9 @@ ALTER TABLE `xz_ask_type`
  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `zx_admin`
+-- Indexes for table `zx_admins`
 --
-ALTER TABLE `zx_admin`
+ALTER TABLE `zx_admins`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -8305,6 +8331,12 @@ ALTER TABLE `zx_ask`
 -- Indexes for table `zx_comment`
 --
 ALTER TABLE `zx_comment`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `zx_config`
+--
+ALTER TABLE `zx_config`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -8454,10 +8486,10 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `xz_ask_type`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `zx_admin`
+-- AUTO_INCREMENT for table `zx_admins`
 --
-ALTER TABLE `zx_admin`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
+ALTER TABLE `zx_admins`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
 --
 -- AUTO_INCREMENT for table `zx_ads`
 --
@@ -8478,6 +8510,11 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1270;
 --
 ALTER TABLE `zx_comment`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=44;
+--
+-- AUTO_INCREMENT for table `zx_config`
+--
+ALTER TABLE `zx_config`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `zx_course`
 --

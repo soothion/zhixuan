@@ -26,7 +26,7 @@ Yii::app()->bootstrap->register();//载入boostrap
             <?php $this->widget('bootstrap.widgets.TbNavbar', array(
                 'type'=>'inverse', // null or 'inverse'
                 'brand'=>'智选后台管理系统',
-                'brandUrl'=>'#',
+                'brandUrl'=>array('/admin'),
                 'collapse'=>true, // requires bootstrap-responsive.css
                 'items'=>array(
                     array(
@@ -51,6 +51,11 @@ Yii::app()->bootstrap->register();//载入boostrap
                                 array('label'=>'广告添加', 'url'=>array('/admin/ads/create')),
                             )),
                             array('label'=>'评论管理', 'url'=>array('/admin/comment/index')),
+                            array('label'=>'管理员管理', 'url'=>'/admin/ads/index', 'items'=>array(
+                                array('label'=>'管理员列表', 'url'=>array('/admin/ads/index')),
+                                array('label'=>'管理员添加', 'url'=>array('/admin/ads/create')),
+                                array('label'=>'退出系统', 'url'=>array('/admin/ads/create')),
+                            )),
                         ),
                     ),
                 ),
