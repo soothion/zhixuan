@@ -22,32 +22,32 @@
                     <li><a href="<?php echo Yii::app()->createUrl('experience') ?>">经验专栏</a></li>
                 </ul>
                 <div class="searchBar">
-                    <form action="<?php echo Yii::app()->createUrl('index/search')?>" method="get" id="search-form">
+                    <form action="<?php echo Yii::app()->createUrl('index/search') ?>" method="get" id="search-form">
                         <input type="hidden" name="model" id="search-model" value="course"/>
-                    <p class="searchType" onclick="OnClickDownMuen()">
-                        <span id="DownText">课程</span> 
-                    </p>
+                        <p class="searchType" onclick="OnClickDownMuen()">
+                            <span id="DownText">课程</span> 
+                        </p>
                         <p class="keyword"><input type="text" name="key" /></p>
-                    <p class="btnSearch"><input type="image" src="<?php echo Yii::app()->request->baseUrl?>/images/Seach.png" id="search-submit" /></p> 
+                        <p class="btnSearch"><input type="image" src="<?php echo Yii::app()->request->baseUrl ?>/images/Seach.png" id="search-submit" /></p> 
 
-                    <div class="dropdown" id="MuenNavDown" style=" display:none">
-                        <p class="dropMenu" model="course">课程</p>
-                        <p class="dropMenu" model="ask">问题</p>
-                        <p class="dropMenu" model="experience">经验</p>
-                    </div>
+                        <div class="dropdown" id="MuenNavDown" style=" display:none">
+                            <p class="dropMenu" model="course">课程</p>
+                            <p class="dropMenu" model="ask">问题</p>
+                            <p class="dropMenu" model="experience">经验</p>
+                        </div>
                     </form>
                 </div>
                 <script type="text/javascript">
                     function OnClickDownMuen() {
                         $('#MuenNavDown').toggle();
                     }
-                    $(document).ready(function(){
-                        $('.dropMenu').click(function(){
+                    $(document).ready(function() {
+                        $('.dropMenu').click(function() {
                             $('#DownText').html($(this).html());
                             $('#search-model').val($(this).attr('model'));
                             $('#MuenNavDown').toggle();
                         })
-                        $('#search-submit').click(function(){
+                        $('#search-submit').click(function() {
                             $('#search-form').submit();
                         })
                     })
@@ -66,7 +66,7 @@
             <?php echo $content; ?>
             <!--右侧栏开始-->
             <div class="sideBar">
-                <div class="adBlock"><img src="<?php echo Yii::app()->request->baseUrl?>/images/corese_ad.png" width="308" height="270" /></div>
+                <div class="adBlock"><img src="<?php echo Yii::app()->request->baseUrl ?>/images/corese_ad.png" width="308" height="270" /></div>
 
                 <ul class="CourseLogin block"  id="MenberLogins">
                     <?php if (Yii::app()->user->isGuest) { ?>
@@ -77,7 +77,7 @@
                             <li class="TT3">
                                 <a href="javascript:;" class="login-submit">登录  </a>   
                                 <a href="<?php echo Yii::app()->createUrl('index/register'); ?>">马上注册</a>     
-                                <a href="<?php echo Yii::app()->createUrl('index/reset')?>">忘记密码？</a>
+                                <a href="<?php echo Yii::app()->createUrl('index/reset') ?>">忘记密码？</a>
                             </li>
                             <li class="TT4">
                                 <p class="PP1">社交工具登录</p>
@@ -88,37 +88,38 @@
                             </li>
                         </form>
                     <?php } else { ?>
-                    <?php $user=Users::model()->findByPk(Yii::app()->user->id);?>
+                        <?php $user = Users::model()->findByPk(Yii::app()->user->id); ?>
                         <div class="CourseLoginInfo" id="MenberInfos">
-                            <div class="Lefts"><a href="#"><img src="<?php echo  Yii::app()->request->baseUrl.'/'.$user->thumb;?>"width="55px" /></a></div>
+                            <div class="Lefts"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl . '/' . $user->thumb; ?>"width="55px" /></a></div>
                             <div class="Rights"> 
                                 <ul class="CourseLoginInfoText">
                                     <li class="TT1">
                                         <p class="PP1"><span><?php if ($user->level == 1) echo '普通';if ($user->level == 2) echo '高级'; ?>会员</span> <?php echo Yii::app()->user->name ?></p> 
                                     </li>
 
-                                    <li class="TT2">积分:<?php echo $user->score;?><br/><a href="#">查看积分规则</a></li>  
+                                    <li class="TT2">积分:<?php echo $user->score; ?><br/><a href="#">查看积分规则</a></li>  
                                 </ul>
                             </div>
-                                                    <div class="Centers">
-                            <a href="#">我的资料</a>
-                            <a href="#">我的积分</a>
-                            <a href="#">我的主页</a>
-                            <a href="#">消息(1)</a>
-                            <a href="<?php echo Yii::app()->createUrl('index/logout'); ?>">退出  </a> 
-                        </div>
+                            <div class="Centers">
+                                <a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $user->id)) ?>" target="_blank">我的资料</a>
+                                <a href="<?php echo Yii::app()->createUrl('member/score', array('id' => $user->id)) ?>" target="_blank">我的积分</a>
+                                <a href="<?php echo Yii::app()->createUrl('member/index', array('id' => $user->id)) ?>" target="_blank">我的主页</a>
+                                <a href="<?php echo Yii::app()->createUrl('member/message', array('id' => $user->id)) ?>" target="_blank">消息</a>
+                                <a href="<?php echo Yii::app()->createUrl('index/logout'); ?>">退出  </a> 
+                            </div>
                         <?php } ?>
 
                 </ul>
 
-                   <?php 
-                   if($this->getAction()->getId()=='detail'&&Yii::app()->controller->id=='course')
-                   $this->widget('PriceWidget',array('course'=>$this->data['course'])); ?>
-                
-                <?php $this->widget('RecommendListWidget') ?>
+                <?php
+                if ($this->getAction()->getId() == 'detail' && Yii::app()->controller->id == 'course')
+                    $this->widget('PriceWidget', array('course' => $this->data['course']));
+                ?>
+
+<?php $this->widget('RecommendListWidget') ?>
 
                 <div class="adBlock">
-                    <?php $this->widget('AdWidget'); ?>
+<?php $this->widget('AdWidget'); ?>
                 </div> 
             </div>
             <!--右侧栏结束-->

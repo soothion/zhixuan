@@ -1,125 +1,92 @@
-﻿.btn{cursor:pointer}
-.MenberContent{ margin:0px auto; width:996px; height:auto; clear:both; overflow:hidden; text-align:left;}
-.MenberInfo{ margin-left:130px; height:115px; padding-top:10px; width:530px; clear:both; overflow:hidden; background-color:#EFEFEF; }
-.MenberInfo .Lefts{ width:95px; padding-right:10px; text-align:right; float:left;}
-.MenberInfo .Lefts img{ height:72px; width:72px;}
-.MenberInfo .Rights{ width:410px; float:right; padding-right:15px;}
+﻿.commTable {border-top:1px solid #eaeaea; }
+.commTable td{ border-bottom:1px solid #eaeaea; padding:4px 6px;}
+.btn{cursor:pointer}
+.memberContentWrapper{ margin:0px auto; width:996px; height:auto;  text-align:left;}
+.userInfoWrap{padding-top:10px;}
+.userProfileContainer{margin-left:130px; height:115px; padding-top:16px; width:530px; background-color:#EFEFEF; }
+.userPhotoFrame{width:70px; height:70px; float:left; margin-left:12px;}
+.userPhotoFrame{width:70px; height:70px; }
+.userProfileDescribe{width:410px; float:right; padding-right:15px;}
+.userTitleSection{font-size:18px; line-height:30px;}
+.userTitleSection .name{padding-left:12px;}
+.userTitleSection .snsEntLink{float:right;}
+.userProfileDescribe .scoreWrap{margin-top:20px; }
+.userProfileDescribe .scoreWrap{font-size:14px;}
+.userProfileDescribe .scoreWrap a{color:#9d9e9e; font-size:12px; padding-left:12px;}
+.userProfileDescribe .userProfileNav{margin-top:8px;}
+.userProfileDescribe .userProfileNav a{padding-right:30px; color:#8C8C8C; font-size:12px;}
+.userProfileDescribe .userProfileNav a.current{ color:#FD2323; }
 
-ul.MenberInfoText{font-family:微软雅黑; width:410px; height:auto; clear:both; overflow:hidden;}
-ul.MenberInfoText li.TT1{ width:410px; height:34px; clear:both; overflow:hidden;}
-ul.MenberInfoText li.TT1 p{ float:left; height:34px;}
-ul.MenberInfoText li.TT1 p.PP1{ font-size:18px; line-height:34px;}
-ul.MenberInfoText li.TT1 p.PP1 span{ padding-right:12px;}
-ul.MenberInfoText li.TT1 p.PP2{ float:right}
-ul.MenberInfoText li.TT1 p.PP2 img{ margin-left:4px;}
-ul.MenberInfoText li.TT2{ color:#58585B; font-size:14px; width:410px; padding-top:20px; line-height:25px; height:auto; clear:both; overflow:hidden;}
-ul.MenberInfoText li.TT2 a{ padding-left:8px; color:#919296; font-size:12px;}
-ul.MenberInfoText li.TT2 a:hover{ color:#C7000D;}
-ul.MenberInfoText li.TT3{ width:410px; line-height:25px; height:auto; clear:both; overflow:hidden;}
-ul.MenberInfoText li.TT3 a{ padding-right:30px; color:#8C8C8C; font-size:12px;}
-ul.MenberInfoText li.TT3 a:hover{ color:#FD2323;}
-ul.MenberInfoText li.TT3 a.AA{ color:#FD2323;}
-
+.userInfoDetailContainer{color:#4C4C4C;   height:auto; font-size:12px; padding-top:12px;}
 
 
-ul.MenberEditTitle{font-size:14px; padding-top:15px; font-family:微软雅黑; padding-left:130px; height:25px; clear:both; overflow:hidden; border-bottom:1px solid #DDDDDD;}
+.userInfoMain{width:350px; float:left; margin-left:130px;}
+.userInfoMain .userPhotoSelector{width:350px; height:125px;  }
+.userInfoMain .userPhotoSelector span{display:block; float:left;}
+.userInfoMain .userPhotoSelector .tit{line-height:25px; width:65px;}
+.userInfoMain .userPhotoSelector .photo{width:85px;}
+.userInfoMain .userPhotoSelector .control{width:175px; line-height:18px; float:left;}
+.userInfoListing li{font-size:12px;  margin-bottom:5px;  width:245px; height:24px; line-height:24px;  background-color:#EFEFEF; position:relative; }
+.userInfoListing  li span{display:block;  float:left;}
+.userInfoListing  li span.tit{padding-left:10px; width:75px; text-align:left;}
+.userInfoListing  li span.infoEditor{width:130px;}
+.userInfoListing  li span.infoEditor .inp{width:130px; height:18px; line-height:18px; border:none; margin-top:2px;  background-color:transparent; font-size:12px;}
+.userInfoListing  li.desp .inp{overflow:hidden; height:50px; border:none;}
+.userInfoListing  li span.change{width:30px; text-align:center;}
+.userInfoListing  li span.change input{width:30px; border:none; cursor:pointer; height:18px; line-height:18px; border:none; font-size:12px; background:transparent; color:#c9caca; margin-top:2px;}
+.userInfoListing  li span.hide{width:50px; position:absolute; right:-65px; color:#c9caca; line-height:24px;}
+
+.userInfoSide{width:300px;  float:left;  }
+.userInfoListing  li.desp{height:70px;}
+.userInfoListing  li.desp span.infoEditor .inp{height:50px; vertical-align:top; line-height:20px;}
+
+.userInfoDisplay .userInfoListing li{border:none;}
+ 
+ul.MenberEditTitle{font-size:14px; padding-top:15px;  padding-left:130px; height:25px; clear:both; overflow:hidden; border-bottom:1px solid #DDDDDD;}
 ul.MenberEditTitle li{ font-weight:bold; float:left; line-height:25px; padding-right:25px;}
-ul.MenberEditTitle li.TT1{ color:#FF1212;}
-ul.MenberEditTitle li.TT1 a{  color:#FF1212; }
-ul.MenberEditTitle li  a:hover{ color:#FF1212;}
 
-ul.MenberEditTitle2{ font-size:14px;  padding-top:15px; font-family:微软雅黑; padding-left:130px; height:25px; clear:both; overflow:hidden; border-bottom:1px solid #DDDDDD;}
-ul.MenberEditTitle2 li{font-weight:bold; float:left; line-height:25px; padding-right:20px;}
-ul.MenberEditTitle2 li.TT1{ color:#FF1212;}
-ul.MenberEditTitle2 li.TT1 a{  color:#FF1212; }
-ul.MenberEditTitle2 li a:hover{ color:#FF1212;}
+ul.MenberEditTitle li.current a{color:#FF1212; }
+ul.MenberEditTitle  a:hover{ color:#FF1212;}
+
+.memberTabs{font-size:14px; padding-top:15px;  padding-left:130px; height:25px; border-bottom:1px solid #DDDDDD;}
+.memberTabs li{font-weight:bold; float:left; line-height:25px; padding-right:20px; font-weight:normal;}
+.memberTabs li a{line-height:25px; padding:0 6px;}
+.memberTabs li.current a{ color:#FF1212; border-bottom:2px solid #FF1212; font-weight:bold; position:relative; bottom:0px; padding-bottom:2px; }
+.memberTabs li a:hover{ color:#FF1212;}
+.userTitle{padding-left:130px; padding-top:20px; border-bottom:1px solid #DDDDDD;}
+.userTitle h2{font-size:14px; line-height:24px; padding-bottom:4px;}
+.userConWrap{padding-top:12px; padding-left:130px;}
+.userConWrap h3{font-size:14px; margin-bottom:6px;}
+.userConWrap ol, .userConWrap li{list-style:none; padding-left:2px; margin-left:0px;}
+.userConWrap li {margin-bottom:8px; padding-bottom:5px; border-bottom:1px dashed #ccc;}
+.userConWrap li h3{margin-bottom:0px; font-size:14px;}
+.userConWrap li .date{color:#999;}
+
 
 .MenberEdit{ padding-left:130px; padding-top:15px; width:850px; height:auto; clear:both; overflow:hidden;}
 .MenberEdit .lefts{ width:350px; float:left; overflow:hidden;}
 .MenberEdit .Rights{ padding-left:10px; width:400px; float:left; overflow:hidden;}
 
-ul.MenberEditBian{ color:#4C4C4C; font-family:微软雅黑; width:350px; height:auto; clear:both; overflow:hidden;}
-ul.MenberEditBian li.TT1{ height:350px; height:125px; clear:both; overflow:hidden;}
-ul.MenberEditBian li.TT1 p{  float:left; height:75px;}
-ul.MenberEditBian li.TT1 p.PP1{ line-height:25px; width:65px;}
-ul.MenberEditBian li.TT1 p.PP2{ width:83px;}
-ul.MenberEditBian li.TT1 p.PP3{ width:175px; line-height:18px;}
-ul.MenberEditBian li.TT1 p.PP3 img{ margin-bottom:6px;}
-ul.MenberEditBian li.TT2{ margin-bottom:5px; clear:both; width:260px; height:25px; overflow:hidden; background-color:#EFEFEF;}
-ul.MenberEditBian li.TT2 p{ float:left; height:25px; float:left; line-height:25px;  }
-ul.MenberEditBian li.TT2 p.PP1{ padding-left:10px; width:70px;}
-ul.MenberEditBian li.TT2 p.PP2{ width:130px;}
-ul.MenberEditBian li.TT2 p.PP3{ width:50px; text-align:center;}
-ul.MenberEditBian li.TT3{ margin-bottom:5px; float:left; height:250px; height:25px; overflow:hidden; background-color:#EFEFEF;}
-ul.MenberEditBian li.TT3 p{ float:left; height:25px; line-height:25px; }
-ul.MenberEditBian li.TT3 p.PP1{ padding-left:10px; width:70px;}
-ul.MenberEditBian li.TT3 p.PP2{ width:130px;}
-ul.MenberEditBian li.TT3 p.PP3{ width:50px; text-align:center;}
-ul.MenberEditBian li.TT4{margin-bottom:5px; width:90px; height:25px; float:left;}
-ul.MenberEditBian li.TT4 p{ float:left;float:left; color:#939597;}
-ul.MenberEditBian li.TT4 p.PP1{ padding-top:5px; padding-bottom:8px; padding-left:0px;}
-ul.MenberEditBian li.TT4 p.PP1 input{  border-spacing:0px; margin:0px; padding:0px;}
-ul.MenberEditBian li.TT4 p.PP2{ height:25px;  line-height:25px; padding-left:5px; padding-right:5px;}
-ul.MenberEditBian li.TT5{   clear:both; margin-bottom:5px; margin-right:90px;  height:250px; height:75px; overflow:hidden; background-color:#EFEFEF;}
-ul.MenberEditBian li.TT5 p{ float:left; height:75px; line-height:25px; }
-ul.MenberEditBian li.TT5 p.PP1{ padding-left:10px; width:70px;}
-ul.MenberEditBian li.TT5 p.PP2{ width:130px;}
-ul.MenberEditBian li.TT5 p.PP3{ width:50px; text-align:center;}
-ul.MenberEditBian li.TT6{margin-bottom:5px; width:90px; height:75px; float:left;}
-ul.MenberEditBian li.TT6 p{ float:left;float:left; color:#939597;}
-ul.MenberEditBian li.TT6 p.PP1{ padding:6px; padding-left:0px;}
-ul.MenberEditBian li.TT6 p.PP1 input{vertical-align:middle;  margin:0px; padding:0px;}
-ul.MenberEditBian li.TT6 p.PP2{ height:25px;  line-height:25px; padding-left:5px; padding-right:5px;}
-
-ul.MenberEditBianinfo{ margin-left:130px; margin-top:15px; color:#4C4C4C; font-family:微软雅黑; width:350px; height:auto; clear:both; overflow:hidden;}
-ul.MenberEditBianinfo li.TT1{ margin-bottom:5px; clear:both; width:260px; height:25px; overflow:hidden; background-color:#EFEFEF;}
-ul.MenberEditBianinfo li.TT1 p{ overflow:hidden; float:left; height:25px; float:left; line-height:25px;  }
-ul.MenberEditBianinfo li.TT1 p.PP1{ padding-left:10px; width:90px;}
-ul.MenberEditBianinfo li.TT1 p.PP2{ width:160px;} 
-ul.MenberEditBianinfo li.TT2{ margin-bottom:5px; float:left; height:250px; height:75px; overflow:hidden; background-color:#EFEFEF;}
-ul.MenberEditBianinfo li.TT2 p{ overflow:hidden;background-color:#EFEFEF; float:left; height:75px; line-height:25px; }
-ul.MenberEditBianinfo li.TT2 p.PP1{ padding-left:10px; width:90px;}
-ul.MenberEditBianinfo li.TT2 p.PP2{ width:160px; } 
-
-
 
 ul.MenberEditBian li a{ color:#BBBDC0;}
 ul.MenberEditBian li a:hover{ color:#C7000D;}
+.accountBinding {padding-top:15px; padding-bottom:100px; width:850px; padding-left:130px;  }
+.accountBinding li{background-color:#ffffff; width:300px;}
+.accountBinding li .change input{width:120px; background:red;}
+.accountBinding .userInfoListing  li span.change input{width:90px;  }
 
+ 
 
-ul.MenberEditShare{font-family:微软雅黑; padding-top:15px; padding-bottom:100px; width:850px; padding-left:130px; clear:both; overflow:hidden;}
-ul.MenberEditShare li{  float:left; height:25px; line-height:25px;}
-ul.MenberEditShare li.TT1{ width:95px;}
-ul.MenberEditShare li.TT2{ width:700px;}
-ul.MenberEditShare li.TT2 a{ padding-left:10px; color:#929497;}
-ul.MenberEditShare li.TT2 a:hover{ color:#C7000D;}
-ul.MenberEditShare li.TT2 a.AA1{ padding-left:10px; color:#222222;}
-ul.MenberEditShare li.TT2 a.AA1:hover{ color:#C7000D;}
+.courseList .date{width:20%}
+.courseList .tit{width:40%}
+.courseList .payInfo{width:20%}
+.courseList .status{width:20%} 
+.scoresList .date{width:20%}
+.scoresList .tit{width:40%}
+.scoresList .payInfo{width:20%}
+.scoresList .status{width:20%} 
 
-.IntegralMoney{font-size:14px; font-family:微软雅黑; color:#222222; padding-left:130px; line-height:35px; height:35px; clear:both; overflow:hidden; width:870px;}
-
-ul.IntegralList{font-family:微软雅黑; color:#222222; padding-bottom:20px; padding-left:130px; width:520px; height:auto; clear:both; overflow:hidden;}
-ul.IntegralList li.TT1{ height:25px; width:520px; border-bottom:1px solid #DDDDDD;}
-ul.IntegralList li.TT1 p{ float:left; height:25px; line-height:25px;}
-ul.IntegralList li.TT1 p.PP1{ width:115px;}
-ul.IntegralList li.TT1 p.PP2{ width:160px;}
-ul.IntegralList li.TT1 p.PP3{ width:115px;}
-ul.IntegralList li.TT1 p.PP4{ width:130px;}
-ul.IntegralList li.TT2{ font-size:14px;height:25px; line-height:25px; width:520px; border-bottom:1px solid #DDDDDD;}
-ul.IntegralList li.TT2 a{ color:#222222;}
-ul.IntegralList li.TT2 a:hover{ color:#C7000D;}
-
-
-ul.PurchaseList{font-family:微软雅黑; color:#222222; padding-bottom:10px;  padding-top:10px; padding-left:130px; width:520px; height:auto; clear:both; overflow:hidden;}
-ul.PurchaseList li.TT1{ height:25px; width:520px; clear:both; overflow:hidden;  }
-ul.PurchaseList li.TT1 p{ float:left; height:25px; line-height:25px; overflow:hidden;}
-ul.PurchaseList li.TT1 p.PP1{ width:90px;}
-ul.PurchaseList li.TT1 p.PP2{ width:165px;}
-ul.PurchaseList li.TT1 p.PP3{ width:170px;}
-ul.PurchaseList li.TT1 p.PP4{ width:95px;}
-ul.PurchaseList li.TT2{ font-size:14px; height:25px; line-height:25px; width:520px;  }
-
-.MenberMess{ width:530px; padding-bottom:25px; height:auto; clear:both; overflow:hidden; padding-left:130px;}
+.memberWrap{ width:530px; padding-bottom:25px; padding-left:130px;　padding-top:22px;}
 
 ul.memberMessList{ font-family:微软雅黑;  padding-bottom:15px; padding-top:15px; border-bottom:1px dashed #DDDDDD; width:530px; height:auto; clear:both; overflow:hidden;}
 ul.memberMessList li{ float:left; height:auto;}
@@ -135,14 +102,13 @@ ul.memberMessList li.TT2 p.PP3 a{color:#898989; padding-left:10px;}
 ul.memberMessList li.TT2 p.PP3 a:hover{ color:#C7000D;}
 
 
-ul.MenberMessEdit{padding-top:15px; padding-left:130px; width:530px; height:auto; clear:both; overflow:hidden;}
-ul.MenberMessEdit li.TT1{ width:530px; height:auto; clear:both; overflow:hidden;}
-ul.MenberMessEdit li.TT1 textarea{ line-height:20px; width:528px; height:78px; border:1px solid #B3B3B3;}
-ul.MenberMessEdit li.TT2{ color:#343434; font-family:微软雅黑; font-size:15px; height:30px;  text-align:right;}
-ul.MenberMessEdit li.TT2 input{ margin:0px; padding:0px; border:0px; border-style:none; background:none; font-size:15px; margin-top:7px;}
 
+.msgBoard{width:530px;}
+.msgBoard textarea{line-height:20px; width:528px; height:78px; border:1px solid #B3B3B3;}
+.msgBoard .ctrl{color:#343434;  font-size:15px; height:30px;  text-align:right;}
+.msgBoard .ctrl input{ margin:0px; padding:0px; border:0px; border-style:none; background:none; font-size:15px; margin-top:7px;}
 
-ul.PaymentInfo{ color:#424242; font-family:微软雅黑;  width:305px; height:auto; clear:both; overflow:hidden;}
+ul.PaymentInfo{ color:#424242; font-family:微软雅黑; padding-left:315px; width:305px; height:auto; clear:both; overflow:hidden;}
 ul.PaymentInfo li.TT1{ height:50px; clear:both; overflow:hidden; }
 ul.PaymentInfo li.TT1 p{ float:left; font-size:18px; height:50px; line-height:50px; padding-right:30px;}
 ul.PaymentInfo li.TT2{  padding-top:10px;border-top:1px solid #E77575; font-size:14px;width:305px; height:auto; clear:both; overflow:hidden;}
@@ -161,36 +127,36 @@ ul.PaymentInfo li.TT3 p.PP3{ color:#818181; float:right; line-height:20px; text-
 ul.PaymentInfo li.TT3 p.PP3 span.SP1{display:block;  padding-bottom:6px;  color:#818181; font-size:18px;} 
 ul.PaymentInfo li.TT3 p.PP3 input{ border:0px; border-style:none; background:none; font-size:18px;  margin:0px; padding:0px; }
 
-ul.PaymentInfo2{ color:#424242; font-family:微软雅黑;  width:330px; height:auto; clear:both; overflow:hidden;}
+ul.PaymentInfo2{ color:#424242; font-family:微软雅黑; padding-left:290px; width:330px; height:auto; clear:both; overflow:hidden;}
 ul.PaymentInfo2 a{color:#ffffff;}
-ul.PaymentInfo2 li.TT1{  height:50px; clear:both; overflow:hidden; }
+ul.PaymentInfo2 li.TT1{ margin-left:25px; height:50px; clear:both; overflow:hidden; }
 ul.PaymentInfo2 li.TT1 p{ float:left; font-size:18px; height:50px; line-height:50px; }
-ul.PaymentInfo2 li.TT2{ width:305px; height:auto; padding-bottom:5px; clear:both; overflow:hidden;border-bottom:1px solid #E77575; }
+ul.PaymentInfo2 li.TT2{ margin-left:25px;width:305px; height:auto; padding-bottom:5px; clear:both; overflow:hidden;border-bottom:1px solid #E77575; }
 ul.PaymentInfo2 li.TT2 p{ float:left;}
 ul.PaymentInfo2 li.TT2 p.PP1{ width:28px; }
 ul.PaymentInfo2 li.TT2 p.PP1 input{ width:25px; height:25px; margin:0px; padding:0px; }
 ul.PaymentInfo2 li.TT2 p.PP2{ font-size:18px; width:100px;} 
-ul.PaymentInfo2 li.TT3{width:305px; height:auto; clear:both; overflow:hidden; }
+ul.PaymentInfo2 li.TT3{ margin-left:25px;width:305px; height:auto; clear:both; overflow:hidden; }
 ul.PaymentInfo2 li.TT3 p{ margin-top:10px; font-size:14px; margin-right:8px; float:left; height:27px; line-height:27px;}
 ul.PaymentInfo2 li.TT3 p.PP1{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT3 p.PP2{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT3 p.PP3{ font-size:18px; background-color:#E60C13; color:White; padding-left:10px; width:100px;}
 ul.PaymentInfo2 li.TT3 p.PP4{ font-size:12px; clear:both; margin:0px; padding:0px; padding-bottom:6px; color:#929292;  height:20px; line-height:20px; padding-left:187px; width:123px; text-align:left;
                               border-bottom:1px solid #E77575;}
-ul.PaymentInfo2 li.TT4{ margin-top:15px; width:330px; height:40px; clear:both; overflow:hidden; background:url(../images/Dixian.jpg) left bottom no-repeat;}
+ul.PaymentInfo2 li.TT4{ margin-top:15px; width:330px; height:40px; clear:both; overflow:hidden; background:url(../images/Dixian.jpg) right bottom no-repeat;}
 ul.PaymentInfo2 li.TT4 p{ float:left; height:40px; line-height:40px;}
 ul.PaymentInfo2 li.TT4 p.PP1{ font-size:18px; width:25px;}
 ul.PaymentInfo2 li.TT4 p.PP2{ width:28px; }
 ul.PaymentInfo2 li.TT4 p.PP2 input{ width:25px; height:40px; margin:0px; padding:0px; }
 ul.PaymentInfo2 li.TT4 p.PP3{ font-size:18px; } 
-ul.PaymentInfo2 li.TT5{ width:305px; height:auto; clear:both; overflow:hidden; }
+ul.PaymentInfo2 li.TT5{ margin-left:25px;width:305px; height:auto; clear:both; overflow:hidden; }
 ul.PaymentInfo2 li.TT5 p{ margin-top:10px; font-size:14px; margin-right:8px; float:left; height:27px; line-height:27px;}
 ul.PaymentInfo2 li.TT5 p.PP1{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT5 p.PP2{ color:#343434; background-color:#EFEFEF; padding-left:10px; width:75px;}
 ul.PaymentInfo2 li.TT5 p.PP3{ font-size:18px; background-color:#808080; color:White; padding-left:10px; width:100px;}
 ul.PaymentInfo2 li.TT5 p.PP4{ font-size:12px; clear:both; margin:0px; padding:0px; color:#929292;  height:20px; line-height:20px; padding-left:187px; width:123px; text-align:left;
                              }
-ul.PaymentInfo2 li.TT5 p.PP5{overflow:hidden; clear:both; margin:0px; padding:0px;  height:8px;  width:305px; text-align:left;
+ul.PaymentInfo2 li.TT5 p.PP5{margin-left:25px; overflow:hidden; clear:both; margin:0px; padding:0px;  height:8px;  width:305px; text-align:left;
                             border-bottom:2px solid #9A9A9A; }
 
 ul.MenberLoginWrite{font-family:微软雅黑; width:670px; padding-left:330px; height:auto; clear:both; overflow:hidden;}
@@ -220,6 +186,19 @@ ul.MenberLoginWrite li.TT7{ padding-left:20px; float:left; margin-bottom:5px; wi
 .MenberLoginWText{ line-height:20px; color:#424242; font-family:微软雅黑; width:670px; padding-left:330px; height:auto;  padding-top:15px; padding-bottom:15px; border-bottom:2px solid #DDDDDD; border-top:2px solid #DDDDDD;}
 .MenberLoginWText span{ color:#C7000D;}
 
+
+
+
+.memberWrap .commentListing ul{margin:0px; padding-top:12px; }
+.memberWrap .commentListing li{padding-bottom:12px; border-bottom:1px dashed #dfdfdf; padding-top:12px; padding-left:60px; padding-right:100px;}
+.memberWrap .commentListing .userPhoto{ width:40px; text-align:center; float:left; margin-left:-60px;}
+.memberWrap .commentListing .comment{  }
+.memberWrap .commentListing .comment .userInfo{ color:#808080; }
+.memberWrap .commentListing .comment .userInfo span{ color:#222222; padding-right:4px;}
+.memberWrap .commentListing .comment .con{ font-size:14px; color:#424242;   line-height:24px; }
+.memberWrap .commentListing .comment .ctrl{float:right; margin-right:-100px; margin-top:-24px; _width:100px;}
+.memberWrap .commentListing .comment .ctrl a{padding:0 8px; color:#666666;}
+.memberWrap .commentListing .comment .ctrl .tick{color:green;}
 /*找密码*/
  
 .head{height:45px;} 
@@ -230,13 +209,6 @@ ul.MenberLoginWrite li.TT7{ padding-left:20px; float:left; margin-bottom:5px; wi
 .getPwdFlow li span{padding-right:16px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#fff; line-height:25px;}
 .getPwdFlow li.focus{background:url(../images/flow_bg.png) no-repeat 2px 0; color:#c7000d;}
 .getPwdFlow li.focus span{color:#fff;}
-.MenberContent .conWrap{padding:40px 0;}
-
-
-
-
-
-
-
+.memberContentWrapper .conWrap{padding:40px 0;}
 
 

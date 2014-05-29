@@ -6950,3 +6950,992 @@ REQUEST_URI=/zhixuan/index.php?r=experience/detail&id=146
 in D:\wamp\www\zhixuan\protected\views\experience\detail.php (19)
 in D:\wamp\www\zhixuan\protected\controllers\ExperienceController.php (41)
 in D:\wamp\www\zhixuan\index.php (13)
+2014/05/29 09:52:37 [error] [exception.CException] exception 'CException' with message 'MemberController cannot find the requested view "Info".' in /var/www/zhixuan/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('Info', NULL, true)
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(13): CController->render('Info')
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionInfo()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('info')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/info')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/info&id=1543
+HTTP_REFERER=http://localhost/zhixuan/
+---
+2014/05/29 09:53:16 [error] [exception.CException] exception 'CException' with message 'MemberController cannot find the requested view "Info".' in /var/www/zhixuan/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('Info', NULL, true)
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(13): CController->render('Info')
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionInfo()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('info')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/info')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/info&id=1543
+HTTP_REFERER=http://localhost/zhixuan/
+---
+2014/05/29 10:11:50 [error] [php] include(MemberWidget.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWidgetFactory.php(146): import()
+#1 /var/www/zhixuan/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /var/www/zhixuan/framework/web/CBaseController.php(172): MemberController->createWidget()
+#3 /var/www/zhixuan/protected/views/member/score.php(5): MemberController->widget()
+#4 /var/www/zhixuan/framework/web/CBaseController.php(126): require()
+#5 /var/www/zhixuan/framework/web/CBaseController.php(95): MemberController->renderInternal()
+#6 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#7 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#8 /var/www/zhixuan/protected/controllers/MemberController.php(29): MemberController->render()
+#9 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionScore()
+#10 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#12 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#13 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#14 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/score&id=1543
+in /var/www/zhixuan/protected/views/member/score.php (5)
+in /var/www/zhixuan/protected/controllers/MemberController.php (29)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 10:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "setArray".' in /var/www/zhixuan/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(270): CController->missingAction('setArray')
+#1 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('setArray')
+#2 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/setArray')
+#3 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/zhixuan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/setArray
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/info&id=1543
+---
+2014/05/29 11:21:27 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:21:28 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:21:28 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:21:29 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:21:29 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:21:29 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:21:59 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:22:00 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:22:00 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:22:00 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:22:00 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 11:22:00 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/views/member/index.php:17)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(869): MemberController->renderFile()
+#1 /var/www/zhixuan/framework/web/CController.php(782): MemberController->renderPartial()
+#2 /var/www/zhixuan/protected/controllers/MemberController.php(20): MemberController->render()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): MemberController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): MemberController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): MemberController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+in /var/www/zhixuan/protected/views/member/index.php (17)
+in /var/www/zhixuan/protected/controllers/MemberController.php (20)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 12:01:23 [error] [exception.CException] exception 'CException' with message 'Property "Love.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/member/index.php(75): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/MemberController.php(21): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/index&id=1543
+---
+2014/05/29 12:01:23 [error] [exception.CException] exception 'CException' with message 'Property "Love.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/member/index.php(75): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/MemberController.php(21): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/index&id=1543
+---
+2014/05/29 13:24:13 [error] [exception.CDbException] exception 'CDbException' with message 'Table "zx_message" does not have a column named "uid".' in /var/www/zhixuan/framework/db/schema/CDbCommandBuilder.php:591
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(1481): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(36): CActiveRecord->findAllByAttributes(Array)
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionMessage()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('message')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/message')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/message&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/index&id=1543
+---
+2014/05/29 13:24:14 [error] [exception.CDbException] exception 'CDbException' with message 'Table "zx_message" does not have a column named "uid".' in /var/www/zhixuan/framework/db/schema/CDbCommandBuilder.php:591
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(1481): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(36): CActiveRecord->findAllByAttributes(Array)
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionMessage()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('message')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/message')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/message&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/index&id=1543
+---
+2014/05/29 13:24:14 [error] [exception.CDbException] exception 'CDbException' with message 'Table "zx_message" does not have a column named "uid".' in /var/www/zhixuan/framework/db/schema/CDbCommandBuilder.php:591
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(1481): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(36): CActiveRecord->findAllByAttributes(Array)
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionMessage()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('message')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/message')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/message&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/index&id=1543
+---
+2014/05/29 13:24:14 [error] [exception.CDbException] exception 'CDbException' with message 'Table "zx_message" does not have a column named "uid".' in /var/www/zhixuan/framework/db/schema/CDbCommandBuilder.php:591
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(1481): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(36): CActiveRecord->findAllByAttributes(Array)
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionMessage()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('message')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/message')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/message&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/index&id=1543
+---
+2014/05/29 13:24:14 [error] [exception.CDbException] exception 'CDbException' with message 'Table "zx_message" does not have a column named "uid".' in /var/www/zhixuan/framework/db/schema/CDbCommandBuilder.php:591
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(1481): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(36): CActiveRecord->findAllByAttributes(Array)
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionMessage()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('message')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/message')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/message&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/index&id=1543
+---
+2014/05/29 13:37:03 [error] [exception.CException] exception 'CException' with message 'Property "Ask.title" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('title')
+#1 /var/www/zhixuan/protected/views/member/index.php(43): CActiveRecord->__get('title')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/zhixuan/protected/controllers/MemberController.php(21): CController->render('index', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionIndex()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/index')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/index&id=58
+---
+2014/05/29 13:52:28 [error] [exception.CException] exception 'CException' with message 'Property "Users.thubm" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('thubm')
+#1 /var/www/zhixuan/protected/views/member/set.php(28): CActiveRecord->__get('thubm')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('set', Array, true)
+#6 /var/www/zhixuan/protected/controllers/MemberController.php(66): CController->render('set', Array)
+#7 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionSet()
+#8 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('set')
+#12 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/set')
+#13 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/zhixuan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/set&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/info&id=1543
+---
+2014/05/29 14:15:45 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:15:45 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:15:45 [error] [exception.CException] exception 'CException' with message 'Property "Users.save" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('save')
+#1 /var/www/zhixuan/protected/controllers/MemberController.php(68): CActiveRecord->__get('save')
+#2 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): MemberController->actionSet()
+#3 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('set')
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('member/set')
+#8 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/zhixuan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/zhixuan/index.php?r=member/set&id=1543
+HTTP_REFERER=http://localhost/zhixuan/index.php?r=member/set&id=1543
+---
+2014/05/29 14:15:53 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:15:53 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:16:03 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:16:03 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:23:30 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:23:30 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:23:44 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:23:44 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:23:59 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:23:59 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:24:09 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:24:09 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:25:56 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:25:56 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:26:05 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:26:05 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:09 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:09 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:47 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:47 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:47 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:47 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:57 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:57 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:57 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:27:57 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:04 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:04 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:04 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:04 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:46 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:46 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:46 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:46 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:54 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:54 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:54 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:28:54 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:21 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:21 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:21 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:21 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:33 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:33 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:33 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:33 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:44 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:44 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:44 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:44 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:58 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:58 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:58 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:31:58 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:34 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:34 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:34 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:34 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:48 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:48 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:48 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:32:48 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:19 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:19 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:19 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:19 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:58 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:58 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:58 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:33:58 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:35:01 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:35:01 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:35:01 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:35:01 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:00 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:00 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:00 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:00 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:14 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:14 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:14 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:44:14 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:47:20 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:47:20 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:47:20 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:47:20 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:48:24 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:48:24 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:48:24 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:48:24 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:18 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:18 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:18 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:18 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:26 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:26 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:26 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 14:49:26 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (67)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:19 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:19 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:19 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:19 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:40 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:40 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:40 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:10:40 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:03 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:03 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:03 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:03 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:39 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:39 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:39 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:20:39 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:21:50 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:21:50 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:21:50 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:21:50 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:23:47 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:23:47 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:23:47 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:23:47 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:24:31 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:24:31 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:24:31 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:24:31 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:28:31 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:28:31 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:28:31 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:28:31 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:25 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:25 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:25 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:25 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:56 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:56 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:56 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:29:56 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:17 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:17 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:17 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:17 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:25 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:25 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:25 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:30:25 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:33:44 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:33:44 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:33:44 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:33:44 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:36:56 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:36:56 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:36:56 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:36:56 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:08 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:08 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:08 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:08 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:26 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:26 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:26 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:37:26 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (78)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:38:41 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:38:41 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:38:41 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:38:41 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:39:59 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:39:59 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:39:59 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:39:59 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:40:30 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:40:30 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:40:30 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:40:30 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:41:58 [warning] [application] Failed to set unsafe attribute "oldpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:41:58 [warning] [application] Failed to set unsafe attribute "newpassword" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:41:58 [warning] [application] Failed to set unsafe attribute "sina" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
+2014/05/29 15:41:58 [warning] [application] Failed to set unsafe attribute "renren" of "Users".
+in /var/www/zhixuan/protected/controllers/MemberController.php (77)
+in /var/www/zhixuan/index.php (13)
