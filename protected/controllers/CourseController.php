@@ -134,6 +134,7 @@ class CourseController extends Controller {
     }
 
     public function actionOrder() {
+        $this->layout = 'application.views.layouts.main1';
         if (!Yii::app()->user->id)
             $this->redirect(array('index'));
         $id = $_GET['id'];

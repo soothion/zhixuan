@@ -37,7 +37,7 @@
    if($_GET['type']==1) echo $course->price;
    else echo ($course->price)*2;
    ?>元</p>
-   <p class="PP3">支付宝支付<</p> 
+   <p class="PP3">支付宝支付</p> 
    <p class="PP4">即将进入支付宝页面</p>
   </li>
   <li class="TT4">
