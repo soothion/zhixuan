@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2014-05-29 15:42:50
+-- Generation Time: 2014-05-29 16:27:51
 -- 服务器版本： 5.5.37-0ubuntu0.12.04.1
 -- PHP Version: 5.3.10-1ubuntu3.11
 
@@ -6276,7 +6276,7 @@ CREATE TABLE IF NOT EXISTS `zx_config` (
   `tag` varchar(250) CHARACTER SET utf8 NOT NULL,
   `partner` varchar(50) CHARACTER SET utf8 NOT NULL,
   `seller_email` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `security_code` varchar(50) CHARACTER SET utf32 NOT NULL,
+  `security_code` varchar(50) CHARACTER SET utf8 NOT NULL,
   `copyright` varchar(50) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
