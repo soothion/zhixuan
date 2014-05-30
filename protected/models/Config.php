@@ -12,6 +12,8 @@
  * @property string $partner
  * @property string $seller_email
  * @property string $security_code
+ * @property string $auth1
+ * @property string $auth2
  * @property string $copyright
  */
 class Config extends CActiveRecord
@@ -42,13 +44,13 @@ class Config extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, keyword, des, tag, partner, seller_email, security_code, copyright', 'required'),
+			array('title, keyword, des, tag, partner, seller_email, security_code,  copyright', 'required'),
 			array('title, partner, seller_email, security_code, copyright', 'length', 'max'=>50),
-			array('keyword', 'length', 'max'=>100),
+			array('keyword, auth1, auth2', 'length', 'max'=>100),
 			array('des, tag', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, keyword, des, tag, partner, seller_email, security_code, copyright', 'safe', 'on'=>'search'),
+			array('id, title, keyword, des, tag, partner, seller_email, security_code, auth1, auth2, copyright', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,14 +72,16 @@ class Config extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'keyword' => 'Keyword',
-			'des' => 'Des',
-			'tag' => 'Tag',
-			'partner' => 'Partner',
-			'seller_email' => 'Seller Email',
-			'security_code' => 'Security Code',
-			'copyright' => 'Copyright',
+			'title' => '网站标题',
+			'keyword' => '关键字',
+			'des' => '描述',
+			'tag' => '标签',
+			'partner' => '支付宝合作Ｐａｒｔｎｅｒ',
+			'seller_email' => '支付宝帐号',
+			'security_code' => '支付宝安全码',
+			'auth1' => '普通用户权限',
+			'auth2' => '高级用户权限',
+			'copyright' => '版本信息',
 		);
 	}
 
@@ -100,6 +104,8 @@ class Config extends CActiveRecord
 		$criteria->compare('partner',$this->partner,true);
 		$criteria->compare('seller_email',$this->seller_email,true);
 		$criteria->compare('security_code',$this->security_code,true);
+		$criteria->compare('auth1',$this->auth1,true);
+		$criteria->compare('auth2',$this->auth2,true);
 		$criteria->compare('copyright',$this->copyright,true);
 
 		return new CActiveDataProvider($this, array(

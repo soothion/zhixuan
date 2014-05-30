@@ -71,12 +71,12 @@ class Comment extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'uid' => 'Uid',
-			'aid' => 'Aid',
-			'cid' => 'Cid',
-			'eid' => 'Eid',
-			'content' => 'Content',
-			'addtime' => 'Addtime',
+			'uid' => '用户',
+			'aid' => '问题',
+			'cid' => '课程',
+			'eid' => '经验',
+			'content' => '内容',
+			'addtime' => '添加时间',
 		);
 	}
 

@@ -31,7 +31,7 @@ class IndexController extends Controller {
 
     //赞同、有启发操作
     public function actionAgree() {
-        $message = '';
+        $id = $_POST['id'];
         switch ($_POST['type']) {
             case 'ask':
                 $model = Ask::model();
@@ -46,7 +46,14 @@ class IndexController extends Controller {
                 $model = Answer::model();
                 break;
         }
-        $id = $_POST['id'];
+        if (!$this->checkAuth('agree')) {
+            echo '<script>alert("没有权限");</script>';
+            echo $model->findByPk($id)->agree . $message;
+            die;
+        }
+        $message = '';
+
+
         if (isset(Yii::app()->session[$_POST['type']]) && in_array($id, Yii::app()->session[$_POST['type']])) {
             $message.='<script>alert("您已经点过了！");</script>';
         } else {
@@ -218,15 +225,15 @@ str;
                         $this->message('两次密码不一致！');
                     else {
                         if (Users::model()->updateAll(array('password' => md5($_POST['reset']['password'])), 'username=:username', array(':username' => $username)))
-                            $this->message('修改成功，请重新登录！',Yii::app()->createUrl('index'));
+                            $this->message('修改成功，请重新登录！', Yii::app()->createUrl('index'));
                         else
                             $this->message('修改失败！');
                     }
                 }
                 $this->layout = 'application.views.layouts.main1';
                 $this->render('reset', array('step' => 2));
-            }
-            else $this->message ('非法访问！');
+            } else
+                $this->message('非法访问！');
         }
     }
 

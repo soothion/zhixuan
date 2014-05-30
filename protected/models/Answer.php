@@ -68,10 +68,10 @@ class Answer extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'aid' => 'Aid',
-			'content' => 'Content',
-			'uid' => 'Uid',
-			'addtime' => 'Addtime',
+			'aid' => '问题',
+			'content' => '内容',
+			'uid' => '用户',
+			'addtime' => '添加时间',
 		);
 	}
 

@@ -83,7 +83,15 @@
                         分类：<span><?php echo $v->type->title ?></span> 
                         标签：<span><?php echo $v->tag ?></span> 
                         评论 (<?php echo count($v->comment) ?>) </p>
-                    <p class="ctrl"> <span class="SP1"><a href="javascript:;" value="<?php echo $v->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $v->agree; ?></span>)</a></span> <span class="SP2"><a href="<?php echo Yii::app()->createUrl('ask/detail', array('id' => $v->id)); ?>">回复</a></span> </p>
+                    <p class="ctrl"> <span class="SP1"><a href="javascript:;" value="<?php echo $v->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $v->agree; ?></span>)</a></span> <span class="SP2"><a href="javascript:;" class="reply-pop">向提问者追问</a></span> </p>
+                    
+                    <div class="askModule forQuetion clearfix" id="zw1457" style="display: none; ">
+                            <form action="<?php echo Yii::app()->createUrl('ask/answer');?>" method="post">
+                                <input name="aid" type="hidden" value="<?php echo $v->id?>">
+                                <textarea name="content" id="zwcontent2" rows="3" cols="30" tabindex="4" class="askTxt txtArea">写下你的回复</textarea>
+                                <div class="sbmDiv clearfix"><input name="" type="button" value="提交" class="btnTxt fr reply"></div> 
+                            </form>
+                    </div> 
                 </li>
             </ul>
             <?php if($v->answer){?>
@@ -98,6 +106,14 @@
                     <div class="interaction clearfix">
                         <span class="i1"><a href="javascript:;" value="<?php echo $v->answer[0]->id?>" type="answer" class="zhixuanAgree">有启发 (<span><?php echo $v->answer[0]->agree ?></span>)</a></span> 
                         <span class="i2"><a <a href="javascript:;" value="<?php echo $v->answer[0]->id?>" type="answer" class="zhixuanLove">收藏(<span><?php echo count($v->answer[0]->love)?></span>)</a></span>
+                        <span class="fr"><a href="javascript:;" class="reply-pop">回复</a></span>
+                    </div>
+                    <div class="askModule forAnswer clearfix" id="zw1456" style="display: none; ">
+                                <form action="<?php echo Yii::app()->createUrl('ask/answer');?>" method="post">
+                                    <input name="aid" type="hidden" value="<?php echo $v->id?>">
+                                    <textarea name="content" id="zwcontent" style="width:560px;" rows="3" cols="30" tabindex="4" class="askTxt txtArea">写下你的回复</textarea>
+                                    <div class="sbmDiv clearfix"><input name="" type="button" value="提交" class="btnTxt fr reply"></div> 
+                                </form>
                     </div>
                 </li>        
             </ul>
@@ -119,4 +135,19 @@
     );
     ?>
 </div>
+<script>
+          $(document).ready(function() {
+              $('.reply').click(function() {
+                  var data = $(this).parent().parent().serialize();
+                  $.post("<?php echo Yii::app()->createUrl('ask/answer') ?>", data, function(result) {
+                      alert(result);
+                      location.reload();
+                  });
 
+              });
+              
+              $('.reply-pop').click(function(){
+                  $(this).parent().parent().next().toggle();
+              });
+          })
+</script> 

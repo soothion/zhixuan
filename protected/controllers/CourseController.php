@@ -94,6 +94,10 @@ class CourseController extends Controller {
     }
 
     public function actionComment() {
+        if(!$this->checkAuth('comment')){
+            echo '没有权限';
+            die;
+        }
         //获取评论信息
         $id = $_GET['id'];
         $flag = 0; //是否允许浏览

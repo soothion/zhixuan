@@ -123,6 +123,21 @@
 		<?php echo $form->textField($model,'config',array('size'=>60,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'config'); ?>
 	</div>
+        
+        <div class="row">
+            <?php echo $form->labelEx($model, 'auth'); ?>
+            <?php
+            $model->auth = explode('|', $model->auth);
+            echo $form->checkBoxList($model, 'auth', array(
+                'ask' => '提问',
+                'answer' => '解惑',
+                'email' => '获得ＥＭＡＩＬ提醒',
+                'comment' => '评论',
+                'agree' => '发送“有启发”、“感谢”',
+                'reply' => '向解惑者追问')
+            );?>
+        <?php echo $form->error($model, 'auth'); ?>
+        </div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

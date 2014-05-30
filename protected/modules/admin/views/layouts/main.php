@@ -39,7 +39,6 @@ Yii::app()->bootstrap->register();//载入boostrap
                             )),
                             array('label'=>'问答管理', 'url'=>'/admin/ask/index', 'items'=>array(
                                 array('label'=>'问答列表', 'url'=>array('/admin/ask/index')),
-                                array('label'=>'问答添加', 'url'=>array('/admin/ask/create')),
                             )),
                             array('label'=>'答案管理', 'url'=>array('/admin/answer/index')),
                             array('label'=>'经验管理', 'url'=>'/admin/experience/index', 'items'=>array(
@@ -50,11 +49,15 @@ Yii::app()->bootstrap->register();//载入boostrap
                                 array('label'=>'广告列表', 'url'=>array('/admin/ads/index')),
                                 array('label'=>'广告添加', 'url'=>array('/admin/ads/create')),
                             )),
+                            array('label'=>'文章管理', 'url'=>'/admin/article/index', 'items'=>array(
+                                array('label'=>'文章列表', 'url'=>array('/admin/article/index')),
+                                array('label'=>'文章添加', 'url'=>array('/admin/article/create')),
+                            )),
                             array('label'=>'评论管理', 'url'=>array('/admin/comment/index')),
-                            array('label'=>'管理员管理', 'url'=>'/admin/ads/index', 'items'=>array(
-                                array('label'=>'管理员列表', 'url'=>array('/admin/ads/index')),
-                                array('label'=>'管理员添加', 'url'=>array('/admin/ads/create')),
-                                array('label'=>'退出系统', 'url'=>array('/admin/ads/create')),
+                            array('label'=>'管理员管理', 'url'=>'/admin/admin/index', 'items'=>array(
+                                array('label'=>'管理员列表', 'url'=>array('/admin/admin/index')),
+                                array('label'=>'管理员添加', 'url'=>array('/admin/admin/create')),
+                                array('label'=>'退出系统', 'url'=>array('/admin/admin/create')),
                             )),
                         ),
                     ),

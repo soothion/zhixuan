@@ -71,12 +71,12 @@ class Message extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'type' => 'Type',
-			'from' => 'From',
-			'to' => 'To',
-			'content' => 'Content',
-			'read' => 'Read',
-			'addtime' => 'Addtime',
+			'type' => '消息类型',
+			'from' => '来自',
+			'to' => '发送给',
+			'content' => '内容',
+			'read' => '已读',
+			'addtime' => '添加时间',
 		);
 	}
 

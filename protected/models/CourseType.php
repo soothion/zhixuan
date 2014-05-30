@@ -63,8 +63,8 @@ class CourseType extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'addtime' => 'Addtime',
+			'title' => '标题',
+			'addtime' => '添加时间',
 		);
 	}
 

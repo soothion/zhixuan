@@ -8335,3 +8335,534 @@ Stack trace:
 REQUEST_URI=/zhixuan/index.php/member/score/images/T2.png
 HTTP_REFERER=http://localhost/zhixuan/index.php/member/score/1543
 ---
+2014/05/30 10:07:29 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in /var/www/zhixuan/protected/modules/admin/controllers/LoginController.php (29)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 10:14:09 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:11 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:11 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:11 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:11 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:11 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:11 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:12 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:12 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:14:12 [error] [exception.CException] exception 'CException' with message 'Property "Config.auth" is not defined.' in /var/www/zhixuan/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(143): CComponent->__get('auth')
+#1 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(58): CActiveRecord->__get('auth')
+#2 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#3 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#4 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#5 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): CController->renderPartial('_form', Array)
+#6 /var/www/zhixuan/framework/web/CBaseController.php(126): require('/var/www/zhixua...')
+#7 /var/www/zhixuan/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/zhixua...', Array, true)
+#8 /var/www/zhixuan/framework/web/CController.php(869): CBaseController->renderFile('/var/www/zhixua...', Array, true)
+#9 /var/www/zhixuan/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): CController->render('index', Array)
+#11 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#12 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/zhixuan/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/zhixuan/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/zhixuan/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index')
+#17 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/zhixuan/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/zhixuan/index.php/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/login
+---
+2014/05/30 10:35:58 [error] [php] Invalid argument supplied for foreach() (/var/www/zhixuan/protected/extensions/bootstrap/widgets/TbActiveForm.php:325)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CBaseController.php(126): require()
+#1 /var/www/zhixuan/framework/web/CBaseController.php(95): IndexController->renderInternal()
+#2 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#3 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): IndexController->renderPartial()
+#4 /var/www/zhixuan/framework/web/CBaseController.php(126): require()
+#5 /var/www/zhixuan/framework/web/CBaseController.php(95): IndexController->renderInternal()
+#6 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#7 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#8 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): IndexController->render()
+#9 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#10 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#12 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#13 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#14 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/extensions/bootstrap/widgets/TbActiveForm.php (325)
+in /var/www/zhixuan/protected/extensions/bootstrap/widgets/TbActiveForm.php (241)
+in /var/www/zhixuan/protected/modules/admin/views/index/_form.php (57)
+2014/05/30 10:50:08 [error] [php] mb_strlen() expects parameter 1 to be string, array given (/var/www/zhixuan/framework/validators/CStringValidator.php:84)
+Stack trace:
+#0 /var/www/zhixuan/framework/base/CModel.php(159): CStringValidator->validate()
+#1 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(794): Config->validate()
+#2 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(14): Config->save()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 10:50:52 [error] [php] mb_strlen() expects parameter 1 to be string, array given (/var/www/zhixuan/framework/validators/CStringValidator.php:84)
+Stack trace:
+#0 /var/www/zhixuan/framework/base/CModel.php(159): CStringValidator->validate()
+#1 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(794): Config->validate()
+#2 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(14): Config->save()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 10:50:59 [error] [php] mb_strlen() expects parameter 1 to be string, array given (/var/www/zhixuan/framework/validators/CStringValidator.php:84)
+Stack trace:
+#0 /var/www/zhixuan/framework/base/CModel.php(159): CStringValidator->validate()
+#1 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(794): Config->validate()
+#2 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(14): Config->save()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 10:52:46 [error] [php] mb_strlen() expects parameter 1 to be string, array given (/var/www/zhixuan/framework/validators/CStringValidator.php:84)
+Stack trace:
+#0 /var/www/zhixuan/framework/base/CModel.php(159): CStringValidator->validate()
+#1 /var/www/zhixuan/framework/db/ar/CActiveRecord.php(794): Config->validate()
+#2 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(14): Config->save()
+#3 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#4 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#6 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#7 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#8 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:07:19 [error] [php] include(array.php): failed to open stream: No such file or directory (/var/www/zhixuan/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/zhixuan/framework/validators/CValidator.php(186): import()
+#1 /var/www/zhixuan/framework/base/CModel.php(286): createValidator()
+#2 /var/www/zhixuan/framework/base/CModel.php(260): Config->createValidators()
+#3 /var/www/zhixuan/framework/base/CModel.php(303): Config->getValidators()
+#4 /var/www/zhixuan/framework/web/helpers/CHtml.php(1237): Config->isAttributeRequired()
+#5 /var/www/zhixuan/framework/web/widgets/CActiveForm.php(562): activeLabelEx()
+#6 /var/www/zhixuan/protected/modules/admin/views/index/_form.php(24): TbActiveForm->labelEx()
+#7 /var/www/zhixuan/framework/web/CBaseController.php(126): require()
+#8 /var/www/zhixuan/framework/web/CBaseController.php(95): IndexController->renderInternal()
+#9 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#10 /var/www/zhixuan/protected/modules/admin/views/index/index.php(6): IndexController->renderPartial()
+#11 /var/www/zhixuan/framework/web/CBaseController.php(126): require()
+#12 /var/www/zhixuan/framework/web/CBaseController.php(95): IndexController->renderInternal()
+#13 /var/www/zhixuan/framework/web/CController.php(869): IndexController->renderFile()
+#14 /var/www/zhixuan/framework/web/CController.php(782): IndexController->renderPartial()
+#15 /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php(20): IndexController->render()
+#16 /var/www/zhixuan/framework/web/actions/CInlineAction.php(49): IndexController->actionIndex()
+#17 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#19 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#20 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#21 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/views/index/_form.php (24)
+in /var/www/zhixuan/protected/modules/admin/views/index/index.php (6)
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (20)
+2014/05/30 11:16:15 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:13)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (13)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:17:18 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:14)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:17:24 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:14)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:18:04 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:14)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:27:24 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:27:24 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:27:32 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:27:32 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:28:54 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:28:54 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:30:29 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 11:30:29 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in /var/www/zhixuan/protected/modules/admin/controllers/UsersController.php (96)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 13:31:47 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in /var/www/zhixuan/protected/modules/admin/controllers/LoginController.php (29)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 13:31:57 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:13)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (13)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 13:34:21 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:13)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index/index/id/1
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (13)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 13:39:31 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:14)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index/index/id/1
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 13:39:34 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:14)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index/index/id/1
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 13:39:55 [error] [php] implode(): Invalid arguments passed (/var/www/zhixuan/protected/modules/admin/controllers/IndexController.php:14)
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/zhixuan/framework/web/CController.php(286): IndexController->runAction()
+#2 /var/www/zhixuan/framework/web/CController.php(265): IndexController->runActionWithFilters()
+#3 /var/www/zhixuan/framework/web/CWebApplication.php(282): IndexController->run()
+#4 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /var/www/zhixuan/index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index.php/admin/index/index/id/1
+in /var/www/zhixuan/protected/modules/admin/controllers/IndexController.php (14)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 15:48:44 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in /var/www/zhixuan/protected/modules/admin/controllers/LoginController.php (29)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 15:56:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/index/index/id/1".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/index/index...')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php/gii/index/index/id/1
+---
+2014/05/30 16:02:56 [warning] [application] Failed to set unsafe attribute "addtime" of "Article".
+in /var/www/zhixuan/protected/modules/admin/controllers/ArticleController.php (71)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 16:03:35 [warning] [application] Failed to set unsafe attribute "addtime" of "Article".
+in /var/www/zhixuan/protected/modules/admin/controllers/ArticleController.php (71)
+in /var/www/zhixuan/index.php (13)
+2014/05/30 16:31:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/index".' in /var/www/zhixuan/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/zhixuan/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/admin/ind...')
+#1 /var/www/zhixuan/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/zhixuan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/index.php/admin/admin/index
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/comment/index
+---

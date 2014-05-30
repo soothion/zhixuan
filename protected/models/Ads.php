@@ -63,10 +63,10 @@ class Ads extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'dateline' => 'Dateline',
-			'pic' => 'Pic',
-			'links' => 'Links',
+			'title' => '标题',
+			'dateline' => '截止日期',
+			'pic' => '图片',
+			'links' => '链接地址',
 		);
 	}
 

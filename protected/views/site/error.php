@@ -28,7 +28,7 @@ h1{ font-size: 32px; line-height: 48px; }
 </div>
 </div>
 <div class="copyright">
-<p><a title="官方网站" href="http://www.fire-rain.com">火焰雨</a><sup>1.0</sup></p>
+<!--<p><a title="官方网站" href="http://www.fire-rain.com">火焰雨</a><sup>1.0</sup></p>-->
 </div>
 </body>
 </html>

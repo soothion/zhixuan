@@ -70,13 +70,13 @@ class Order extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'cid' => 'Cid',
-			'uid' => 'Uid',
-			'type' => 'Type',
-			'model' => 'Model',
-			'price' => 'Price',
-			'status' => 'Status',
-			'addtime' => 'Addtime',
+			'cid' => '课程',
+			'uid' => '用户',
+			'type' => '购买种类',
+			'model' => '支付方式',
+			'price' => '价格',
+			'status' => '状态',
+			'addtime' => '添加时间',
 		);
 	}
 

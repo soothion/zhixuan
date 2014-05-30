@@ -65,11 +65,11 @@ class Experience extends CActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'title' => 'Title',
-            'content' => 'Content',
-            'uid' => 'Uid',
-            'click' => 'Click',
-            'agree' => 'Agree',
+            'title' => '标题',
+            'content' => '内容',
+            'uid' => '用户',
+            'click' => '浏览量',
+            'agree' => '有启发',
         );
     }
 

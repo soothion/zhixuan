@@ -25,6 +25,25 @@ class Controller extends CController {
     public $breadcrumbs = array();
     public $data = array();
 
+    public function checkAuth($action) {
+        if (!$id = Yii::app()->user->id)
+            return false;
+        $user = Users::model()->findByPk($id);
+        if (!$user->auth == '') {
+            $auth = explode('|', $user->auth);
+        } else {
+            $config = Config::model()->find();
+            if ($user->level == 1)
+                $auth = explode('|', $config->auth1);
+            else if ($user->level == 2)
+                $auth = explode('|', $config->auth2);
+        }
+        if (in_array($action, $auth))
+            return true;
+        else
+            return false;
+    }
+
     public function message($message = '成功', $url = 'javascript:history.back();', $status = 'success', $time = 3) {
 
         $back_color = '#ff0000';

@@ -40,6 +40,10 @@ class AskController extends Controller {
     }
 
     public function actionAsk() {
+        if(!$this->checkAuth('ask')){
+            echo '没有权限';
+            die;
+        }
         if (isset(Yii::app()->user->id)) {
             $model = new Ask;
             if (isset($_POST['content'])) {
@@ -63,6 +67,10 @@ class AskController extends Controller {
     }
 
     public function actionAnswer() {
+        if (!$this->checkAuth('answer')) {
+            echo '没有权限';
+            die;
+        }
         if (isset(Yii::app()->user->id)) {
             if (Yii::app()->user->level == 2) { 
                 $model = new Answer;
@@ -75,7 +83,7 @@ class AskController extends Controller {
                         echo '提交失败';
                 }
             } else
-                echo '您是普通会员，不能提交解答！';
+                echo '您是普通会员，不能提交！';
         } else
             echo '请登录后操作！';
     }
@@ -84,6 +92,10 @@ class AskController extends Controller {
         //获取评论信息
         $id = $_GET['id'];
         if (isset($_POST['content'])) {
+            if (!$this->checkAuth('comment')) {
+                echo '<script>alert("没有权限");</script>';
+                die;
+            }
             if (Yii::app()->user->id) {
                 $comment = new Comment;
                 $comment->content = $_POST['content'];

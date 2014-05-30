@@ -34,7 +34,7 @@
 
         <?php $this->endWidget(); ?>
         <div class="footer">
-            © Powerd By <a href="http://www.fire-rain.com" target="_blank">火焰雨</a> 2014
+            © Powerd By <a href="#" target="_blank">zhixuan</a> 2014
         </div>
     </div>
 </div>

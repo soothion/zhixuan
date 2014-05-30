@@ -10,6 +10,10 @@ class IndexController extends Controller {
 
         if (isset($_POST['Config'])) {
             $model->attributes = $_POST['Config'];
+            if(!empty($_POST['Config']['auth1']))
+                $model->auth1=  implode('|', $_POST['Config']['auth1']);
+            if(!empty($_POST['Config']['auth2']))
+                $model->auth2=  implode('|', $_POST['Config']['auth2']);
             $model->id=1;
             if ($model->save())
                 $this->redirect(array('index', 'id' => $model->id));

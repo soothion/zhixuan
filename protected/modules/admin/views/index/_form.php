@@ -13,7 +13,11 @@
         'htmlOptions' => array('class' => 'well', 'enctype' => 'multipart/form-data'),
     ));
     ?>
-
+//<?php
+//$auth=array('ask'=>'提问','email'=>'获得ＥＭＡＩＬ提醒','comment'=>'评论','agree'=>'发送“有启发”、“感谢”','reply'=>'向解惑者追问');
+//$auth=  json_encode($auth);
+//echo $auth;die;
+//?>
     <?php echo $form->errorSummary($model); ?>
 
     <div class="row">
@@ -53,6 +57,27 @@
         <?php echo $form->error($model, 'security_code'); ?>
     </div>	
 
+    <div class="row">
+        <?php echo $form->labelEx($model, 'auth1'); ?>
+        <?php $model->auth1=  explode('|', $model->auth1); 
+        echo $form->checkBoxList($model, 'auth1',
+             array(
+            'ask'=>'提问',
+            'answer'=>'解惑',
+            'email'=>'获得ＥＭＡＩＬ提醒',
+            'comment'=>'评论',
+            'agree'=>'发送“有启发”、“感谢”',
+            'reply'=>'向解惑者追问')
+            );?>
+        <?php echo $form->error($model, 'auth1'); ?>
+    </div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model, 'auth2'); ?>
+        <?php $model->auth2=explode('|',$model->auth2); echo $form->checkBoxList($model, 'auth2',array('ask'=>'提问','email'=>'获得ＥＭＡＩＬ提醒','comment'=>'评论','agree'=>'发送“有启发”、“感谢”','reply'=>'向解惑者追问'));?>
+        <?php echo $form->error($model, 'auth2'); ?>
+    </div>
+    
     <div class="row">
         <?php echo $form->labelEx($model, 'copyright'); ?>
         <?php echo $form->textField($model, 'copyright'); ?>
