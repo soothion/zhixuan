@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2014-05-30 16:57:51
+-- Generation Time: 2014-06-05 17:12:48
 -- 服务器版本： 5.5.37-0ubuntu0.12.04.1
 -- PHP Version: 5.3.10-1ubuntu3.11
 
@@ -1634,7 +1634,7 @@ CREATE TABLE IF NOT EXISTS `zx_comment` (
   `eid` int(11) DEFAULT NULL,
   `content` varchar(200) CHARACTER SET utf8 NOT NULL,
   `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=45 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
 
 --
 -- 转存表中的数据 `zx_comment`
@@ -1684,7 +1684,9 @@ INSERT INTO `zx_comment` (`id`, `uid`, `aid`, `cid`, `eid`, `content`, `addtime`
 (41, 1543, NULL, NULL, 146, 'asdf', '2014-05-26 10:04:11'),
 (42, 1543, NULL, NULL, 146, 'adfasdf', '2014-05-26 10:04:16'),
 (43, 1543, NULL, NULL, 146, 'asdfasdfasdf', '2014-05-26 10:05:07'),
-(44, 1543, NULL, NULL, 6, '1111', '2014-05-29 08:48:53');
+(44, 1543, NULL, NULL, 6, '1111', '2014-05-29 08:48:53'),
+(45, 1543, 699, NULL, NULL, 'asdfasdfasf', '2014-06-05 06:32:21'),
+(46, 1543, 699, NULL, NULL, 'asdfasdfasf', '2014-06-05 06:32:23');
 
 -- --------------------------------------------------------
 
@@ -1747,7 +1749,7 @@ CREATE TABLE IF NOT EXISTS `zx_course` (
 --
 
 INSERT INTO `zx_course` (`id`, `uid`, `cid`, `tid`, `free`, `title`, `theme`, `tag`, `content`, `des`, `pic`, `click`, `recommend`, `language`, `price`, `video`, `time`, `agree`, `thank`, `addtime`) VALUES
-(1, 0, 49, 1, '2', '创业课程:挣谁的钱', '人脉建设的要点', '淘宝，测试', '<p>商学院都是扯淡，非商学院争取不扯淡。谁告诉你人群是按低收入高收入分的？人群划分要按拥有社会资源的状况分！理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。</p>', '96485132', 'upload/201405/1400489949.jpg', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 21, 8, '2014-05-26 08:56:24'),
+(1, 0, 49, 1, '2', '创业课程:挣谁的钱', '人脉建设的要点', '淘宝，测试', '<p>商学院都是扯淡，非商学院争取不扯淡。谁告诉你人群是按低收入高收入分的？人群划分要按拥有社会资源的状况分！理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。</p>', '96485132', 'upload/201406/1401760832.png', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 21, 8, '2014-05-26 08:56:24'),
 (2, 0, 49, 1, '2', '创业课程:挣什么钱', '人脉建设的要点', '测试，淘宝', '<p>商学院都是扯淡，非商学院争取不扯淡。谁都知道要抓住刚性需求？但为什么一出手就没抓住刚性需求？理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。&nbsp;</p>', '', 'upload/201405/1400489949.jpg', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 18, 5, '2014-05-22 08:39:08'),
 (3, 0, 49, 1, '2', '创业课程：怎样才能高毛利', '人脉建设的要点', '尼玛', '<p>商学院都是扯淡，非商学院争取不扯淡。挣钱的第一个要领是毛利，怎样才能高毛利呢？理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。</p>', '', 'upload/201405/1400489949.jpg', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 12, 4, '2014-05-22 08:39:08'),
 (4, 0, 49, 1, '2', '创业课程：怎么才能挣得快', '人脉建设的要点', '标签，淘宝', '<p>商学院都是扯淡，非商学院争取不扯淡。要想挣得快，就要找能无限放大得生意环节，靠什么能无限放大？理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问，请在首页提交问题，会有人来回答。</p>', '', 'upload/201405/1400489949.jpg', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 12, 2, '2014-05-26 08:56:24'),
@@ -3615,7 +3617,7 @@ INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introdu
 (1539, '1', 0, 'doraprince2', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:49:37', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdasf@sina.com', NULL, '潘雷在在', '专业专业', '简讯职位', '职位职位', '100', '18617185201', '10628520', '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (1540, '1', 0, 'doraprince3', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:55:03', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'xiaoxiaoyi@sina.com', NULL, 'xioxiaoyi', '', '', '', '', '', '', '', '', '10628520', '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (1541, '1', 0, 'doraprince4', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-23 15:32:51', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'doraprince@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
-(1543, '1', 9916000, 'doraprince', 'b2b019aaa6266244f3380362ee932cff', '火焰雨科技2', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, '10628520@qq.com4', NULL, 'doraprince', '火焰雨科3　　　　　', '火焰雨科技5', 'PHP65', '10', '18617185205', '106285202', '', '', NULL, '0|1|1|1|1|1', ''),
+(1543, '1', 9916000, 'doraprince', 'b2b019aaa6266244f3380362ee932cff', '火焰雨科技2', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/201406/1401761084.png', NULL, '10628520@qq.com4', NULL, 'doraprince', '火焰雨科3　　　　　', '火焰雨科技5', 'PHP65', '10', '18617185205', '106285202', '', '', NULL, '0|1|1|1|1|1', ''),
 (1544, '1', 0, '65465132', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-26 18:10:22', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdf@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply');
 
 --
@@ -3756,7 +3758,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1275;
 -- AUTO_INCREMENT for table `zx_comment`
 --
 ALTER TABLE `zx_comment`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=45;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
 --
 -- AUTO_INCREMENT for table `zx_config`
 --
