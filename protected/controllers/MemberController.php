@@ -82,7 +82,7 @@ class MemberController extends Controller {
             $config = implode('|', $config);
             $user->config = $config;
             //头像处理
-            if (isset($_FILES['thumb']) && $_FILES['thumb'] != null) {
+            if (isset($_FILES['Users']) && $_FILES['Users'] != null) {
                 $thumb = CUploadedFile::getInstance($user, 'thumb');   //获得一个CUploadedFile的实例  
                 if (is_object($thumb) && get_class($thumb) === 'CUploadedFile') {   // 判断实例化是否成功  
                     $user->thumb = 'upload/' . date('Ym') . '/' . time() . '.' . $thumb->extensionName;   //定义文件保存的名称  

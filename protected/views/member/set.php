@@ -28,7 +28,7 @@
                     <span class="tit">更改头像：</span>
                     <span class="photo"><img src="<?php echo Yii::app()->baseUrl . '/' . $user->thumb ?>" width="70"/></span>
                     <div class="control">
-                        <input type="file" value="选择文件" name="thumb" class="BtnFile" style="width:200px;background:none;color:inherit;" />
+                        <input type="file" name="Users[thumb]" class="BtnFile" style="width:200px;background:none;color:inherit;" />
                         <br/>
                         仅支持JPG,GIF,BMP,JPRG,PNG格式， 
                         大小不超过1M    </div>

@@ -53,7 +53,7 @@ return array(
           'urlManager'=>array(
           'urlFormat'=>'path',
           'rules'=>array(
-          '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+          'ask/filter/<filter:.*>'=>'ask/index',
           '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
           '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
           ),
