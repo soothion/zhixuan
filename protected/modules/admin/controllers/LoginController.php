@@ -36,8 +36,8 @@ Class LoginController extends Controller {
     }
     
     public function actionLogout(){
-        Yii::app()->user->logout(true);
-        $this->redirect('login');
+        Yii::app()->admin->logout(true);
+        $this->redirect(array('/admin/login'));
     }
 
 }

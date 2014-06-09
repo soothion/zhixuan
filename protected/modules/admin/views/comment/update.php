@@ -3,9 +3,8 @@
 /* @var $model Comment */
 
 $this->breadcrumbs=array(
-	'Comments'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'评论管理'=>array('index'),
+	$model->id,
 );
 
 $this->menu=array(

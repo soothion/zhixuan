@@ -3,9 +3,8 @@
 /* @var $model Course */
 
 $this->breadcrumbs=array(
-	'Courses'=>array('index'),
-	$model->title=>array('view','id'=>$model->id),
-	'Update',
+	'课程管理'=>array('index'),
+	$model->title,
 );
 
 $this->menu=array(

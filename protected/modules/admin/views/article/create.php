@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
 	'Articles'=>array('index'),
-	'Create',
+	'添加',
 );
 
 $this->menu=array(
@@ -9,7 +9,5 @@ $this->menu=array(
 	array('label'=>'Manage Article','url'=>array('admin')),
 );
 ?>
-
-<h1>Create Article</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

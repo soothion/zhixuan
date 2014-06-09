@@ -12,7 +12,7 @@
 	'htmlOptions'=>array('class'=>'well'),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+<p class="note">含有 <span class="required">*</span> 的字段必须填写！</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -22,22 +22,22 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->textFieldRow($model,'recommend'); ?>
+		<?php echo $form->textFieldRow($model,'recommend',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'recommend'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->textFieldRow($model,'verify'); ?>
+		<?php echo $form->textFieldRow($model,'verify',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'verify'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->textFieldRow($model,'agree'); ?>
+		<?php echo $form->textFieldRow($model,'agree',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'agree'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->textFieldRow($model,'tag'); ?>
+		<?php echo $form->textFieldRow($model,'tag',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'tag'); ?>
 	</div>
 

@@ -76,7 +76,7 @@ class Config extends CActiveRecord
 			'keyword' => '关键字',
 			'des' => '描述',
 			'tag' => '标签',
-			'partner' => '支付宝合作Ｐａｒｔｎｅｒ',
+			'partner' => '支付宝合作Partner',
 			'seller_email' => '支付宝帐号',
 			'security_code' => '支付宝安全码',
 			'auth1' => '普通用户权限',

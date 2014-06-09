@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Ads'=>array('index'),
-	'Create',
+	'添加',
 );
 
 $this->menu=array(

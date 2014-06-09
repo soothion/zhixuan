@@ -70,13 +70,13 @@ class Ask extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'cid' => 'Cid',
-			'uid' => 'Uid',
-			'content' => 'Content',
-			'recommend' => 'Recommend',
-			'verify' => 'Verify',
-			'agree' => 'Agree',
-			'tag' => 'Tag',
-			'addtime' => 'Addtime',
+			'uid' => '用户ID',
+			'content' => '内容',
+			'recommend' => '推荐',
+			'verify' => '审核',
+			'agree' => '赞同',
+			'tag' => '标题',
+			'addtime' => '添加时间',
 		);
 	}
 

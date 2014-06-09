@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Ads',
+	'广告管理',
 );
 
 $this->menu=array(

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the model class for table "{{admin}}".
+ * This is the model class for table "{{admins}}".
  *
- * The followings are the available columns in table '{{admin}}':
+ * The followings are the available columns in table '{{admins}}':
  * @property integer $id
  * @property string $username
  * @property string $password
@@ -16,7 +16,7 @@ class Admins extends CActiveRecord
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Admin the static model class
+	 * @return Admins the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -68,11 +68,11 @@ class Admins extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => '用户名',
-			'password' => '密码',
-			'logintime' => '最后登录时间',
-			'loginip' => '最后登录ＩＰ',
-			'logincount' => '登录次数',
+			'username' => 'Username',
+			'password' => 'Password',
+			'logintime' => 'Logintime',
+			'loginip' => 'Loginip',
+			'logincount' => 'Logincount',
 		);
 	}
 

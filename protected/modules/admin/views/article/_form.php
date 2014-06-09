@@ -1,9 +1,11 @@
+<div class="form">
 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
 	'id'=>'article-form',
 	'enableAjaxValidation'=>false,
+        'htmlOptions'=>array('class'=>'well'),
 )); ?>
 
-	<p class="help-block">Fields with <span class="required">*</span> are required.</p>
+<p class="note">含有 <span class="required">*</span> 的字段必须填写！</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -13,14 +15,10 @@
 
 	<?php echo $form->textFieldRow($model,'click',array('class'=>'span5')); ?>
 
-	<?php echo $form->textFieldRow($model,'addtime',array('class'=>'span5')); ?>
 
-	<div class="form-actions">
-		<?php $this->widget('bootstrap.widgets.TbButton', array(
-			'buttonType'=>'submit',
-			'type'=>'primary',
-			'label'=>$model->isNewRecord ? 'Create' : 'Save',
-		)); ?>
+	<div class="row buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
+</div>

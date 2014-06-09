@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Comments',
+	'评论管理',
 );
 
 $this->menu=array(

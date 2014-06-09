@@ -3,9 +3,8 @@
 /* @var $model Experience */
 
 $this->breadcrumbs=array(
-	'Experiences'=>array('index'),
-	$model->title=>array('view','id'=>$model->id),
-	'Update',
+	'经验管理'=>array('index'),
+	$model->title,
 );
 
 $this->menu=array(

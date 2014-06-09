@@ -24,6 +24,31 @@ class IndexController extends Controller {
         ));
     }
     
+       public function actionPassword() {
+            $id=  Yii::app()->admin->id;
+            $model =  Admins::model()->findByPk($id);
+            if (isset($_POST['ajax']) && $_POST['ajax'] === 'id-form') {
+                echo CActiveForm::validate($model);
+                Yii::app()->end();
+            }
+            if(isset($_POST['AdminModel'])&&$_POST['AdminModel']!==''){
+                if (password($_POST['AdminModel']['oldpassword']) != $model->password) {
+                    $this->message('密码错误');
+                }
+                $model->password = password($_POST['Admins']['password']);
+                if ($data->save()) {
+                    $this->message('保存成功！');
+                } else {
+                    $this->message('保存失败！');
+                }
+            }
+            else{
+                $model = new Admins('modify_pw');
+                $this->breadcrumbs[] = '修改密码';
+                $model->password = "";
+                $this->render('password', array('model' => $model));
+            }
+    }
     
 
 }

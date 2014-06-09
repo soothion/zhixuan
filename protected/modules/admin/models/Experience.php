@@ -67,11 +67,11 @@ class Experience extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
-			'uid' => 'Uid',
-			'click' => 'Click',
-			'agree' => 'Agree',
+			'title' => '标题',
+			'content' => '内容',
+			'uid' => '用户ID',
+			'click' => '浏览量',
+			'agree' => '赞同',
 		);
 	}
 

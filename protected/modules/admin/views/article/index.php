@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Articles',
+	'文章管理',
 );
 
 $this->menu=array(
@@ -8,10 +8,15 @@ $this->menu=array(
 	array('label'=>'Manage Article','url'=>array('admin')),
 );
 ?>
-
-<h1>Articles</h1>
-
-<?php $this->widget('bootstrap.widgets.TbListView',array(
+<?php $this->widget('bootstrap.widgets.TbGridView',array(
+        'type'=>'striped bordered condensed',
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+        'columns'=>array(
+        array('name'=>'id','header'=>'#'),
+        array('name'=>'title','header'=>'标题'),
+        array('name'=>'content','header'=>'内容'),
+        array('name'=>'click','header'=>'浏览量'),
+        array('header'=>'操作','class'=>'bootstrap.widgets.TbButtonColumn','template'=>'{update}{delete}'),
+    ),
 )); ?>
+

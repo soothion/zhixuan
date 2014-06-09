@@ -32,6 +32,11 @@ Yii::app()->bootstrap->register();//载入boostrap
                     array(
                         'class'=>'bootstrap.widgets.TbMenu',
                         'items'=>array(
+                           array('label'=>'系统管理', 'url'=>'/admin/admin/index', 'items'=>array(
+                                array('label'=>'系统设置', 'url'=>array('/admin/index/index')),
+                                array('label'=>'更改密码', 'url'=>array('/admin/index/password')),
+                                array('label'=>'退出系统', 'url'=>array('/admin/login/logout')),
+                            )),
                             array('label'=>'用户管理', 'url'=>array('/admin/users/index')),
                             array('label'=>'课程管理', 'url'=>'/admin/course/index', 'items'=>array(
                                 array('label'=>'课程列表', 'url'=>array('/admin/course/index')),
@@ -54,18 +59,13 @@ Yii::app()->bootstrap->register();//载入boostrap
                                 array('label'=>'文章添加', 'url'=>array('/admin/article/create')),
                             )),
                             array('label'=>'评论管理', 'url'=>array('/admin/comment/index')),
-                            array('label'=>'管理员管理', 'url'=>'/admin/admin/index', 'items'=>array(
-                                array('label'=>'管理员列表', 'url'=>array('/admin/admin/index')),
-                                array('label'=>'管理员添加', 'url'=>array('/admin/admin/create')),
-                                array('label'=>'退出系统', 'url'=>array('/admin/admin/create')),
-                            )),
                         ),
                     ),
                 ),
             )); ?>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
@@ -74,7 +74,7 @@ Yii::app()->bootstrap->register();//载入boostrap
 
 	<div class="clear"></div>
 
-	<div id="footer">
+        <div id="footer" class="well">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>

@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Experiences',
+	'经验管理',
 );
 
 $this->menu=array(
@@ -12,7 +12,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Experiences</h1>
 
 <?php $this->widget('bootstrap.widgets.TbGridView', array(
 	'type'=>'striped bordered condensed',

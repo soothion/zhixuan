@@ -3,9 +3,8 @@
 /* @var $model Ads */
 
 $this->breadcrumbs=array(
-	'Ads'=>array('index'),
-	$model->title=>array('view','id'=>$model->id),
-	'Update',
+	'广告管理'=>array('index'),
+	$model->title,
 );
 
 $this->menu=array(

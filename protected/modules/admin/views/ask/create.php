@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Asks'=>array('index'),
-	'Create',
+	'添加',
 );
 
 $this->menu=array(
@@ -12,7 +12,5 @@ $this->menu=array(
 	array('label'=>'Manage Ask', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Create Ask</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

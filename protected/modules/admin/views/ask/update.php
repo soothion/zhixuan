@@ -3,9 +3,8 @@
 /* @var $model Ask */
 
 $this->breadcrumbs=array(
-	'Asks'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'问答管理'=>array('index'),
+	$model->id,
 );
 
 $this->menu=array(

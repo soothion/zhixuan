@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Answers',
+	'答案管理',
 );
 
 $this->menu=array(
