@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/AskController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/AdsController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/ExperienceController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/IndexController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/CommentController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/CourseController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/UsersController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/DefaultController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/ArticleController.php</file>
+            <file>file:/D:/wamp/www/zhixuan/protected/modules/admin/controllers/AnswerController.php</file>
+        </group>
     </open-files>
 </project-private>

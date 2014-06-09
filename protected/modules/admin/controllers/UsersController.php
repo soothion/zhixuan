@@ -71,7 +71,7 @@ class UsersController extends Controller
 		{
 			$model->attributes=$_POST['Users'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->message('添加成功');
 		}
 
 		$this->render('create',array(
@@ -97,7 +97,7 @@ class UsersController extends Controller
                         if(!empty($_POST['Users']['auth']))
                             $model->auth=  implode('|', $_POST['Users']['auth']);
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->message('保存成功');
 		}
 
 		$this->render('update',array(

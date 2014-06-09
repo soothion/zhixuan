@@ -118,7 +118,6 @@ $(document).ready(function() {
       </p>
     </form>
   </div>
-  <div class="commentModule clearfix">
     <ul class="commentListing">
     </ul>
     <script>
@@ -148,5 +147,4 @@ $(document).ready(function() {
                 })
             })
         </script> 
-  </div>
 </div>

@@ -28,11 +28,10 @@
     <div class="qaModule"> 
         <div class="head">
             <h2 class="fl">有问必答<span>已解答(1002)</span></h2>
-            <a href="#" class="btnComm fr">向智课堂提问      </a>
+            <a class="btnComm fr" id="btnQuest" href="<?php echo Yii::app()->createUrl('ask/index');?>">向智课堂提问      </a>
 
-        </div>
-
-
+        </div>     
+       
 
         <ul class="questListing">
             <?php foreach ($ask as $v) { ?>

@@ -28,6 +28,12 @@ class IndexController extends Controller {
             'ask' => $ask,
         ));
     }
+    
+    public function actionArticle(){
+        $id=$_REQUEST['id'];
+        $article=  Article::model()->findByPk($id);
+        $this->render('article',array('article'=>$article));
+    }
 
     //赞同、有启发操作
     public function actionAgree() {
@@ -236,5 +242,4 @@ str;
                 $this->message('非法访问！');
         }
     }
-
 }

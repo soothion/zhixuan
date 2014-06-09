@@ -140,7 +140,7 @@ class CourseController extends Controller {
     public function actionOrder() {
         $this->layout = 'application.views.layouts.main1';
         if (!Yii::app()->user->id)
-            $this->redirect(array('index'));
+            $this->message('请登录后购买！',$this->createUrl('index'));
         $id = $_GET['id'];
         $type = $_GET['type'];
         $course = Course::model()->findByPk($id);

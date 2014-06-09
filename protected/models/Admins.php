@@ -13,6 +13,9 @@
  */
 class Admins extends CActiveRecord
 {
+        public $oldpassword;
+        public $repassword;
+    
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -39,14 +42,15 @@ class Admins extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, logintime, loginip', 'required'),
+			array('username,  password', 'required' ,'message'=>'不能为'),
 			array('logincount', 'numerical', 'integerOnly'=>true),
 			array('username', 'length', 'max'=>20),
 			array('password, loginip', 'length', 'max'=>40),
 			array('logintime', 'length', 'max'=>35),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, password, logintime, loginip, logincount', 'safe', 'on'=>'search'),
+			array('id, username, oldpassword, logintime, loginip, logincount', 'safe', 'on'=>'search'),
+                        array('repassword','compare','compareAttribute'=>'password','message'=>'两次密码输入不同'),
 		);
 	}
 
@@ -69,7 +73,9 @@ class Admins extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'username' => 'Username',
-			'password' => 'Password',
+			'oldpassword' => '原始密码',
+			'password' => '密码',
+			'repassword' => '重复密码',
 			'logintime' => 'Logintime',
 			'loginip' => 'Loginip',
 			'logincount' => 'Logincount',

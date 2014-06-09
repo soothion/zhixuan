@@ -31,13 +31,14 @@ class IndexController extends Controller {
                 echo CActiveForm::validate($model);
                 Yii::app()->end();
             }
-            if(isset($_POST['AdminModel'])&&$_POST['AdminModel']!==''){
-                if (password($_POST['AdminModel']['oldpassword']) != $model->password) {
+            if(isset($_POST['Admins'])&&$_POST['Admins']!==''){
+                if (md5($_POST['Admins']['oldpassword']) != $model->password) {
                     $this->message('密码错误');
                 }
-                $model->password = password($_POST['Admins']['password']);
-                if ($data->save()) {
-                    $this->message('保存成功！');
+                $model->password = md5($_POST['Admins']['password']);
+                 $model->repassword = md5($_POST['Admins']['password']);
+                if ($model->save()) {
+                    $this->message('保存成功！',$this->creatUrl('/admin/login'));
                 } else {
                     $this->message('保存失败！');
                 }

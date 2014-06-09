@@ -8,7 +8,6 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/global.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/component.css" />             
         <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
     <body>
@@ -70,6 +69,7 @@
 
                 <ul class="CourseLogin block"  id="MenberLogins">
                     <?php if (Yii::app()->user->isGuest) { ?>
+                    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/layer/layer.min.js"></script>
                         <form action="" method="" id="login-form">
                             <span class="login-info"></span>
                             <li class="TT1">用户名</li><li class="TT2"><input type="text" name="username"/></li>
@@ -129,9 +129,9 @@
         <div id="footer">
             <div class="wrapper">
                 <p class="botNav">
-                    <a href="#">关于智选</a><a href="#">使用帮助</a><a href="#">意见反馈</a><a href="#">加入我们</a>
+                    <a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>1))?>">关于智选</a><a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>2))?>">使用帮助</a><a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>3))?>">意见反馈</a><a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>4))?>">加入我们</a>
                 </p>
-                <p class="copyright">沪ICP备11022737</p>
+                <p class="copyright"><?php echo $config=  Config::model()->find()->copyright;?></p>
             </div>
         </div><!-- footer -->
         </div><!-- page -->
@@ -140,7 +140,8 @@
                 var data = $('#login-form').serialize();
                 var url = "<?php echo Yii::app()->createUrl('index/login'); ?>";
                 $.post(url, data, function(result) {
-                    $('.login-info').html(result);
+                    layer.tips(result, '.login-submit', {style: ['background-color:red; color:#fff', 'red'],
+time: 2,maxWidth:255,closeBtn:[0, true]});
                 })
             });
             $(".zhixuanAgree").bind("click", function() {

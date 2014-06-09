@@ -28,7 +28,11 @@
             CKobject.embedHTML5('video', 'ckplayer_a1', 600, 400, video, flashvars, support);
         </script> 
         <?php }else{?>
-        此课程需要购买后才能观看！
+        <div class="tipsWrap">
+        该课程需购买后才能观看</br>
+        点播价为<?php echo $course->price;?>元，<a href="<?php echo Yii::app()->createUrl('course/order',array('type'=>1,'id'=>$course->id));?>" target="_blank">立即购买>></a></br>
+        百人优先分享价<?php echo ($course->price)*2?>元，<a href="<?php echo Yii::app()->createUrl('course/order',array('type'=>2,'id'=>$course->id));?>" target="_blank">立即购买>></a>
+        </div>
         <?php }?>
     </div>
     <div class="videoIntro">

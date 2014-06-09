@@ -71,7 +71,7 @@ class AskController extends Controller
 		{
 			$model->attributes=$_POST['Ask'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->message('添加成功');
 		}
 
 		$this->render('create',array(
@@ -95,7 +95,7 @@ class AskController extends Controller
 		{
 			$model->attributes=$_POST['Ask'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->message('保存成功');
 		}
 
 		$this->render('update',array(

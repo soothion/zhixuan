@@ -169,9 +169,28 @@ ul.globalNav li a:hover{ color:#C8000D;}
 .btnJieHuo{font-family:微软雅黑; font-size:18px; margin:0px; padding:0px; border:0px; background:none; }
 
 
+//首页弹出窗口
+.postInfo{font-size:12px; text-align:left; width:600px; text-align:left; margin:12px auto;}
 
-
-
-
+.postInfo h2{margin-bottom:2px; padding-left:2px; font-size:14px; padding-bottom:2px;}
+.postInfo h2 span{color:#6C6C6F; padding-left:12px; font-size:11px; float:right}
+.postInfo .textareaBlock textarea{border:1px solid #cccccc;  height:205px;   width:590px; }
+.postInfo .botControl{ margin-top:7px; margin-bottom:12px; font-size:12px; }
+#questionform .botControl select{height:25px; line-height:25px;  border:1px solid #ccc; background-color:#ffffff; border-style:solid; padding:0;}
+ 
+.postInfo .botControl .cat{padding-right:20px;}
+.postInfo .botControl .label{width:350px; height:18px; border:1px solid #cccccc; color:#777; padding:2px 3px;}
+.postInfo .botControl .tips{position:absolute; left:240px; top:25px;　color:#999999; font-size:11px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+#questionform .botControl select{height:18px;}
+#questionform .botControl .tips{padding-top:3px; font-size:11px; left:230px;}
+/* Safari and Opera rules here */
+}
+ 
+.postInfo .botControl .tagTipsLt{position:absolute; left:52px; top:25px;　color:#999999; font-size:11px;}
+.postInfo .botControl .expireDate .inpTxt{width:150px; border:1px solid #ccc; height:20px;}  
+.postInfo .botControl .tagExpireRt{position:absolute; left:392px; top:25px;　color:#999999; font-size:11px;}
+.btnSbm{border:none; background-color:#d41b1b; color:white; width:62px; height:24px;   cursor:pointer; float:right; margin-top:12px; margin-right:4px;}
 
 

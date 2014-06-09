@@ -1,16 +1,19 @@
 ﻿<script type="text/javascript" charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/js/Validform_v5.3.2_min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/member.css" /> 
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/layer/layer.min.js"></script>
 <script>
 $(document).ready(function(){
   $(".regForm1").Validform({
         tiptype:function(msg,o,cssctl){
-        $('.form1-info').html(msg);
+        layer.tips(msg, '.regForm1 .BtnJiao', {style: ['background-color:red; color:#fff', 'red'],
+time: 2,maxWidth:255,closeBtn:[0, true]});
     }
   });
 
     $(".regForm2").Validform({
     tiptype:function(msg,o,cssctl){
-        $('.form2-info').html(msg);
+        layer.tips(msg, '.regForm1 .BtnJiao', {style: ['background-color:red; color:#fff', 'red'],
+time: 2,maxWidth:255,closeBtn:[0, true]});
     }
   });
 })
@@ -28,11 +31,6 @@ $(document).ready(function(){
 <form class="regForm1" action="<?php echo Yii::app()->createUrl('index/register')?>" method="post">
     <input type="hidden" name="level" value="1"/>
     <ul class="MenberLoginWrite">
-     <li class="TT1">
-   <p class="PP1"></p>
-   <p class="PP2"><span class="form1-info"></span></p> 
-  </li>
-  <li class="TT5"></li>
   <li class="TT1">
    <p class="PP1">*用户名：</p>
    <p class="PP2"><input type="text" name="username" datatype="s4-18" errormsg="用户名至少4个字符,最多16个字符！" /></p> 
@@ -73,11 +71,6 @@ $(document).ready(function(){
 
 <form class="regForm2" action="<?php echo Yii::app()->createUrl('index/register')?>" method="post">
  <ul class="MenberLoginWrite">
-          <li class="TT1">
-   <p class="PP1"></p>
-   <p class="PP2"><span class="form2-info"></span></p> 
-  </li>
-  <li class="TT5"></li>
   <li class="TT1">
    <p class="PP1">*用户名：</p>
    <p class="PP2"><input type="text" name="username" datatype="s4-18" errormsg="用户名至少4个字符,最多16个字符！" /></p>

@@ -71,7 +71,7 @@ class CourseController extends Controller
 		{
 			$model->attributes=$_POST['Course'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->message('添加成功');
 		}
 
 		$this->render('create',array(
@@ -106,7 +106,7 @@ class CourseController extends Controller
                                     mkdir(dirname($model->pic), 0777);
                                 $pic->saveAs($model->pic);    // 上传图片  
                             } 
-                            $this->redirect(array('update','id'=>$model->id));
+                            $this->message('保存成功');
                         }		
 		}
 

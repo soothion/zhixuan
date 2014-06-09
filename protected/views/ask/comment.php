@@ -1,4 +1,5 @@
-    <?php foreach ($comment as $v) {?>
+<?php if(!$comment) exit('暂无人发表评论');?>    
+<?php foreach ($comment as $v) {?>
  <li class="clearfix">
      <div class="userPhoto"><img src="<?php echo  Yii::app()->request->baseUrl.'/'.$v->user->thumb?>" width="40px" height="40px"/></div>
  <div class="comment clearfix">

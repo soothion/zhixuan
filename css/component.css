@@ -291,7 +291,13 @@ ul.questListing li.TT1 p.PP1 h2{ font-weight:lighter; list-style:none; font-size
 .questListing  .voteCtrl a{ color:#595757}
 .questListing  .voteCtrl a:hover{ color:#CD0101}
 
-/*经验列表*/
+/*创业课程详情*/
+
+.videoWindow{clear:both; overflow:hidden; height:430px; background-color:#ccc;}
+.videoWindow{background:#cccccc url(../images/video_bg.png) no-repeat center center;width:642px; height:430px; }
+.videoWindow .tipsWrap{text-align:center; padding-top:180px; font-size:20px; color:#666666;}
+.videoWindow .tipsWrap a{font-size:24px; font-weight:bold; color:#c8000d; line-height:50px;}
+.videoWindow .tipsWrap a:hover{text-decoration:underline;}
 
 /*经验列表*/
 .experienceTopModule{height:168px; margin-bottom:30px;}
@@ -479,7 +485,6 @@ ul.ContributeBiao li.TT3{ float:right; padding-right:12px;}
 
 /*创业课程详情*/
 
-.videoWindow{ width:642px; height:auto; clear:both; overflow:hidden;}
 .videoIntro{font-family:微软雅黑; position:relative; font-family:微软雅黑; width:642px; height:auto; clear:both; overflow:hidden;}
 .videoIntro .overview{ color:#757575; font-size:14px; height:50px; }
 .videoIntro  .overview p{ float:left; height:50px; line-height:50px;}
