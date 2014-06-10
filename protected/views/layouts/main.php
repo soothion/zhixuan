@@ -82,7 +82,8 @@
                             <li class="TT4">
                                 <p class="PP1">社交工具登录</p>
                                 <p class="PP2">
-                                    <a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G1.png" /></a>
+                                    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101118300" data-redirecturi="http://www.baidu.com" charset="utf-8"></script>
+                                    <a onclick="return window.open('https://graph.qq.com/oauth2.0/authorize?client_id=101118300&amp;response_type=token&amp;scope=all&amp;redirect_uri=<?php echo Yii::app()->createAbsoluteUrl('index/qqLogin')?>', 'oauth2Login_10788', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G1.png" /></a>
                                     <a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G2.png" /></a>
                                 </p> 
                             </li>
