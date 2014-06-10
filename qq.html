@@ -10,10 +10,44 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101118300" data-redirecturi="http://www.baidu.com" charset="utf-8"></script>
+        <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1327438061" type="text/javascript" charset="utf-8"></script>
+        <link type="text/css" rel="stylesheet" href="http://tjs.sjs.sinajs.cn/t3/style/css/common/card.css" />
     </head>
     <body>
 
         <a href="javascript:;" onclick="return window.open('https://graph.qq.com/oauth2.0/authorize?client_id=101118300&amp;response_type=token&amp;scope=all&amp;redirect_uri=http%3A%2F%2Fwww.baidu.com', 'oauth2Login_10788', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_7.png" alt="QQ登录" border="0">
         </a>
+        
+        <div id="wb_connect_btn"></div>
+        <script>
+WB2.anyWhere(function(W){
+		W.widget.connectButton({
+			id: "wb_connect_btn",	
+			type:'3,2',
+			callback : {
+				login:function(o){	//登录后的回调函数
+					alert("login: "+o.screen_name)	
+				},
+				logout:function(){	//退出后的回调函数
+					alert('logout');
+				}
+			}
+		});
+	});
+            
+        </script>
     </body>
+    
+    <script type="text/javascript">
+    WB.core.load(['connect', 'client', 'widget.base', 'widget.atWhere'], function() {
+            var cfg = {
+                    key: 'YOU APP KEY',
+                    xdpath: '你的跨域文件URL（http://yourdomain/xd.html）'
+            };
+            WB.connect.init(cfg);
+            WB.client.init(cfg);
+
+            //放置具体的组件代码
+    });
+    </script>
 </html>

@@ -51,6 +51,26 @@
         <?php echo $form->textField($model, 'security_code',array('class'=>'span5','maxlength'=>100)); ?>
         <?php echo $form->error($model, 'security_code'); ?>
     </div>	
+    <div class="row">
+        <?php echo $form->labelEx($model, 'qqAPPID'); ?>
+        <?php echo $form->textField($model, 'qqAPPID',array('class'=>'span5','maxlength'=>100)); ?>
+        <?php echo $form->error($model, 'qqAPPID'); ?>
+    </div>	
+    <div class="row">
+        <?php echo $form->labelEx($model, 'qqAPPKEY'); ?>
+        <?php echo $form->textField($model, 'qqAPPKEY',array('class'=>'span5','maxlength'=>100)); ?>
+        <?php echo $form->error($model, 'qqAPPKEY'); ?>
+    </div>	
+    <div class="row">
+        <?php echo $form->labelEx($model, 'sinaAPPID'); ?>
+        <?php echo $form->textField($model, 'sinaAPPID',array('class'=>'span5','maxlength'=>100)); ?>
+        <?php echo $form->error($model, 'sinaAPPID'); ?>
+    </div>	
+    <div class="row">
+        <?php echo $form->labelEx($model, 'sinaAPPKEY'); ?>
+        <?php echo $form->textField($model, 'sinaAPPKEY',array('class'=>'span5','maxlength'=>100)); ?>
+        <?php echo $form->error($model, 'sinaAPPKEY'); ?>
+    </div>	
 
     <div class="row">
         <?php echo $form->labelEx($model, 'auth1'); ?>

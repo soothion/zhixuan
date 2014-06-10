@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.1
+-- version 3.4.10.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: 2014-06-05 17:12:48
--- 服务器版本： 5.5.37-0ubuntu0.12.04.1
--- PHP Version: 5.3.10-1ubuntu3.11
+-- 主机: localhost
+-- 生成日期: 2014 年 06 月 10 日 02:48
+-- 服务器版本: 5.5.20
+-- PHP 版本: 5.3.0
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `zhixuan`
+-- 数据库: `zhixuan`
 --
 
 -- --------------------------------------------------------
@@ -27,9 +27,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `xz_ask_type` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(20) NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
@@ -51,12 +52,13 @@ INSERT INTO `xz_ask_type` (`id`, `title`, `addtime`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `zx_admins` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` char(20) NOT NULL,
   `password` varchar(40) NOT NULL,
   `logintime` varchar(35) NOT NULL,
   `loginip` varchar(40) NOT NULL,
-  `logincount` int(11) NOT NULL DEFAULT '1'
+  `logincount` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=48 ;
 
 --
@@ -75,11 +77,12 @@ INSERT INTO `zx_admins` (`id`, `username`, `password`, `logintime`, `loginip`, `
 --
 
 CREATE TABLE IF NOT EXISTS `zx_ads` (
-`id` int(10) unsigned NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(80) DEFAULT NULL,
   `dateline` varchar(80) DEFAULT NULL,
   `pic` varchar(80) DEFAULT NULL,
-  `links` varchar(80) DEFAULT NULL
+  `links` varchar(80) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=115 ;
 
 --
@@ -101,12 +104,13 @@ INSERT INTO `zx_ads` (`id`, `title`, `dateline`, `pic`, `links`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `zx_answer` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `aid` smallint(6) DEFAULT NULL,
   `content` mediumtext,
   `agree` int(11) NOT NULL,
   `uid` int(4) DEFAULT '0',
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=561 ;
 
 --
@@ -499,11 +503,12 @@ INSERT INTO `zx_answer` (`id`, `aid`, `content`, `agree`, `uid`, `addtime`) VALU
 --
 
 CREATE TABLE IF NOT EXISTS `zx_article` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
   `content` text NOT NULL,
   `click` int(11) NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -521,7 +526,7 @@ INSERT INTO `zx_article` (`id`, `title`, `content`, `click`, `addtime`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `zx_ask` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `cid` int(11) NOT NULL,
   `tid` int(11) NOT NULL,
   `uid` int(4) DEFAULT NULL,
@@ -530,7 +535,8 @@ CREATE TABLE IF NOT EXISTS `zx_ask` (
   `verify` int(4) DEFAULT NULL,
   `agree` int(4) DEFAULT '0',
   `tag` mediumtext,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1275 ;
 
 --
@@ -1627,13 +1633,14 @@ INSERT INTO `zx_ask` (`id`, `cid`, `tid`, `uid`, `content`, `recommend`, `verify
 --
 
 CREATE TABLE IF NOT EXISTS `zx_comment` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL,
   `aid` int(11) DEFAULT NULL,
   `cid` int(11) DEFAULT NULL,
   `eid` int(11) DEFAULT NULL,
   `content` varchar(200) CHARACTER SET utf8 NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
 
 --
@@ -1695,7 +1702,7 @@ INSERT INTO `zx_comment` (`id`, `uid`, `aid`, `cid`, `eid`, `content`, `addtime`
 --
 
 CREATE TABLE IF NOT EXISTS `zx_config` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(50) CHARACTER SET utf8 NOT NULL,
   `keyword` varchar(100) CHARACTER SET utf8 NOT NULL,
   `des` varchar(250) CHARACTER SET utf8 NOT NULL,
@@ -1703,17 +1710,22 @@ CREATE TABLE IF NOT EXISTS `zx_config` (
   `partner` varchar(50) CHARACTER SET utf8 NOT NULL,
   `seller_email` varchar(50) CHARACTER SET utf8 NOT NULL,
   `security_code` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `qqAPPID` varchar(100) NOT NULL,
+  `qqAPPKEY` varchar(100) NOT NULL,
+  `sinaAPPID` varchar(100) NOT NULL,
+  `sinaAPPKEY` varchar(100) NOT NULL,
   `auth1` varchar(100) NOT NULL,
   `auth2` varchar(100) NOT NULL,
-  `copyright` varchar(50) CHARACTER SET utf8 NOT NULL
+  `copyright` varchar(50) CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- 转存表中的数据 `zx_config`
 --
 
-INSERT INTO `zx_config` (`id`, `title`, `keyword`, `des`, `tag`, `partner`, `seller_email`, `security_code`, `auth1`, `auth2`, `copyright`) VALUES
-(1, '智选', '智选', '智选', '智选', '2088901946732788', 'shzhixuan12580@163.com', '1gkmskldwz03m6rnm0wpl53g41j52bd7', 'ask|answer|email|comment|agree|reply', 'ask|email|comment|agree|reply', 'copyright ©2010-2013 ????');
+INSERT INTO `zx_config` (`id`, `title`, `keyword`, `des`, `tag`, `partner`, `seller_email`, `security_code`, `qqAPPID`, `qqAPPKEY`, `sinaAPPID`, `sinaAPPKEY`, `auth1`, `auth2`, `copyright`) VALUES
+(1, '智选', '智选', '智选', '智选', '2088901946732788', 'shzhixuan12580@163.com', '1gkmskldwz03m6rnm0wpl53g41j52bd7', '101118300', 'b13c63a48ceb6e7cc638398333a0fe2e', '1327438061', '4a7a5891a94468c3cea6a2f348f33214', 'ask|answer|email|comment|agree|reply', 'ask|email|comment|agree|reply', 'copyright ©2010-2013 ????');
 
 -- --------------------------------------------------------
 
@@ -1722,7 +1734,7 @@ INSERT INTO `zx_config` (`id`, `title`, `keyword`, `des`, `tag`, `partner`, `sel
 --
 
 CREATE TABLE IF NOT EXISTS `zx_course` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL,
   `cid` smallint(6) DEFAULT NULL,
   `tid` int(11) NOT NULL,
@@ -1741,7 +1753,8 @@ CREATE TABLE IF NOT EXISTS `zx_course` (
   `time` varchar(20) NOT NULL,
   `agree` int(4) DEFAULT '0',
   `thank` int(4) DEFAULT '0',
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=25 ;
 
 --
@@ -1781,9 +1794,10 @@ INSERT INTO `zx_course` (`id`, `uid`, `cid`, `tid`, `free`, `title`, `theme`, `t
 --
 
 CREATE TABLE IF NOT EXISTS `zx_course_type` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(20) NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -1801,7 +1815,7 @@ INSERT INTO `zx_course_type` (`id`, `title`, `addtime`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `zx_experience` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(80) DEFAULT NULL,
   `content` mediumtext,
   `uid` int(11) NOT NULL,
@@ -1809,7 +1823,8 @@ CREATE TABLE IF NOT EXISTS `zx_experience` (
   `click` smallint(4) DEFAULT NULL,
   `agree` smallint(4) DEFAULT NULL,
   `recommend` int(11) NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=148 ;
 
 --
@@ -1982,12 +1997,13 @@ INSERT INTO `zx_experience` (`id`, `title`, `content`, `uid`, `status`, `click`,
 --
 
 CREATE TABLE IF NOT EXISTS `zx_love` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL,
   `aid` int(11) NOT NULL,
   `cid` int(11) NOT NULL,
   `eid` int(11) NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
@@ -2004,13 +2020,14 @@ INSERT INTO `zx_love` (`id`, `uid`, `aid`, `cid`, `eid`, `addtime`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `zx_message` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` enum('note','system') NOT NULL,
   `from` int(11) NOT NULL,
   `to` int(11) NOT NULL,
   `content` varchar(200) NOT NULL,
   `read` enum('0','1') NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -2027,7 +2044,8 @@ CREATE TABLE IF NOT EXISTS `zx_order` (
   `model` enum('1','2') NOT NULL,
   `price` int(11) NOT NULL,
   `status` int(11) NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -2050,11 +2068,12 @@ INSERT INTO `zx_order` (`id`, `cid`, `uid`, `type`, `model`, `price`, `status`, 
 --
 
 CREATE TABLE IF NOT EXISTS `zx_score` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL,
   `action` varchar(50) CHARACTER SET utf8 NOT NULL,
   `score` int(11) NOT NULL,
-  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
 
 --
@@ -2121,7 +2140,7 @@ INSERT INTO `zx_tag` (`course`, `ask`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `zx_users` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `level` enum('1','2') NOT NULL DEFAULT '1',
   `score` int(11) NOT NULL,
   `username` char(20) NOT NULL,
@@ -2145,7 +2164,9 @@ CREATE TABLE IF NOT EXISTS `zx_users` (
   `renren` varchar(50) NOT NULL,
   `msn` varchar(80) DEFAULT NULL,
   `config` varchar(300) DEFAULT NULL,
-  `auth` varchar(100) NOT NULL
+  `auth` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1545 ;
 
 --
@@ -3620,185 +3641,6 @@ INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introdu
 (1543, '1', 9916000, 'doraprince', 'b2b019aaa6266244f3380362ee932cff', '火焰雨科技2', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/201406/1401761084.png', NULL, '10628520@qq.com4', NULL, 'doraprince', '火焰雨科3　　　　　', '火焰雨科技5', 'PHP65', '10', '18617185205', '106285202', '', '', NULL, '0|1|1|1|1|1', ''),
 (1544, '1', 0, '65465132', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-26 18:10:22', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdf@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply');
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `xz_ask_type`
---
-ALTER TABLE `xz_ask_type`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_admins`
---
-ALTER TABLE `zx_admins`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_ads`
---
-ALTER TABLE `zx_ads`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_answer`
---
-ALTER TABLE `zx_answer`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_article`
---
-ALTER TABLE `zx_article`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_ask`
---
-ALTER TABLE `zx_ask`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_comment`
---
-ALTER TABLE `zx_comment`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_config`
---
-ALTER TABLE `zx_config`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_course`
---
-ALTER TABLE `zx_course`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_course_type`
---
-ALTER TABLE `zx_course_type`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_experience`
---
-ALTER TABLE `zx_experience`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_love`
---
-ALTER TABLE `zx_love`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_message`
---
-ALTER TABLE `zx_message`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_order`
---
-ALTER TABLE `zx_order`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_score`
---
-ALTER TABLE `zx_score`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `zx_users`
---
-ALTER TABLE `zx_users`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `username` (`username`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `xz_ask_type`
---
-ALTER TABLE `xz_ask_type`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `zx_admins`
---
-ALTER TABLE `zx_admins`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
---
--- AUTO_INCREMENT for table `zx_ads`
---
-ALTER TABLE `zx_ads`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=115;
---
--- AUTO_INCREMENT for table `zx_answer`
---
-ALTER TABLE `zx_answer`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=561;
---
--- AUTO_INCREMENT for table `zx_article`
---
-ALTER TABLE `zx_article`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `zx_ask`
---
-ALTER TABLE `zx_ask`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1275;
---
--- AUTO_INCREMENT for table `zx_comment`
---
-ALTER TABLE `zx_comment`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
---
--- AUTO_INCREMENT for table `zx_config`
---
-ALTER TABLE `zx_config`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `zx_course`
---
-ALTER TABLE `zx_course`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
---
--- AUTO_INCREMENT for table `zx_course_type`
---
-ALTER TABLE `zx_course_type`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `zx_experience`
---
-ALTER TABLE `zx_experience`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=148;
---
--- AUTO_INCREMENT for table `zx_love`
---
-ALTER TABLE `zx_love`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
---
--- AUTO_INCREMENT for table `zx_message`
---
-ALTER TABLE `zx_message`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `zx_score`
---
-ALTER TABLE `zx_score`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
---
--- AUTO_INCREMENT for table `zx_users`
---
-ALTER TABLE `zx_users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1545;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
