@@ -106,7 +106,7 @@
                     <div class="interaction clearfix">
                         <span class="i1"><a href="javascript:;" value="<?php echo $v->answer[0]->id?>" type="answer" class="zhixuanAgree">有启发 (<span><?php echo $v->answer[0]->agree ?></span>)</a></span> 
                         <span class="i2"><a <a href="javascript:;" value="<?php echo $v->answer[0]->id?>" type="answer" class="zhixuanLove">收藏(<span><?php echo count($v->answer[0]->love)?></span>)</a></span>
-                        <span class="fr"><a href="javascript:;" class="reply-pop">回复</a></span>
+                        <span class="fr"><a href="javascript:;" class="reply-pop">向解惑者追问</a></span>
                     </div>
                     <div class="askModule forAnswer clearfix" id="zw1456" style="display: none; ">
                                 <form action="<?php echo Yii::app()->createUrl('ask/answer');?>" method="post">
