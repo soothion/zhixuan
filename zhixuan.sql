@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.10.1
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- 主机: localhost
--- 生成日期: 2014 年 06 月 10 日 02:48
--- 服务器版本: 5.5.20
--- PHP 版本: 5.3.0
+-- Host: 127.0.0.1
+-- Generation Time: 2014-06-10 17:20:50
+-- 服务器版本： 5.6.17
+-- PHP Version: 5.5.12
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- 数据库: `zhixuan`
+-- Database: `zhixuan`
 --
 
 -- --------------------------------------------------------
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `zx_ads` (
 --
 
 INSERT INTO `zx_ads` (`id`, `title`, `dateline`, `pic`, `links`) VALUES
-(111, '3', '1366773956', 'upload/ad.jpg', 'http://www.fire-rain.com'),
+(111, 'fire-rain', '1366773956', 'upload/ad.jpg', 'http://www.fire-rain.com'),
 (110, '2', '1366773938', 'upload/ad.jpg', 'http://www.fire-rain.com'),
 (109, '1', '1366773923', 'upload/ad.jpg', 'http://www.fire-rain.com'),
 (112, '1', '1371874738', 'upload/ad.jpg', 'http://www.fire-rain.com'),
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `zx_answer` (
   `uid` int(4) DEFAULT '0',
   `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=561 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=569 ;
 
 --
 -- 转存表中的数据 `zx_answer`
@@ -494,7 +494,15 @@ INSERT INTO `zx_answer` (`id`, `aid`, `content`, `agree`, `uid`, `addtime`) VALU
 (557, 1241, '谢谢哦，大大的赞', 0, 1501, '0000-00-00 00:00:00'),
 (558, 1243, '谢谢，有所启发。', 0, 1525, '0000-00-00 00:00:00'),
 (559, 516, '<p>adfasdfasf</p>', 0, 58, '2014-05-21 03:19:01'),
-(560, 516, '<p>asdfasdf</p>', 0, 58, '2014-05-21 03:26:24');
+(560, 516, '<p>asdfasdf</p>', 0, 58, '2014-05-21 03:26:24'),
+(561, 546, '<p>asdfasf<br/></p>', 0, 1543, '2014-06-10 14:46:13'),
+(562, 546, '<p>asdfasf<br/></p>', 0, 1543, '2014-06-10 14:48:03'),
+(563, 546, '<p>asfasdf</p>', 0, 1543, '2014-06-10 14:49:16'),
+(564, 546, '<p>asdf</p>', 0, 1543, '2014-06-10 14:53:45'),
+(565, 546, '<p>asdfasf<br/></p>', 0, 1543, '2014-06-10 14:58:09'),
+(566, 546, '<p>asfdasf</p>', 0, 1543, '2014-06-10 15:07:01'),
+(567, 546, '<p>afdasdf</p>', 0, 1543, '2014-06-10 15:07:52'),
+(568, 546, '<p>asdfasdf</p>', 0, 1543, '2014-06-10 15:10:21');
 
 -- --------------------------------------------------------
 
@@ -509,15 +517,17 @@ CREATE TABLE IF NOT EXISTS `zx_article` (
   `click` int(11) NOT NULL,
   `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `zx_article`
 --
 
 INSERT INTO `zx_article` (`id`, `title`, `content`, `click`, `addtime`) VALUES
-(1, '关于智选', '关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选', 0, '2014-05-30 08:02:56'),
-(2, '使用帮助', '使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助', 0, '2014-05-30 08:03:35');
+(1, '关于智选', '关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选关于智选', 0, '2014-05-30 08:02:56'),
+(2, '使用帮助', '使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助', 0, '2014-05-30 08:03:35'),
+(3, '意见反馈', '意见反馈意见反馈意见反馈意见反馈意见反馈', 1222, '2014-06-09 15:22:24'),
+(4, '加入我们', '加入我们加入我们加入我们加入我们', 111, '2014-06-09 15:22:50');
 
 -- --------------------------------------------------------
 
@@ -1634,6 +1644,7 @@ INSERT INTO `zx_ask` (`id`, `cid`, `tid`, `uid`, `content`, `recommend`, `verify
 
 CREATE TABLE IF NOT EXISTS `zx_comment` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(10) CHARACTER SET utf8 NOT NULL,
   `uid` int(11) NOT NULL,
   `aid` int(11) DEFAULT NULL,
   `cid` int(11) DEFAULT NULL,
@@ -1647,53 +1658,49 @@ CREATE TABLE IF NOT EXISTS `zx_comment` (
 -- 转存表中的数据 `zx_comment`
 --
 
-INSERT INTO `zx_comment` (`id`, `uid`, `aid`, `cid`, `eid`, `content`, `addtime`) VALUES
-(1, 58, 699, 21, 0, '????????', '2014-05-19 03:09:59'),
-(2, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:06'),
-(3, 58, 699, 21, 0, '这是评论测试信息', '2014-05-19 03:11:16'),
-(4, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:23'),
-(5, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:25'),
-(6, 58, 699, 21, 0, '这是评论测试信息', '2014-05-19 03:11:27'),
-(7, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:29'),
-(8, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:30'),
-(9, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:32'),
-(10, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:34'),
-(11, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:36'),
-(12, 58, 699, 21, 0, '这是评论测试信息', '2014-05-19 03:11:38'),
-(13, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:40'),
-(14, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:42'),
-(15, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:44'),
-(16, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:46'),
-(17, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:48'),
-(18, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:49'),
-(19, 58, 0, 21, 0, '这是评论测试信息', '2014-05-19 03:11:51'),
-(20, 58, NULL, 21, NULL, 'test', '2014-05-20 08:31:39'),
-(21, 58, NULL, 21, NULL, 'test', '2014-05-20 08:31:40'),
-(22, 58, NULL, 21, NULL, 'test', '2014-05-20 08:31:40'),
-(23, 58, NULL, 21, NULL, 'test', '2014-05-20 08:31:40'),
-(24, 58, NULL, 21, NULL, 'test', '2014-05-20 08:31:40'),
-(25, 58, NULL, 21, NULL, 'test', '2014-05-20 08:31:41'),
-(26, 58, 516, NULL, NULL, 'adsfasdfasdf', '2014-05-21 03:26:32'),
-(27, 58, 516, NULL, NULL, 'adfasdasdfas', '2014-05-21 03:26:47'),
-(28, 58, 516, NULL, NULL, 'adfasdasfd', '2014-05-21 03:26:50'),
-(29, 58, NULL, 22, NULL, '681320', '2014-05-21 03:55:24'),
-(30, 58, NULL, 22, NULL, 'aasdfasfd', '2014-05-21 04:00:11'),
-(31, 58, NULL, 23, NULL, 'asfasdf', '2014-05-21 08:01:26'),
-(32, 58, NULL, 24, NULL, 'asdf', '2014-05-22 07:30:37'),
-(33, 58, NULL, 24, NULL, 'asdfasdfasdf', '2014-05-22 07:30:39'),
-(34, 1535, NULL, 24, NULL, 'asdfasdf', '2014-05-22 07:31:36'),
-(35, 1543, NULL, 19, NULL, 'asdfasdf', '2014-05-26 08:58:00'),
-(36, 1543, NULL, NULL, 146, 'asdfasf', '2014-05-26 10:03:12'),
-(37, 1543, NULL, NULL, 146, 'asdfasf', '2014-05-26 10:03:14'),
-(38, 1543, NULL, NULL, 146, 'asdfasf', '2014-05-26 10:03:31'),
-(39, 1543, NULL, NULL, 146, 'asdf', '2014-05-26 10:04:01'),
-(40, 1543, NULL, NULL, 146, 'asdf', '2014-05-26 10:04:08'),
-(41, 1543, NULL, NULL, 146, 'asdf', '2014-05-26 10:04:11'),
-(42, 1543, NULL, NULL, 146, 'adfasdf', '2014-05-26 10:04:16'),
-(43, 1543, NULL, NULL, 146, 'asdfasdfasdf', '2014-05-26 10:05:07'),
-(44, 1543, NULL, NULL, 6, '1111', '2014-05-29 08:48:53'),
-(45, 1543, 699, NULL, NULL, 'asdfasdfasf', '2014-06-05 06:32:21'),
-(46, 1543, 699, NULL, NULL, 'asdfasdfasf', '2014-06-05 06:32:23');
+INSERT INTO `zx_comment` (`id`, `type`, `uid`, `aid`, `cid`, `eid`, `content`, `addtime`) VALUES
+(2, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(3, '问答', 58, 699, 21, 0, '这是评论测试信息', '2014-06-10 13:37:07'),
+(4, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(5, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(6, '问答', 58, 699, 21, 0, '这是评论测试信息', '2014-06-10 13:37:07'),
+(7, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(8, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(9, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(10, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(11, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(12, '问答', 58, 699, 21, 0, '这是评论测试信息', '2014-06-10 13:37:07'),
+(13, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(14, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(15, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(16, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(17, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(18, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(19, '课程', 58, 0, 21, 0, '这是评论测试信息', '2014-06-10 13:37:06'),
+(20, '课程', 58, NULL, 21, NULL, 'test', '2014-06-10 13:37:06'),
+(21, '课程', 58, NULL, 21, NULL, 'test', '2014-06-10 13:37:06'),
+(22, '课程', 58, NULL, 21, NULL, 'test', '2014-06-10 13:37:06'),
+(23, '课程', 58, NULL, 21, NULL, 'test', '2014-06-10 13:37:06'),
+(24, '课程', 58, NULL, 21, NULL, 'test', '2014-06-10 13:37:06'),
+(25, '课程', 58, NULL, 21, NULL, 'test', '2014-06-10 13:37:06'),
+(26, '问答', 58, 516, NULL, NULL, 'adsfasdfasdf', '2014-06-10 13:37:07'),
+(27, '问答', 58, 516, NULL, NULL, 'adfasdasdfas', '2014-06-10 13:37:07'),
+(28, '问答', 58, 516, NULL, NULL, 'adfasdasfd', '2014-06-10 13:37:07'),
+(29, '课程', 58, NULL, 22, NULL, '681320', '2014-06-10 13:37:06'),
+(30, '课程', 58, NULL, 22, NULL, 'aasdfasfd', '2014-06-10 13:37:06'),
+(31, '课程', 58, NULL, 23, NULL, 'asfasdf', '2014-06-10 13:37:06'),
+(35, '课程', 1543, NULL, 19, NULL, 'asdfasdf', '2014-06-10 13:37:06'),
+(36, '经验', 1543, NULL, NULL, 146, 'asdfasf', '2014-06-10 13:37:06'),
+(37, '经验', 1543, NULL, NULL, 146, 'asdfasf', '2014-06-10 13:37:06'),
+(38, '经验', 1543, NULL, NULL, 146, 'asdfasf', '2014-06-10 13:37:06'),
+(39, '经验', 1543, NULL, NULL, 146, 'asdf', '2014-06-10 13:37:06'),
+(40, '经验', 1543, NULL, NULL, 146, 'asdf', '2014-06-10 13:37:06'),
+(41, '经验', 1543, NULL, NULL, 146, 'asdf', '2014-06-10 13:37:06'),
+(42, '经验', 1543, NULL, NULL, 146, 'adfasdf', '2014-06-10 13:37:06'),
+(43, '经验', 1543, NULL, NULL, 146, 'asdfasdfasdf', '2014-06-10 13:37:06'),
+(44, '经验', 1543, NULL, NULL, 6, '1111', '2014-06-10 13:37:06'),
+(45, '问答', 1543, 699, NULL, NULL, 'asdfasdfasf', '2014-06-10 13:37:07'),
+(46, '问答', 1543, 699, NULL, NULL, 'asdfasdfasf', '2014-06-10 13:37:07');
 
 -- --------------------------------------------------------
 
@@ -1725,7 +1732,7 @@ CREATE TABLE IF NOT EXISTS `zx_config` (
 --
 
 INSERT INTO `zx_config` (`id`, `title`, `keyword`, `des`, `tag`, `partner`, `seller_email`, `security_code`, `qqAPPID`, `qqAPPKEY`, `sinaAPPID`, `sinaAPPKEY`, `auth1`, `auth2`, `copyright`) VALUES
-(1, '智选', '智选', '智选', '智选', '2088901946732788', 'shzhixuan12580@163.com', '1gkmskldwz03m6rnm0wpl53g41j52bd7', '101118300', 'b13c63a48ceb6e7cc638398333a0fe2e', '1327438061', '4a7a5891a94468c3cea6a2f348f33214', 'ask|answer|email|comment|agree|reply', 'ask|email|comment|agree|reply', 'copyright ©2010-2013 ????');
+(1, '智选', '智选', '智选', '智选', '2088901946732788', 'shzhixuan12580@163.com', '1gkmskldwz03m6rnm0wpl53g41j52bd7', '', '', '', '', 'ask|answer|email|comment|agree|reply', 'ask|email|comment|agree|reply', 'copyright ©2010-2013 zhixuan');
 
 -- --------------------------------------------------------
 
@@ -1762,7 +1769,7 @@ CREATE TABLE IF NOT EXISTS `zx_course` (
 --
 
 INSERT INTO `zx_course` (`id`, `uid`, `cid`, `tid`, `free`, `title`, `theme`, `tag`, `content`, `des`, `pic`, `click`, `recommend`, `language`, `price`, `video`, `time`, `agree`, `thank`, `addtime`) VALUES
-(1, 0, 49, 1, '2', '创业课程:挣谁的钱', '人脉建设的要点', '淘宝，测试', '<p>商学院都是扯淡，非商学院争取不扯淡。谁告诉你人群是按低收入高收入分的？人群划分要按拥有社会资源的状况分！理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。</p>', '96485132', 'upload/201406/1401760832.png', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 21, 8, '2014-05-26 08:56:24'),
+(1, 0, 49, 1, '2', '1', '人脉建设的要点', '淘宝，测试', '<p>商学院都是扯淡，非商学院争取不扯淡。谁告诉你人群是按低收入高收入分的？人群划分要按拥有社会资源的状况分！理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。</p>', '96485132', 'upload/noPic.jpg', 100, 0, 1, 22, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 21, 8, '2014-05-26 08:56:24'),
 (2, 0, 49, 1, '2', '创业课程:挣什么钱', '人脉建设的要点', '测试，淘宝', '<p>商学院都是扯淡，非商学院争取不扯淡。谁都知道要抓住刚性需求？但为什么一出手就没抓住刚性需求？理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。&nbsp;</p>', '', 'upload/201405/1400489949.jpg', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 18, 5, '2014-05-22 08:39:08'),
 (3, 0, 49, 1, '2', '创业课程：怎样才能高毛利', '人脉建设的要点', '尼玛', '<p>商学院都是扯淡，非商学院争取不扯淡。挣钱的第一个要领是毛利，怎样才能高毛利呢？理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问请在首页提交问题，会有人来回答。</p>', '', 'upload/201405/1400489949.jpg', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 12, 4, '2014-05-22 08:39:08'),
 (4, 0, 49, 1, '2', '创业课程：怎么才能挣得快', '人脉建设的要点', '标签，淘宝', '<p>商学院都是扯淡，非商学院争取不扯淡。要想挣得快，就要找能无限放大得生意环节，靠什么能无限放大？理解商业本质，洞察行业内涵，适合中国市场环境。每课内容简短，若有疑问，请在首页提交问题，会有人来回答。</p>', '', 'upload/201405/1400489949.jpg', 100, 0, 1, 0, 'http://movie.ks.js.cn/flv/other/1_0.flv', '10分钟', 12, 2, '2014-05-26 08:56:24'),
@@ -1832,7 +1839,7 @@ CREATE TABLE IF NOT EXISTS `zx_experience` (
 --
 
 INSERT INTO `zx_experience` (`id`, `title`, `content`, `uid`, `status`, `click`, `agree`, `recommend`, `addtime`) VALUES
-(1, '如何提出一个好问题？', '<p><span style="color: rgb(255, 0, 0); "><span style="font-size: larger; ">在您提问之前：</span></span><br />\r\n1.试着通过网络搜索引擎，书籍资料等自己找答案。<br />\r\n2.向你身边精于此道的朋友打听。</p>\r\n<p><span style="color: rgb(255, 0, 0); "><span style="font-size: larger; ">怎样提问：</span></span><br />\r\n<span style="font-size: larger; ">1.用辞贴切，语法正确，拼写无误。</span><br />\r\n我们从经验中发现，粗心的写作者通常也是马虎的思考者。回答粗心大意者的问题很不值得，我们宁愿把时间耗在别处。正确的拼写，标点符号和大小写很重要。更一般的说，如果你的提问写得象个半文盲，你很有可能被忽视。<br />\r\n<span style="font-size: larger; ">2.让你的问题处于具体的环境中，避免大而空洞、需要具体情况来分析、或别人难以读懂的问题。</span><br />\r\n将问题阐述清楚，尽可能将问题的「补充说明」写清楚。<br />\r\n<span style="font-size: larger; ">3.精确描述，信息量大。</span><br />\r\n1)谨慎明确的描述问题状况。<br />\r\n2)提供问题发生的环境。<br />\r\n3)说明你在提问前是怎样去研究和理解这个问题的。<br />\r\n4)说明你在提问前采取了什么步骤去解决它。<br />\r\n<span style="font-size: larger; ">4.只说症状，不说猜想。</span><br />\r\n<span style="font-size: larger; ">5.明白你想问什么。认真对待你的提问，就像你希望别人认真回答你的问题一样。</span><br />\r\n优化问题的结构，尽量减少解惑者解决它所需要的时间，会有很大的帮助。这通常和简化问题有所区别。因此，问&ldquo;我想更好的理解X，能给点提示吗？&rdquo;通常比问&ldquo;你能解释一下X吗？&rdquo;更好。<br />\r\n<span style="font-size: larger; ">6.别问应该自己解决的问题。</span><br />\r\n<span style="font-size: larger; ">7.去除无意义的疑问。</span><br />\r\n别用无意义的话结束提问，例如&ldquo;有人能帮我吗？&rdquo;或者&ldquo;有答案吗？&rdquo;。首先：如果你对问题的描述不很合适，这样问更是画蛇添足。其次：由于这样问是画蛇添足，通常会用逻辑上正确的回答来表示他们的蔑视，例如：&ldquo;没错，有人能帮你&rdquo;或者&ldquo;不，没答案&rdquo;。<br />\r\n<span style="font-size: larger; ">8.谦逊绝没有害处，而且常帮大忙。</span><br />\r\n彬彬有礼，多用&ldquo;请&rdquo;和&ldquo;先道个谢了&rdquo;。让大家都知道你对他们花费时间义务提供帮助心存感激。然而，如果你有很多问题无法解决，礼貌将会增加你得到有用答案的机会。</p>\r\n<p>&nbsp;</p>', 58, '1', 313, 99, 0, '2014-05-27 09:59:20'),
+(1, '如何提出一个好问题？', '<p><span style="color: rgb(255, 0, 0); "><span style="font-size: larger; ">在您提问之前：</span></span><br />\r\n1.试着通过网络搜索引擎，书籍资料等自己找答案。<br />\r\n2.向你身边精于此道的朋友打听。</p>\r\n<p><span style="color: rgb(255, 0, 0); "><span style="font-size: larger; ">怎样提问：</span></span><br />\r\n<span style="font-size: larger; ">1.用辞贴切，语法正确，拼写无误。</span><br />\r\n我们从经验中发现，粗心的写作者通常也是马虎的思考者。回答粗心大意者的问题很不值得，我们宁愿把时间耗在别处。正确的拼写，标点符号和大小写很重要。更一般的说，如果你的提问写得象个半文盲，你很有可能被忽视。<br />\r\n<span style="font-size: larger; ">2.让你的问题处于具体的环境中，避免大而空洞、需要具体情况来分析、或别人难以读懂的问题。</span><br />\r\n将问题阐述清楚，尽可能将问题的「补充说明」写清楚。<br />\r\n<span style="font-size: larger; ">3.精确描述，信息量大。</span><br />\r\n1)谨慎明确的描述问题状况。<br />\r\n2)提供问题发生的环境。<br />\r\n3)说明你在提问前是怎样去研究和理解这个问题的。<br />\r\n4)说明你在提问前采取了什么步骤去解决它。<br />\r\n<span style="font-size: larger; ">4.只说症状，不说猜想。</span><br />\r\n<span style="font-size: larger; ">5.明白你想问什么。认真对待你的提问，就像你希望别人认真回答你的问题一样。</span><br />\r\n优化问题的结构，尽量减少解惑者解决它所需要的时间，会有很大的帮助。这通常和简化问题有所区别。因此，问&ldquo;我想更好的理解X，能给点提示吗？&rdquo;通常比问&ldquo;你能解释一下X吗？&rdquo;更好。<br />\r\n<span style="font-size: larger; ">6.别问应该自己解决的问题。</span><br />\r\n<span style="font-size: larger; ">7.去除无意义的疑问。</span><br />\r\n别用无意义的话结束提问，例如&ldquo;有人能帮我吗？&rdquo;或者&ldquo;有答案吗？&rdquo;。首先：如果你对问题的描述不很合适，这样问更是画蛇添足。其次：由于这样问是画蛇添足，通常会用逻辑上正确的回答来表示他们的蔑视，例如：&ldquo;没错，有人能帮你&rdquo;或者&ldquo;不，没答案&rdquo;。<br />\r\n<span style="font-size: larger; ">8.谦逊绝没有害处，而且常帮大忙。</span><br />\r\n彬彬有礼，多用&ldquo;请&rdquo;和&ldquo;先道个谢了&rdquo;。让大家都知道你对他们花费时间义务提供帮助心存感激。然而，如果你有很多问题无法解决，礼貌将会增加你得到有用答案的机会。</p>', 58, '1', 313, 99, 0, '2014-05-27 09:59:20'),
 (2, '智选问答：聚集民间智慧', '<p>街头的生意经，比MBA课堂更有用。<br />\r\n我们都是小微型创业者。<br />\r\n我们从不面对抉择大趋势、抉择产业版块、并购合并等问题。<br />\r\n我们渴望成功，不渴望改变大世界，只希望能改变小世界。<br />\r\n我们只是在靠自身可触及到的资源，对市场进行敏感的捕捉。<br />\r\n很多时候，我们没有调研经费。<br />\r\n很多时候，我们没有人力资源总监，没有法律顾问。<br />\r\n我们不能犯错，一旦犯错，就血本无归。<br />\r\n我们不需要太多的工具，我们需要的是智慧。<br />\r\n我们不需要太多的流程，我们需要的是短兵相接时的灵活果断。<br />\r\n我们想听过来人的经验，具体直接。<br />\r\n我们不想听成功者的宣言，只要成功了都是对的。<br />\r\n滚蛋吧，别和我讲财务分析模型。<br />\r\n我要的是&ldquo;如何搞定那个变态的客户？&rdquo;&nbsp;</p>', 58, '1', 333, 98, 0, '2014-05-27 09:59:20'),
 (3, '实在想不到做什么项目，就做投资吧！', '<p>世界有两种人，一种人，年轻，满腔热情，想法很多，经验不足，没钱。另一种人，不年轻，有资源，有经验，瞻前顾后，冷静多过热情，有点钱。<br />\r\n前一种人，焦虑自己的想法和干劲能不能换来成功。后一种人，焦虑不多的钱天天在贬值不知道能不能撑到退休。<br />\r\n世上有一种叫做早期天使投资的事，可以让后一种人和前一种人都不焦虑。前一种人的想法，由后一种人的经验来判断，后一种人投很少的钱，占很少的股份。比如：投5万，占2％，但要到工商局备案，出席公司的决策会。然后，就用经验和资源来帮助这家公司成长，成长的过程中，找到新的投资者，随时套现退出。<br />\r\n真可以这样做，华为出来的王利杰这样做了，一次投了10万，占了2％，然后这家公司获得5000万的投资，公司估值爆涨，10万变成400万。别流口水，当然他也有别的投资，后期完全放弃。<br />\r\n关键是，你要会看，也有资源能找到下家。<br />\r\n不过实在找不到下家也没关系，播了个种在那里，花心思去浇灌，结果了，你的经验将发挥的作用会更大，你可以一点点地增加投入，逐步真正地参与到结了果的公司中去，别人鼓捣大了，你来弄。<br />\r\n当然你不能投只想开家店的人，也不能投接了个工程做装修的人，生意和模式是两码事。</p>', 58, '1', 371, 98, 0, '2014-05-27 09:59:20'),
 (4, '打工上班的现实', '<p><span style="color: rgb(255, 0, 0); ">办公室里只有两种人，主角和龙套。</span>想要过的轻松，不想往上爬，那就只能做一辈子的龙套。作龙套的坏处就是：送死你先去，功劳全没有，裁员先考虑。现在的公司绝不是养懒人的地方，你要比别人生存的好，就唯有当主角，让别人去做龙套。你不能踩着别人肩膀，就只能做他人垫背。<br />\r\n<span style="color: rgb(255, 0, 0); ">每个人都要有大志，就算要毁灭世界也可以。</span>胸怀大志是做主角的首要条件。在职场上，你若没有一个奋斗目标，就不可能进取的往上爬，到最后只能沦为龙套，成为别人的牺牲品。所以不管毁灭世界，还是成为第一首富，你都必须心存志向，以此为目标。<br />\r\n<span style="color: rgb(255, 0, 0); ">别被理想忽悠，理想是需要的，但不是别人的理想，而是你自己的。</span>当提起大志时，有人会想到企业目标，想到，想到老板慷慨激昂的演说。忘了那些吧，老板的理想只是老板的，而职场上，你是独立的。要保持清醒头脑，不能被轻易忽悠。不管别人有什么理想，要牢牢记住自己的大志，这才是立命之根本。<br />\r\n<span style="color: rgb(255, 0, 0); ">如果真的没大志，那就为钱奋斗。</span>每个人都有解甲归田的时候，如果不是为了钱，谁要当这个官呢。所以赚钱是人最主要的追求。职场上很危险的局面，就是老板用理想笼络人，想让人不拿钱白干活。但真的肯不要钱干活，那你就是没价值的，既然没价值，还有什么存在的必要呢?金钱是唯一衡量你价值的东西。你真的一无所求的话，那就为赚钱而奋斗。<br />\r\n<span style="color: rgb(255, 0, 0); ">你可以不聪明，但不可以不小心。</span>不聪明的人，最多笨拙一些，事情做的差一些。这不是很大的罪过。但不小心就随时会触犯到别人的利益，犯下得罪人这个大忌。到那时，穿小鞋都不晓得是为什么穿的。管牢嘴，能风花雪月的时候就少议论同事，能说人好话时就别说坏话。</p>', 58, '1', 380, 98, 0, '2014-05-27 09:59:20'),
@@ -2167,14 +2174,14 @@ CREATE TABLE IF NOT EXISTS `zx_users` (
   `auth` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1545 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1547 ;
 
 --
 -- 转存表中的数据 `zx_users`
 --
 
 INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introduction`, `logintime`, `loginip`, `logincount`, `thumb`, `flag`, `email`, `sex`, `name`, `major`, `company`, `job`, `age`, `tel`, `qq`, `sina`, `renren`, `msn`, `config`, `auth`) VALUES
-(55, '2', 123456, 'popo123456', '75495214727afd0a0481d7c3027a8400', '', '1338158138', '11.11.11.11', 1, 'upload/noThumb.jpg', 2, '99221470@qq.com', '男', '真实姓名', '专业描述', '就职单位', '职位', '22', '手机', 'QQ', '', '', 'MSN', '0|1|0|1|0|1', 'comment|agree|reply'),
+(55, '2', 1234567, 'popo123456', '75495214727afd0a0481d7c3027a8400', '', '1338158138', '11.11.11.11', 1, 'upload/noThumb.jpg', 2, '99221470@qq.com', '男', '真实姓名', '专业描述', '就职单位', '职位', '22', '手机', 'QQ', '', '', 'MSN', '0|1|0|1|0|1', 'comment|agree|reply'),
 (58, '1', 0, '拉面', '25f9e794323b453885f5181f1b624d0b', '', '1338543962', '', 1, 'upload/noThumb.jpg', 1, 'meidusha456@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (59, '1', 0, '刘翔', 'e10adc3949ba59abbe56e057f20f883e', '', '1338544018', '', 1, 'upload/noThumb.jpg', 1, '582690773@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (61, '1', 0, '疾风', '25f9e794323b453885f5181f1b624d0b', '', '1338545040', '', 1, 'upload/noThumb.jpg', 1, 'hayate123@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
@@ -2792,7 +2799,7 @@ INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introdu
 INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introduction`, `logintime`, `loginip`, `logincount`, `thumb`, `flag`, `email`, `sex`, `name`, `major`, `company`, `job`, `age`, `tel`, `qq`, `sina`, `renren`, `msn`, `config`, `auth`) VALUES
 (693, '1', 0, 'linwei06', '25f9e794323b453885f5181f1b624d0b', '', '1357133987', '', 1, 'upload/noThumb.jpg', 1, 'linwei0632@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (694, '1', 0, '留白', '25f9e794323b453885f5181f1b624d0b', '', '1357265330', '', 1, 'upload/noThumb.jpg', 1, 'zhouliubai06532@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
-(695, '1', 0, 'zoom2030', '13666eaadea26033930c846407cea835', '', '1357273240', '', 1, 'upload/noThumb.jpg', 1, '253589319@qq.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
+(695, '1', 0, 'zoom2030', '13666eaadea26033930c846407cea835', '', '1357273240', '', 1, 'upload/noThumb.jpg', 1, '10628520@qq.com', '', '', '', '', '', '', '', '', '', '', '', '0|1|0|1|0|1', 'ask|email|comment|agree|reply'),
 (696, '1', 0, '淡然一笑', '25f9e794323b453885f5181f1b624d0b', '', '1357285190', '', 1, 'upload/noThumb.jpg', 1, 'xiaoyike9562@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (697, '1', 0, 'kyoen', '853685741bae3eee8206c0290a701fca', '', '1357351159', '', 1, 'upload/noThumb.jpg', 2, 'zdcolon@163.com', NULL, '赵东', '18年企业业务流程与IT规划', '上海时睿信息科技', '', '', '', '', '', '', '', '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (698, '1', 0, '小白', '25f9e794323b453885f5181f1b624d0b', '', '1357354690', '', 1, 'upload/noThumb.jpg', 1, 'zhangxiaobai05412@163.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
@@ -3638,8 +3645,9 @@ INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introdu
 (1539, '1', 0, 'doraprince2', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:49:37', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdasf@sina.com', NULL, '潘雷在在', '专业专业', '简讯职位', '职位职位', '100', '18617185201', '10628520', '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (1540, '1', 0, 'doraprince3', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-22 09:55:03', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'xiaoxiaoyi@sina.com', NULL, 'xioxiaoyi', '', '', '', '', '', '', '', '', '10628520', '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (1541, '1', 0, 'doraprince4', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-23 15:32:51', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'doraprince@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
-(1543, '1', 9916000, 'doraprince', 'b2b019aaa6266244f3380362ee932cff', '火焰雨科技2', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/201406/1401761084.png', NULL, '10628520@qq.com4', NULL, 'doraprince', '火焰雨科3　　　　　', '火焰雨科技5', 'PHP65', '10', '18617185205', '106285202', '', '', NULL, '0|1|1|1|1|1', ''),
-(1544, '1', 0, '65465132', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-26 18:10:22', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdf@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply');
+(1543, '2', 9916000, 'doraprince', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '火焰雨科技2', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/201406/1401761084.png', NULL, '10628520@qq.com4', '', 'doraprince', '火焰雨科3　　　　　', '火焰雨科技5', 'PHP65', '10', '18617185205', '106285202', '', '', '', '0|1|1|1|1|1', 'answer|email'),
+(1544, '1', 0, '65465132', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-26 18:10:22', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdf@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
+(1546, '1', 0, 'doraprince1111', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-06-09 14:42:17', '127.0.0.1', 1, NULL, NULL, 'xiaoxiaoyi@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, NULL, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
