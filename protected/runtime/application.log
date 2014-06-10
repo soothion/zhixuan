@@ -1656,3 +1656,29 @@ Stack trace:
 REQUEST_URI=/zhixuan/index.php/admin/course/update/id/upload/201406/1401760832.png
 HTTP_REFERER=http://localhost/zhixuan/index.php/admin/course/update/id/1
 ---
+2014/06/10 04:16:06 [error] [php] Undefined variable: course (E:\wamp\www\zhixuan\protected\components\PriceWidget.php:12)
+Stack trace:
+#0 E:\wamp\www\zhixuan\framework\web\CBaseController.php(126): require()
+#1 E:\wamp\www\zhixuan\framework\web\CBaseController.php(95): CourseController->renderInternal()
+#2 E:\wamp\www\zhixuan\framework\web\widgets\CContentDecorator.php(76): CourseController->renderFile()
+#3 E:\wamp\www\zhixuan\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#4 E:\wamp\www\zhixuan\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 E:\wamp\www\zhixuan\framework\web\CBaseController.php(206): CContentDecorator->run()
+#6 E:\wamp\www\zhixuan\framework\web\CBaseController.php(300): CourseController->endWidget()
+#7 E:\wamp\www\zhixuan\protected\views\layouts\column1.php(6): CourseController->endContent()
+#8 E:\wamp\www\zhixuan\framework\web\CBaseController.php(126): require()
+#9 E:\wamp\www\zhixuan\framework\web\CBaseController.php(95): CourseController->renderInternal()
+#10 E:\wamp\www\zhixuan\framework\web\CController.php(784): CourseController->renderFile()
+#11 E:\wamp\www\zhixuan\protected\controllers\CourseController.php(93): CourseController->render()
+#12 E:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): CourseController->actionDetail()
+#13 E:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 E:\wamp\www\zhixuan\framework\web\CController.php(286): CourseController->runAction()
+#15 E:\wamp\www\zhixuan\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#16 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CourseController->run()
+#17 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 E:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/course/detail/23
+in E:\wamp\www\zhixuan\protected\components\PriceWidget.php (12)
+in E:\wamp\www\zhixuan\protected\views\layouts\main.php (118)
+in E:\wamp\www\zhixuan\protected\views\layouts\column1.php (6)

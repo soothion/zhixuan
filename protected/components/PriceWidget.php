@@ -9,6 +9,7 @@
 class PriceWidget extends CWidget {
     public $course;
     public function run() {
+        if($this->course->price)
         $this->render('price',array('course'=>$this->course));
     }
 
