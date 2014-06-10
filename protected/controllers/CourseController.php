@@ -52,7 +52,7 @@ class CourseController extends Controller {
         $id = $_GET['id'];
         $flag = 0; //是否允许浏览
         $course = Course::model()->findByPk($id);
-        if ($course->free == 2) {
+        if ($course->price) {
             if ($uid = Yii::app()->user->id) {
                 if (Order::model()->find('cid=:cid AND uid=:uid AND status=1', array(':cid' => $id, 'uid' => $uid)))
                     $flag = 1; //设置允许浏览

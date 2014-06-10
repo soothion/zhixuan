@@ -21,6 +21,11 @@
 		<?php echo $form->textField($model,'title',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
+	<div class="row">
+		<?php echo $form->labelEx($model,'theme'); ?>
+		<?php echo $form->textField($model,'theme',array('class'=>'span5','maxlength'=>100)); ?>
+		<?php echo $form->error($model,'theme'); ?>
+	</div>
     
 	<div class="row">
 		<?php echo $form->labelEx($model,'des'); ?>

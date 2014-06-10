@@ -8,7 +8,7 @@
 <div class="mainPanel">
   <ul class="questListing">
     <li>
-      <h3><?php echo CHtml::encode($ask->content); ?></h3>
+      <h3><?php echo $ask->content; ?></h3>
       <p class="intro"> <span><?php echo $ask->user->username; ?></span> 发布于 <?php echo date('Y-m-d H:m:s', strtotime($ask->addtime)) ?> 分类：<span><?php echo $ask->type->title ?></span> 标签：<span><?php echo $ask->tag ?></span> 评论 (<?php echo count($ask->comment) ?>) </p>
       <p class="voteCtrl"> <span class="v1"><a href="javascript:;" value="<?php echo $ask->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $ask->agree ?></span>)</a></span>　<span class="SP2"><a href="javascript:;" class="reply-pop">向提问者追问</a></span> </p>
       

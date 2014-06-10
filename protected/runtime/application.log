@@ -1543,3 +1543,116 @@ Stack trace:
 #22 {main}
 REQUEST_URI=/zhixuan/
 ---
+2014/06/10 03:27:29 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in E:\wamp\www\zhixuan\protected\modules\admin\controllers\LoginController.php (29)
+in E:\wamp\www\zhixuan\index.php (13)
+2014/06/10 03:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 E:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 E:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 E:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 E:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/index.php/admin/course/update/id/upload/201406/1401760832.png
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/course/update/id/1
+---
+2014/06/10 03:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 E:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 E:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 E:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 E:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/index.php/admin/course/update/id/upload/201406/1401760832.png
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/course/update/id/1
+---
+2014/06/10 03:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 E:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 E:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 E:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 E:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/index.php/admin/course/update/id/upload/201406/1401760832.png
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/course/update/id/1
+---
+2014/06/10 03:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 E:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 E:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 E:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 E:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/index.php/admin/course/update/id/upload/201406/1401760832.png
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/course/update/id/1
+---
+2014/06/10 03:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 E:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 E:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 E:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 E:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 E:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 E:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/index.php/admin/course/update/id/upload/201406/1401760832.png
+HTTP_REFERER=http://localhost/zhixuan/index.php/admin/course/update/id/1
+---

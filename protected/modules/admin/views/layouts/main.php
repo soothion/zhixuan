@@ -41,6 +41,8 @@ Yii::app()->bootstrap->register();//载入boostrap
                             array('label'=>'课程管理', 'url'=>'/admin/course/index', 'items'=>array(
                                 array('label'=>'课程列表', 'url'=>array('/admin/course/index')),
                                 array('label'=>'课程添加', 'url'=>array('/admin/course/create')),
+                                array('label'=>'课程类别列表', 'url'=>array('/admin/courseType/index')),
+                                array('label'=>'课程类别添加', 'url'=>array('/admin/courseType/create')),
                             )),
                             array('label'=>'问答管理', 'url'=>'/admin/ask/index', 'items'=>array(
                                 array('label'=>'问答列表', 'url'=>array('/admin/ask/index')),

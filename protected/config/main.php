@@ -52,6 +52,7 @@ return array(
         
           'urlManager'=>array(
           'urlFormat'=>'path',
+          'showScriptName'=>false,
           'rules'=>array(
           'ask/filter/<filter:.*>'=>'ask/index',
           'course/order/<type:\d+>/<id:\d+>'=>'course/order',

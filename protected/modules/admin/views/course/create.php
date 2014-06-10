@@ -3,7 +3,7 @@
 /* @var $model Course */
 
 $this->breadcrumbs=array(
-	'Courses'=>array('index'),
+	'课程管理'=>array('index'),
 	'添加',
 );
 
