@@ -82,7 +82,8 @@ return array(
             'from' => 'zxcvbnmliuzihui@163.com',
             'fromname' => '智选系统管理员',
             'username' => "zxcvbnmliuzihui@163.com",
-            'password' => 'a2358869'
+            'password' => 'a2358869',
+            'host'=>'smtp.163.com',
         ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
@@ -109,6 +110,8 @@ return array(
     'params' => array(
         // this is used in contact page
         'adminEmail' => 'soothion@sina.com',
+        'discount'=>0.5,//折扣价
+        'firse'=>2,//优先权价
         'score' => array(
             'askCommit' => 5,
             'courseCommit' => 5,

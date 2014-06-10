@@ -56,6 +56,7 @@ class ExperienceController extends Controller {
                 $comment = new Comment;
                 $comment->content = $_POST['content'];
                 $comment->eid = $id;
+                $comment->type = '经验';
                 $comment->uid = Yii::app()->user->id;
                 $comment->save();
             } else

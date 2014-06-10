@@ -119,6 +119,7 @@ class CourseController extends Controller {
             $comment = new Comment;
             $comment->content = $_POST['content'];
             $comment->cid = $id;
+            $comment->type = '课程';
             $comment->uid = Yii::app()->user->id;
             $comment->save();
         }
@@ -179,8 +180,8 @@ class CourseController extends Controller {
             $order->status = 2; //1为已经付款，2为未付款
             $order->save();
         }
-        if ($model == 2)
-            $price = $price * 2;
+        if ($type == 2)
+            $price = $price * Yii::app()->params['firse'];
         if ($model == 1) {
             //支付宝帐号：shzhixuan12580@163.com
             //合作者身份（pid): 2088901946732788 
@@ -209,7 +210,7 @@ class CourseController extends Controller {
         if ($model == 2) {
             $price = $course->price / Yii::app()->params['score']['toRMB'];
             if ($price > $user->score) {
-                throw new CHttpException(400, '积分不足！');
+                $this->message('积分不足！');
             } else {
                 $score = new Score;
                 $score->uid = $uid;

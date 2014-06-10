@@ -3,8 +3,7 @@
 /* @var $model Message */
 
 $this->breadcrumbs=array(
-	'Messages'=>array('index'),
-	'Manage',
+	'消息管理',
 );
 
 $this->menu=array(
@@ -31,6 +30,7 @@ $('.search-form form').submit(function(){
 	'id'=>'message-grid',
         'type'=>'striped bordered condensed',
 	'dataProvider'=>$model->search(),
+     'pager'=>array('class'=>'bootstrap.widgets.TbPager','displayFirstAndLast'=>true,'firstPageLabel'=>'首页','lastPageLabel'=>'尾页'),
 	'filter'=>$model,
 	'columns'=>array(
 		'id',

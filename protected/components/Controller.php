@@ -25,9 +25,13 @@ class Controller extends CController {
     public $breadcrumbs = array();
     public $data = array();
 
-    public function checkAuth($action) {
-        if (!$id = Yii::app()->user->id)
-            return false;
+    public function checkAuth($action,$id=0) {
+        if (!$id){
+            $id=Yii::app()->user->id;
+            if(!$id)
+                return false;
+        }
+        return $id;
         $user = Users::model()->findByPk($id);
         if (!$user->auth == '') {
             $auth = explode('|', $user->auth);

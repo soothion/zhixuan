@@ -3,8 +3,7 @@
 /* @var $model Course */
 
 $this->breadcrumbs=array(
-	'Courses'=>array('index'),
-	'Manage',
+	'课程管理',
 );
 
 $this->menu=array(
@@ -27,36 +26,27 @@ $('.search-form form').submit(function(){
 ?>
 
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'course-grid',
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+	'type'=>'striped bordered condensed',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'id',
-		'cid',
-		'title',
-		'content',
-		'des',
-		'pic',
-		/*
-		'click',
-		'recommend',
-		'language',
-		'price',
-		'video',
-		'agree',
-		'thank',
-		'addtime',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+        'filter'=>$model,
+        'pager'=>array('class'=>'bootstrap.widgets.TbPager','displayFirstAndLast'=>true,'firstPageLabel'=>'首页','lastPageLabel'=>'尾页'),
+        'columns'=>array(
+	    array('name'=>'id', 'header'=>'#'),
+	    array('name'=>'title', 'header'=>'标题'),
+	    // array('name'=>'pic', 'header'=>'图片'),
+	    array('name'=>'click', 'header'=>'浏览'),
+	    array('name'=>'recommend', 'header'=>'推荐'),
+	    array('name'=>'price', 'header'=>'价格'),
+	    array('name'=>'agree', 'header'=>'赞同'),
+	    array('name'=>'thank', 'header'=>'感谢'),
+            array('name'=>'addtime', 'header'=>'添加时间'),
+	    array(
+	        'header'=>'操作',
+	        'class'=>'bootstrap.widgets.TbButtonColumn',
+                'template'=>'{update}{delete}'
+	    ),
+	)	
+));
+?>

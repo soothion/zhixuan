@@ -45,7 +45,7 @@ class Comment extends CActiveRecord
 			array('content', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, uid, aid, cid, eid, content, addtime', 'safe', 'on'=>'search'),
+			array('id,type, uid, aid, cid, eid, content, addtime', 'safe', 'on'=>'search'),
 		);
 	}
 

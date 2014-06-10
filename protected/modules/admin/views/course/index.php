@@ -15,7 +15,8 @@ $this->menu=array(
 <?php $this->widget('bootstrap.widgets.TbGridView', array(
 	'type'=>'striped bordered condensed',
 	'dataProvider'=>$dataProvider,
-    'columns'=>array(
+        'pager'=>array('class'=>'bootstrap.widgets.TbPager','displayFirstAndLast'=>true,'firstPageLabel'=>'首页','lastPageLabel'=>'尾页'),
+        'columns'=>array(
 	    array('name'=>'id', 'header'=>'#'),
 	    array('name'=>'title', 'header'=>'标题'),
 	    // array('name'=>'pic', 'header'=>'图片'),

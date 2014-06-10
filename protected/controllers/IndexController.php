@@ -192,7 +192,7 @@ class IndexController extends Controller {
         <a href="{$url}" target="_blank">"{$url}"</a>
         <br/><br/>
 str;
-                $mailer->Host = 'smtp.163.com';
+                $mailer->Host = Yii::app()->mailer->host;
                 $mailer->IsSMTP();
                 $mailer->SMTPAuth = true;
                 $mailer->From = Yii::app()->mailer->from;

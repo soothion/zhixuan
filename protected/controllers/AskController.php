@@ -77,8 +77,36 @@ class AskController extends Controller {
                 if (isset($_POST['content'])) {
                     $model->attributes = $_POST;
                     $model->uid = Yii::app()->user->id;
-                    if ($model->validate() && $model->save()) //注2：$model->validate()就是在调用model.rules进行验证
+                    if ($model->validate() && $model->save())
+                    {
                         echo '提交成功';
+                        $aid=$_POST['aid'];
+                        $user=Ask::model()->findByPk($aid)->user;
+                        //发送邮件
+                        if($this->checkAuth('email',$user->id )){
+                            $url=$this->createAbsoluteUrl('ask/detail',array('id'=>$aid));
+                            $message = <<<str
+你好！{$user->name}
+        <h2>您的问题有了新回答,请点击以下链接查看！</h2>
+        <a href="{$url}" target="_blank">"{$url}"</a>
+        <br/>
+str;
+                            $mailer = Yii::createComponent('application.extensions.mailer.EMailer');
+                            $mailer->Host = Yii::app()->mailer->host;
+                            $mailer->IsSMTP();
+                            $mailer->SMTPAuth = true;
+                            $mailer->From = Yii::app()->mailer->from;
+                            $mailer->FromName = Yii::app()->mailer->fromname;
+                            $mailer->Username = Yii::app()->mailer->username;
+                            $mailer->Password = Yii::app()->mailer->password;
+                            $mailer->AddAddress($user->email);
+
+                            $mailer->CharSet = 'UTF-8';
+                            $mailer->Subject = '智选问题回答通知！';
+                            $mailer->Body = $message;
+                            $mailer->Send();
+                        }
+                    }
                     else
                         echo '提交失败';
                 }
@@ -100,6 +128,7 @@ class AskController extends Controller {
                 $comment = new Comment;
                 $comment->content = $_POST['content'];
                 $comment->aid = $id;
+                $comment->type = '问答';
                 $comment->uid = Yii::app()->user->id;
                 $comment->save();
             } else

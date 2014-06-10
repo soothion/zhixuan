@@ -3,8 +3,7 @@
 /* @var $model Ask */
 
 $this->breadcrumbs=array(
-	'Asks'=>array('index'),
-	'Manage',
+	'问答管理',
 );
 
 $this->menu=array(
@@ -26,21 +25,28 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Asks</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
 <?php $this->widget('bootstrap.widgets.TbGridView', array(
         'type'=>'striped bordered condensed',
 	'dataProvider'=>$model->search(),
+     'pager'=>array('class'=>'bootstrap.widgets.TbPager','displayFirstAndLast'=>true,'firstPageLabel'=>'首页','lastPageLabel'=>'尾页'),
+        'filter'=>$model,
+        'columns'=>array(
+            array('name'=>'id', 'header'=>'#'),
+            array('name'=>'cid', 'header'=>'分类'),
+            array(
+                'name'=>'content', 
+                'header'=>'内容',
+             
+                ),
+            array('name'=>'recommend', 'header'=>'置顶'),
+            array('name'=>'verify', 'header'=>'审核'),
+            array('name'=>'agree', 'header'=>'赞同'),
+            array('name'=>'tag', 'header'=>'标签'),
+            array(
+                'header'=>'操作',
+                'class'=>'bootstrap.widgets.TbButtonColumn',
+                'template'=>'{update}{delete}'
+            ),
+        ),
 )); ?>
 

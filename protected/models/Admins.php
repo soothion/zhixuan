@@ -42,7 +42,7 @@ class Admins extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username,  password', 'required' ,'message'=>'不能为'),
+			array('username,  password', 'required' ,'message'=>'不能为空'),
 			array('logincount', 'numerical', 'integerOnly'=>true),
 			array('username', 'length', 'max'=>20),
 			array('password, loginip', 'length', 'max'=>40),
@@ -72,7 +72,7 @@ class Admins extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => 'Username',
+			'username' => '用户名',
 			'oldpassword' => '原始密码',
 			'password' => '密码',
 			'repassword' => '重复密码',

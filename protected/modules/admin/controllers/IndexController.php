@@ -35,10 +35,11 @@ class IndexController extends Controller {
                 if (md5($_POST['Admins']['oldpassword']) != $model->password) {
                     $this->message('密码错误');
                 }
+                $model->username = $_POST['Admins']['username'];
                 $model->password = md5($_POST['Admins']['password']);
                  $model->repassword = md5($_POST['Admins']['password']);
                 if ($model->save()) {
-                    $this->message('保存成功！',$this->creatUrl('/admin/login'));
+                    $this->message('保存成功！',$this->createUrl('/admin/login'));
                 } else {
                     $this->message('保存失败！');
                 }

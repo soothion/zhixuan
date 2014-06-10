@@ -9,6 +9,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	),
 		
 )); ?>
+<?php echo $form->textFieldRow($model, 'username', array('class'=>'span5')); ?>
 <?php echo $form->passwordFieldRow($model, 'oldpassword', array('class'=>'span5')); ?>
 <?php echo $form->passwordFieldRow($model, 'password', array('class'=>'span5')); ?>
 <?php echo $form->passwordFieldRow($model, 'repassword', array('class'=>'span5')); ?>

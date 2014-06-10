@@ -135,9 +135,10 @@ class CommentController extends Controller
 	{
 		$model=new Comment('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Comment']))
+		if(isset($_GET['Comment'])){ 
 			$model->attributes=$_GET['Comment'];
-
+                        
+                }
 		$this->render('admin',array(
 			'model'=>$model,
 		));
