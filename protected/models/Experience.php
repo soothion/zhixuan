@@ -70,6 +70,7 @@ class Experience extends CActiveRecord {
             'uid' => '用户',
             'click' => '浏览量',
             'agree' => '有启发',
+            'status' => '审核',
         );
     }
 

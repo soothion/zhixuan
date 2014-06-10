@@ -53,7 +53,7 @@ class Course extends CActiveRecord
 			array('des', 'length', 'max'=>200),
                         array('pic',
                             'file',
-                            'allowEmpty'=>false,
+                            'allowEmpty'=>true,
                             'types'=>'jpg,png,gif',
                             'maxSize'=>1024*1024*10,    //上传大小限制，注意不是php.ini中的上传文件大小
                             'tooLarge'=>'上传失败！请上传小于10M的文件！' 
@@ -89,6 +89,9 @@ class Course extends CActiveRecord
 			'id' => 'ID',
 			'cid' => 'Cid',
 			'title' => '标题',
+                        'tid'=> '课程类别',
+                        'tag'=>'标签',
+                        'time'=>'时长',
 			'content' => '内容',
 			'des' => '简介',
 			'pic' => '图片',

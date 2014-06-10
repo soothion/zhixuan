@@ -3,7 +3,7 @@
 class AskController extends Controller {
 
     public function actionIndex() {
-        //首页教程列表
+        //首页问答列表
         $askCriteria = new CDbCriteria();
         if (isset($_GET['filter'])) {
             $filter = explode('-', $_GET['filter']);

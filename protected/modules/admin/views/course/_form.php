@@ -21,10 +21,30 @@
 		<?php echo $form->textField($model,'title',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
+    <?php 
+    $courseType=  CourseType::model()->findAll();
+    $array=array();
+    foreach($courseType as $val){
+        $id=$val->id;
+        $title=$val->title;
+        $array[$id]=$title;
+    }
+    ?>
+    	<div class="row">
+		<?php echo $form->labelEx($model,'tid'); ?>
+		<?php echo $form->dropDownList($model,'title',$array); ?>
+		<?php echo $form->error($model,'title'); ?>
+	</div>
+    
 	<div class="row">
 		<?php echo $form->labelEx($model,'theme'); ?>
 		<?php echo $form->textField($model,'theme',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'theme'); ?>
+	</div>
+    	<div class="row">
+		<?php echo $form->labelEx($model,'tag'); ?>
+		<?php echo $form->textField($model,'tag',array('class'=>'span5','maxlength'=>100)); ?>
+		<?php echo $form->error($model,'tag'); ?>
 	</div>
     
 	<div class="row">
@@ -56,7 +76,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'recommend'); ?>
-		<?php echo $form->textField($model,'recommend',array('class'=>'span5','maxlength'=>100)); ?>
+		<?php echo $form->checkBox($model,'recommend',array(0,1)); ?>
 		<?php echo $form->error($model,'recommend'); ?>
 	</div>
 
@@ -70,6 +90,12 @@
 		<?php echo $form->labelEx($model,'price'); ?>
 		<?php echo $form->textField($model,'price',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'price'); ?>
+	</div>
+    
+    	<div class="row">
+		<?php echo $form->labelEx($model,'time'); ?>
+		<?php echo $form->textField($model,'time',array('class'=>'span5','maxlength'=>100)); ?>
+		<?php echo $form->error($model,'time'); ?>
 	</div>
 
 	<div class="row">

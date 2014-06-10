@@ -22,7 +22,7 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->textFieldRow($model,'recommend',array('class'=>'span5','maxlength'=>100)); ?>
+		<?php echo $form->checkBoxRow($model,'recommend',array(0,1)); ?>
 		<?php echo $form->error($model,'recommend'); ?>
 	</div>
 

@@ -24,6 +24,7 @@ $this->menu=array(
 	    array('name'=>'price', 'header'=>'价格'),
 	    array('name'=>'agree', 'header'=>'赞同'),
 	    array('name'=>'thank', 'header'=>'感谢'),
+            array('name'=>'addtime', 'header'=>'添加时间'),
 	    array(
 	        'header'=>'操作',
 	        'class'=>'bootstrap.widgets.TbButtonColumn',

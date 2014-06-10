@@ -92,7 +92,7 @@
                     <?php } else { ?>
                         <?php $user = Users::model()->findByPk(Yii::app()->user->id); ?>
                         <div class="CourseLoginInfo" id="MenberInfos">
-                            <div class="Lefts"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl . '/' . $user->thumb; ?>"width="55px" /></a></div>
+                            <div class="Lefts"><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $user->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl . '/' . $user->thumb; ?>"width="55px" /></a></div>
                             <div class="Rights"> 
                                 <ul class="CourseLoginInfoText">
                                     <li class="TT1">

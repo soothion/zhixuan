@@ -34,6 +34,8 @@ Yii::app()->bootstrap->register();//载入boostrap
                         'items'=>array(
                            array('label'=>'系统管理', 'url'=>'/admin/admin/index', 'items'=>array(
                                 array('label'=>'系统设置', 'url'=>array('/admin/index/index')),
+                                array('label'=>'消息管理', 'url'=>array('/admin/message/index')),
+                                array('label'=>'发送消息', 'url'=>array('/admin/message/create')),
                                 array('label'=>'更改密码', 'url'=>array('/admin/index/password')),
                                 array('label'=>'退出系统', 'url'=>array('/admin/login/logout')),
                             )),

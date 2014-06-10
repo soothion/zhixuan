@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
                 'header'=>'内容',
              
                 ),
-            array('name'=>'recommend', 'header'=>'推荐'),
+            array('name'=>'recommend', 'header'=>'置顶'),
             array('name'=>'verify', 'header'=>'审核'),
             array('name'=>'agree', 'header'=>'赞同'),
             array('name'=>'tag', 'header'=>'标签'),

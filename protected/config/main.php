@@ -55,6 +55,7 @@ return array(
           'showScriptName'=>false,
           'rules'=>array(
           'ask/filter/<filter:.*>'=>'ask/index',
+          'course/filter/<filter:.*>'=>'course/index',
           'course/order/<type:\d+>/<id:\d+>'=>'course/order',
           'course/pay/<type:\d+>/<id:\d+>/<model:\d+>'=>'course/order',
           '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

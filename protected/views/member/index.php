@@ -26,7 +26,9 @@
     </ul>
     <div class="userConWrap dd">
         <table width="600" border="0" cellspacing="0" cellpadding="0" class="commTable courseList">
-            <?php foreach($order as $v){?>
+            <?php 
+            if(!$order) echo '暂无信息';else
+            foreach($order as $v){?>
             <tr>
                 <td class="date"><?php echo date('Y-m-d',  strtotime($v->addtime))?></td>
                 <td class="tit"><?php echo $v->course->title?></td>
@@ -39,7 +41,9 @@
     
     <div class="userConWrap u1 dd" >
      <ol>
-         <?php foreach($ask as $v){?>
+         <?php 
+         if(!$ask) echo '暂无信息';else
+         foreach($ask as $v){?>
      <li><h3><a href="<?php echo Yii::app()->createUrl('ask/detail',array('id'=>$v->id));?>"><?php echo $v->content?></a></h3>
          <div class="date"> <?php echo date('Y-m-d H:m',  strtotime($v->addtime))?></div>  
      </li>
@@ -49,7 +53,9 @@
     
     <div class="userConWrap u1 dd" >
      <ol>
-         <?php foreach($answer as $v){?>
+         <?php
+         if(!$answer) echo '暂无信息';else
+         foreach($answer as $v){?>
          <li><h3><a href="<?php echo Yii::app()->createUrl('ask/detail',array('id'=>$v->aid));?>"><?php echo Helper::truncate_utf8_string($v->ask->content, 20)?></a></h3>
          <div class="date"> <?php echo date('Y-m-d H:m',  strtotime($v->addtime))?></div>  
      </li>
@@ -61,7 +67,9 @@
     
     <div class="userConWrap u1 dd" >
      <ol>
-         <?php foreach($experience as $v){?>
+         <?php 
+         if(!$experience) echo '暂无信息';else
+         foreach($experience as $v){?>
      <li><h3><a href="<?php echo Yii::app()->createUrl('experience/detail',array('id'=>$v->id));?>"><?php echo $v->title?></a></h3>
          <div class="date"> <?php echo date('Y-m-d H:m',  strtotime($v->addtime))?></div>  
      </li>
@@ -71,7 +79,9 @@
     
      <div class="userConWrap u1 dd" >
      <ol>
-         <?php foreach($love as $v){?>
+         <?php 
+         if(!$love) echo '暂无信息';else
+         foreach($love as $v){?>
          <li><h3>
              <?php if($v->aid){?><a href="<?php echo Yii::app()->createUrl('ask/detail',array('id'=>$v->aid))?>"><?php echo Helper::truncate_utf8_string($v->ask->content, 20)?></a><?php }?>
              <?php if($v->cid){?><a href="<?php echo Yii::app()->createUrl('course/detail',array('id'=>$v->cid))?>"><?php echo Helper::truncate_utf8_string($v->course->title, 20)?></a><?php }?>

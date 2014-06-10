@@ -40,12 +40,21 @@
 		<?php echo $form->error($model,'click'); ?>
 	</div>
 
+                 <div class="row">
+                <?php echo $form->labelEx($model,'status'); ?>
+		<?php echo $form->checkBox($model,'status',array(0,1)); ?>
+		<?php echo $form->error($model,'status'); ?>
+	</div>
+        
 	<div class="row">
 		<?php echo $form->labelEx($model,'agree'); ?>
 		<?php echo $form->textField($model,'agree',array('class'=>'span5','maxlength'=>100)); ?>
 		<?php echo $form->error($model,'agree'); ?>
 	</div>
+        
 
+
+        
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

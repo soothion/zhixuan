@@ -26,7 +26,9 @@
                             
  <div class="memberWrap dd">
  <ul class="commentListing">
-     <?php foreach($note as $v){?>
+     <?php
+     if(!$note) echo '暂无信息';else
+     foreach($note as $v){?>
     <li>
         <div class="userPhoto"><img src="<?php echo Yii::app()->baseUrl.'/'.$v->from->thumb?>" /></div>
     <div class="comment clearfix">
@@ -41,7 +43,9 @@
 <?php if(Yii::app()->user->id==$_GET['id']){?>
  <div class="memberWrap dd">
  <ul class="commentListing">
-     <?php foreach($system as $v){?>
+     <?php 
+     if(!$note) echo '暂无信息';else
+     foreach($system as $v){?>
     <li>
     <div class="userPhoto"><img src="<?php echo Yii::app()->baseUrl.'/'.$v->from->thumb?>" /></div>
     <div class="comment clearfix">

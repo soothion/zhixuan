@@ -22,11 +22,6 @@
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password',array('class'=>'span5','maxlength'=>100)); ?>
-		<?php echo $form->error($model,'password'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'logintime'); ?>
@@ -53,9 +48,16 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'flag'); ?>
-		<?php echo $form->textField($model,'flag',array('class'=>'span5','maxlength'=>100)); ?>
-		<?php echo $form->error($model,'flag'); ?>
+                 <?php echo $form->labelEx($model,'level'); ?>
+		<?php echo $form->dropDownList($model,'level',array(1=>'提问者',2=>'解惑者')); ?>
+		<?php echo $form->error($model,'level'); ?>
+	</div>
+
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'score'); ?>
+		<?php echo $form->textField($model,'score',array('class'=>'span5','maxlength'=>100)); ?>
+		<?php echo $form->error($model,'score'); ?>
 	</div>
 
 	<div class="row">
@@ -131,7 +133,7 @@
             echo $form->checkBoxList($model, 'auth', array(
                 'ask' => '提问',
                 'answer' => '解惑',
-                'email' => '获得ＥＭＡＩＬ提醒',
+                'email' => '获得EMAIL提醒',
                 'comment' => '评论',
                 'agree' => '发送“有启发”、“感谢”',
                 'reply' => '向解惑者追问')

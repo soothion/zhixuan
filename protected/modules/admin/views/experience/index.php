@@ -21,6 +21,7 @@ $this->menu=array(
     array('name'=>'title', 'header'=>'标题'),
     array('name'=>'click', 'header'=>'浏览'),
     array('name'=>'agree', 'header'=>'赞同'),
+    array('name'=>'status', 'header'=>'审核'),
     array(
         'header'=>'操作',
         'class'=>'bootstrap.widgets.TbButtonColumn',

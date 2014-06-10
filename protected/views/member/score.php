@@ -7,7 +7,9 @@
     <div class="userTitle"><h2><a href="###">我的积分</a></h2></div>
     <div class="userConWrap">
         <table width="600" border="0" cellspacing="0" cellpadding="0" class="commTable scoresList">
-            <?php foreach($list as $v){?>
+            <?php 
+            if(!$list) echo '暂无信息';else
+            foreach($list as $v){?>
             <tr>
                 <td class="date"><?php echo date('Y-m-d',strtotime($v->addtime));?></td>
                 <td class="tit"><?php echo $v->action?></td>

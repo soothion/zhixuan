@@ -51,8 +51,8 @@ class Users extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('username, password, logintime, loginip', 'required'),
-            array('logincount, flag', 'numerical', 'integerOnly' => true),
+            array('username, password', 'required'),
+            array('score, logincount, flag', 'numerical', 'integerOnly' => true),
             array('level', 'length', 'max' => 1),
             array('username, major', 'length', 'max' => 20),
             array('password, loginip', 'length', 'max' => 40),
@@ -72,7 +72,7 @@ class Users extends CActiveRecord {
             array('config', 'length', 'max' => 300),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, level, username, password, introduction, logintime, loginip, logincount, thumb, flag, email, sex, name, major, company, job, age, tel, qq, msn, config', 'safe', 'on' => 'search'),
+            array('id, level,score, username, password, introduction, logintime, loginip, logincount, thumb, flag, email, sex, name, major, company, job, age, tel, qq, msn, config', 'safe', 'on' => 'search'),
         );
     }
 
@@ -97,11 +97,12 @@ class Users extends CActiveRecord {
         return array(
             'id' => '用户ID',
             'level' => '用户等级',
+            'score' => '积分',
             'username' => '用户名',
             'password' => '密码',
             'introduction' => '一句话描述',
             'logintime' => '最后登录时间',
-            'loginip' => '最后登录ＩＰ',
+            'loginip' => '最后登录IP',
             'logincount' => '登录次数',
             'thumb' => '头像',
             'flag' => 'Flag',
@@ -113,7 +114,7 @@ class Users extends CActiveRecord {
             'job' => '职位',
             'age' => '年龄',
             'tel' => '电话',
-            'qq' => 'QＱ',
+            'qq' => 'QQ',
             'msn' => 'Msn',
             'config' => '隐私设置',
         );

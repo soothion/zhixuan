@@ -25,7 +25,7 @@
   <ul class="replyListing">
     <?php foreach ($ask->answer as $v) { ?>
     <li>
-        <div class="userPhoto"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$v->user->thumb; ?>" width="40px" /></div>
+        <div class="userPhoto"><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $v->user->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$v->user->thumb; ?>" width="40px" /></a></div>
       <div class="comment clearfix">
         <p class="userInfo"><span><?php echo $v->user->username ?></span> 发表于 <?php echo date('Y-m-d H:m:s', strtotime($ask->addtime)) ?></p>
         <p class="con"> <?php echo $v->content ?> </p>

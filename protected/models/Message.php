@@ -40,7 +40,7 @@ class Message extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('type, from, to, content, read, addtime', 'required'),
+			array('type, from, to, content', 'required'),
 			array('from, to', 'numerical', 'integerOnly'=>true),
 			array('type', 'length', 'max'=>6),
 			array('content', 'length', 'max'=>200),
