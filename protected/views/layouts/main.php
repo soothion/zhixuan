@@ -4,9 +4,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
-
+        
+        <?php  $config=  Config::model()->find();?>
+        <meta name="description" content="<?php echo $config->des;?>" />
+        <meta name="keywords" content="<?php echo $config->keyword;?>" />
+        
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/global.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/component.css" />             
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/component.css" />  
+ 
         <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
@@ -82,9 +87,9 @@
                             <li class="TT4">
                                 <p class="PP1">社交工具登录</p>
                                 <p class="PP2">
-                                    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="<?php echo $config=  Config::model()->find()->qqAPPID?>" data-redirecturi="http://www.baidu.com" charset="utf-8"></script>
-                                    <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=<?php echo $config=  Config::model()->find()->sinaAPPID?>" type="text/javascript" charset="utf-8"></script>
-                                    <a onclick="return window.open('https://graph.qq.com/oauth2.0/authorize?client_id=<?php echo $config=  Config::model()->find()->qqAPPID?>&amp;response_type=token&amp;scope=all&amp;redirect_uri=<?php echo CHtml::encode(Yii::app()->createAbsoluteUrl('index/qqLogin'))?>', 'oauth2Login_10788', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G1.png" /></a>
+                                    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="<?php echo $config->qqAPPID?>" data-redirecturi="http://www.baidu.com" charset="utf-8"></script>
+                                    <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=<?php echo $config->sinaAPPID?>" type="text/javascript" charset="utf-8"></script>
+                                    <a onclick="return window.open('https://graph.qq.com/oauth2.0/authorize?client_id=<?php echo $config->qqAPPID?>&amp;response_type=token&amp;scope=all&amp;redirect_uri=<?php echo CHtml::encode(Yii::app()->createAbsoluteUrl('index/qqLogin'))?>', 'oauth2Login_10788', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G1.png" /></a>
                                     <a id="connectBtn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/G2.png" /></a>
                                 </p> 
                             </li>
@@ -133,7 +138,7 @@
                 <p class="botNav">
                     <a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>1))?>">关于智选</a><a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>2))?>">使用帮助</a><a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>3))?>">意见反馈</a><a href="<?php echo Yii::app()->createUrl('index/article',array('id'=>4))?>">加入我们</a>
                 </p>
-                <p class="copyright"><?php echo $config=  Config::model()->find()->copyright;?></p>
+                <p class="copyright"><?php echo $config->copyright;?></p>
             </div>
         </div><!-- footer -->
         </div><!-- page -->
@@ -173,7 +178,7 @@ time: 2,maxWidth:255,closeBtn:[0, true]});
 <script type="text/javascript">
     WB.core.load(['connect', 'client', 'widget.base', 'widget.atWhere'], function() {
             var cfg = {
-                    key: '<?php echo $config=  Config::model()->find()->sinaAPPID?>',
+                    key: '<?php echo $config->sinaAPPID?>',
                     xdpath: '<?php echo Yii::app()->request->baseUrl?>/xd.html'
             };
             WB.connect.init(cfg);

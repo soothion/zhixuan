@@ -186,21 +186,22 @@ class CourseController extends Controller {
             //支付宝帐号：shzhixuan12580@163.com
             //合作者身份（pid): 2088901946732788 
             //安全校验码: 1gkmskldwz03m6rnm0wpl53g41j52bd7
+            $config=  Config::model()->find();
             Yii::import('application.extensions.payment.Alipay');
             $alipay = new Alipay();
             $parameter = array(
                 "service" => "create_direct_pay_by_user",
-                "partner" => '2088901946732788',
+                "partner" => $config->partner,
                 "payment_type" => 1,
                 "notify_url" => Yii::app()->createUrl('course/notify'),
                 "return_url" => Yii::app()->createUrl('course/return'),
-                "seller_email" => 'shzhixuan12580@163.com',
+                "seller_email" => $config->seller_email,
                 "out_trade_no" => $order->id,
                 "subject" => "购买课程：" . $course->title,
                 "total_fee" => $price,
                 "body" => "购买课程：" . $course->title,
             );
-            $security_code = '1gkmskldwz03m6rnm0wpl53g41j52bd7';
+            $security_code = $config->seller_email;
             $parameter['subject'] = "购买课程：" . $course->title;
             $parameter['total_fee'] = $price;
             $parameter['body'] = "购买课程：" . $course->title;
