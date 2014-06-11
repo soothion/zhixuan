@@ -78,12 +78,12 @@
             <ul class="questListing">
                 <li>
                     <h3><a href="<?php echo Yii::app()->createUrl('ask/detail', array('id' => $v->id)); ?>"><?php echo Helper::truncate_utf8_string($v->content, 32) ?></a></h3>
-                    <p class="intro"> <span><?php echo ($v->user->username); ?></span> 
+                    <p class="intro"> <span><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $v->user->id)) ?>"><?php echo ($v->user->username); ?></a></span> 
                         发布于 <?php echo date('Y-m-d H:m:s', strtotime($v->addtime)) ?> 
                         分类：<span><?php echo $v->type->title ?></span> 
                         标签：<span><?php echo $v->tag ?></span> 
                         评论 (<?php echo count($v->comment) ?>) </p>
-                    <p class="ctrl"> <span class="SP1"><a href="javascript:;" value="<?php echo $v->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $v->agree; ?></span>)</a></span> <span class="SP2"><a href="javascript:;" class="reply-pop">向提问者追问</a></span> </p>
+                    <p class="ctrl"> <span class="SP1"><a href="javascript:;" value="<?php echo $v->id?>" type="ask" class="zhixuanAgree">同感受 (<span><?php echo $v->agree; ?></span>)</a></span> <span class="SP2"><a href="javascript:;" class="reply-pop">向提问者询问</a></span> </p>
                     
                     <div class="askModule forQuetion clearfix" id="zw1457" style="display: none; ">
                             <form action="<?php echo Yii::app()->createUrl('ask/answer');?>" method="post">
@@ -99,7 +99,7 @@
                 <li>
                     <div class="userPhoto"><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $v->answer[0]->user->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$v->answer[0]->user->thumb; ?>" width="40px" /></a></div>
                     <div class="comment clearfix">
-                        <p class="userInfo"><span><?php echo $v->answer[0]->user->username ?></span>  发表于  <?php echo date('Y-m-d H:m:s', strtotime($v->answer[0]->addtime)) ?></p>
+                        <p class="userInfo"><span><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $v->answer[0]->user->id)) ?>"><?php echo $v->answer[0]->user->username ?></a></span>  发表于  <?php echo date('Y-m-d H:m:s', strtotime($v->answer[0]->addtime)) ?></p>
                         <p class="con">
                             <?php echo $v->answer[0]->content ?> </p>
                     </div>

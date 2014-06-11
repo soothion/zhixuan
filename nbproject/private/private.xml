@@ -3,15 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/wamp/www/zhixuan/protected/views/course/comment.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/components/MemberWidget.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/views/ask/comment.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/views/experience/index.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/views/experience/detail.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/views/experience/comment.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/modules/admin/views/course/index.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/views/ask/detail.php</file>
-            <file>file:/E:/wamp/www/zhixuan/protected/views/ask/index.php</file>
+            <file>file:/E:/wamp/www/zhixuan/protected/modules/admin/views/message/_search.php</file>
+            <file>file:/E:/wamp/www/zhixuan/protected/modules/admin/views/message/index.php</file>
+            <file>file:/E:/wamp/www/zhixuan/protected/modules/admin/views/message/admin.php</file>
+            <file>file:/E:/wamp/www/zhixuan/protected/modules/admin/controllers/MessageController.php</file>
         </group>
     </open-files>
 </project-private>

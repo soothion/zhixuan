@@ -5,7 +5,7 @@
    <h3><?php echo $experience->title?></h3>
     <div class="cont clearfix">
         <div class="photo"> <a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $experience->user->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$experience->user->thumb?>" /></a></div>
-      <div class="author"><em><a href="#"><?php echo $experience->user->username;?></a></em>  <span>发表于 <?php echo date('Y-m-d H:m:s', strtotime($experience->addtime)) ?></span>       </div>
+      <div class="author"><em><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $experience->user->id)) ?>"><?php echo $experience->user->username;?></a></em>  <span>发表于 <?php echo date('Y-m-d H:m:s', strtotime($experience->addtime)) ?></span>       </div>
       <div class="detail">
           <?php echo $experience->content?>
       </div>    

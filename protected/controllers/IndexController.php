@@ -139,6 +139,7 @@ class IndexController extends Controller {
         if (isset($_POST['username'])) {
             $user = new Users;
             $user->attributes = $_POST;
+            $user->thumb = 'upload/noThumb.jpg';
             $user->password = md5($user->password);
             $user->loginip = Yii::app()->request->userHostAddress;
             $user->logintime = date('Y-m-d H:i:s', time());

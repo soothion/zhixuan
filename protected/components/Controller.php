@@ -31,7 +31,6 @@ class Controller extends CController {
             if(!$id)
                 return false;
         }
-        return $id;
         $user = Users::model()->findByPk($id);
         if (!$user->auth == '') {
             $auth = explode('|', $user->auth);

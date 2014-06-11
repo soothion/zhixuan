@@ -21,7 +21,7 @@
     <h3><?php echo $v->title?></h3>
     <div class="cont clearfix">
         <div class="photo"> <a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $v->user->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$v->user->thumb?>" /></a></div>
-      <div class="author"><em><a href="#"><?php echo $v->user->username?></a></em>  <span>发表于 <?php echo date('Y-m-d H:m:s', strtotime($v->addtime)) ?> </span>       </div>
+      <div class="author"><em><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $v->user->id)) ?>"><?php echo $v->user->username?></a></em>  <span>发表于 <?php echo date('Y-m-d H:m:s', strtotime($v->addtime)) ?> </span>       </div>
       <div class="detail">
       <?php echo Helper::truncate_utf8_string($v->content, 100)?><a href="<?php echo Yii::app()->createUrl('experience/detail',array('id'=>$v->id))?>">查看更多</a></div>    
     </div>

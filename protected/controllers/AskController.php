@@ -72,7 +72,6 @@ class AskController extends Controller {
             die;
         }
         if (isset(Yii::app()->user->id)) {
-            if (Yii::app()->user->level == 2) { 
                 $model = new Answer;
                 if (isset($_POST['content'])) {
                     $model->attributes = $_POST;
@@ -110,8 +109,6 @@ str;
                     else
                         echo '提交失败';
                 }
-            } else
-                echo '您是普通会员，不能提交！';
         } else
             echo '请登录后操作！';
     }

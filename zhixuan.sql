@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 3.4.10.1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: 2014-06-10 17:20:50
--- 服务器版本： 5.6.17
--- PHP Version: 5.5.12
+-- 主机: localhost
+-- 生成日期: 2014 年 06 月 11 日 08:25
+-- 服务器版本: 5.5.20
+-- PHP 版本: 5.3.0
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `zhixuan`
+-- 数据库: `zhixuan`
 --
 
 -- --------------------------------------------------------
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `zx_answer` (
   `uid` int(4) DEFAULT '0',
   `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=569 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=570 ;
 
 --
 -- 转存表中的数据 `zx_answer`
@@ -301,7 +301,7 @@ INSERT INTO `zx_answer` (`id`, `aid`, `content`, `agree`, `uid`, `addtime`) VALU
 (307, 147, '大哥，这一课，信息量太大了。', 0, 127, '0000-00-00 00:00:00'),
 (308, 147, '顶一个', 0, 149, '0000-00-00 00:00:00'),
 (309, 516, '嗯，做有用的人', 0, 841, '0000-00-00 00:00:00'),
-(310, 699, '很全面，智选-智慧人的选择！', 28, 841, '2014-05-22 03:34:25'),
+(310, 699, '很全面，智选-智慧人的选择！', 29, 841, '2014-06-11 08:24:50'),
 (311, 380, '你在哪里，我们可以合作。qq1050794037', 0, 666, '0000-00-00 00:00:00'),
 (312, 698, '看了你的追问。之前你提的项目我也看过。真没想到这个也是你提的。 9块9包邮和你的汽车用品导购相比，肯定是汽车用品导购更好。我们做互联网最关心的就是营销成本，总希望有一天营销成本能越降越低。降低营销成本最基本的办法，就是会员用户。相对而言，汽车用品导购的会员要好培养得多，会员体验也更好营造。去面对一群善变的年轻女生，今年是你的用户，明年就已转投他人。 如果要做9块9,需要借助于某个门户或社区来帮你持续带来流量，否则你的营销成本会始终让你头疼。 9块9谁也说不清是不是阶段性的产品。这很考验经营者的运营能力。你一定要看看自己是不是能掌控得了，（这就象开车，没有导航，没有地图，该转哪一个弯全凭自己。有的人转过去之后，马上发现不对，有的人开到断桥边才知道不对）。你要做，要做好不断调整的准备做好随时调头转向的准备。做好异常专注的准备。 竞争激烈不可怕，说明有市场。怕的是，别人能做下去，自己做不下去。 能做什么的项目，和你的性格有关系。（看上去，你还是有点适合的。你能找到一个心细如发的运营吗？）', 0, 454, '0000-00-00 00:00:00'),
 (313, 704, '谢谢，我对选址很纠结。商业区租金贵。', 0, 765, '0000-00-00 00:00:00'),
@@ -502,7 +502,8 @@ INSERT INTO `zx_answer` (`id`, `aid`, `content`, `agree`, `uid`, `addtime`) VALU
 (565, 546, '<p>asdfasf<br/></p>', 0, 1543, '2014-06-10 14:58:09'),
 (566, 546, '<p>asfdasf</p>', 0, 1543, '2014-06-10 15:07:01'),
 (567, 546, '<p>afdasdf</p>', 0, 1543, '2014-06-10 15:07:52'),
-(568, 546, '<p>asdfasdf</p>', 0, 1543, '2014-06-10 15:10:21');
+(568, 546, '<p>asdfasdf</p>', 0, 1543, '2014-06-10 15:10:21'),
+(569, 699, 'asdfasdf', 0, 1547, '2014-06-11 07:32:07');
 
 -- --------------------------------------------------------
 
@@ -547,7 +548,7 @@ CREATE TABLE IF NOT EXISTS `zx_ask` (
   `tag` mediumtext,
   `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1275 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1282 ;
 
 --
 -- 转存表中的数据 `zx_ask`
@@ -1634,7 +1635,14 @@ INSERT INTO `zx_ask` (`id`, `cid`, `tid`, `uid`, `content`, `recommend`, `verify
 (1271, 0, 2, 58, '<p>asdfasdf　<br/></p>', NULL, NULL, 0, 'asfdasfd', '2014-05-30 05:46:14'),
 (1272, 0, 3, 58, '<p>22222</p>', NULL, NULL, 0, '2222', '2014-05-30 05:46:23'),
 (1273, 0, 1, 58, '<p>654561</p>', NULL, NULL, 0, '523', '2014-05-30 05:46:33'),
-(1274, 0, 3, 58, '<p>65165</p>', NULL, NULL, 0, '54521', '2014-05-30 05:46:45');
+(1274, 0, 3, 58, '<p>65165</p>', NULL, NULL, 0, '54521', '2014-05-30 05:46:45'),
+(1275, 0, 1, 58, '<p>asasfasf</p>', NULL, NULL, 0, 'asdf', '2014-06-11 07:30:38'),
+(1276, 0, 2, 58, '<p>asdfasdf</p>', NULL, NULL, 0, 'asfdasdf', '2014-06-11 07:32:29'),
+(1277, 0, 1, 58, '<p>asdfasdf</p>', NULL, NULL, 0, 'asdfasdf', '2014-06-11 07:32:34'),
+(1278, 0, 1, 58, '<p>asdfasf</p>', NULL, NULL, 0, 'asdfa', '2014-06-11 07:56:46'),
+(1279, 0, 2, 58, '<p>asdfasdf</p>', NULL, NULL, 0, 'asdfasdf', '2014-06-11 07:57:05'),
+(1280, 0, 2, 58, '<p>asdasdf</p>', NULL, NULL, 0, 'asdfasdf', '2014-06-11 07:57:11'),
+(1281, 0, 1, 58, '<p>asdf</p>', NULL, NULL, 0, 'asdfas', '2014-06-11 07:58:23');
 
 -- --------------------------------------------------------
 
@@ -2170,11 +2178,11 @@ CREATE TABLE IF NOT EXISTS `zx_users` (
   `sina` varchar(50) NOT NULL,
   `renren` varchar(50) NOT NULL,
   `msn` varchar(80) DEFAULT NULL,
-  `config` varchar(300) DEFAULT NULL,
+  `config` varchar(300) DEFAULT '1|1|1|1|1|1',
   `auth` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1547 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1549 ;
 
 --
 -- 转存表中的数据 `zx_users`
@@ -3647,7 +3655,9 @@ INSERT INTO `zx_users` (`id`, `level`, `score`, `username`, `password`, `introdu
 (1541, '1', 0, 'doraprince4', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-23 15:32:51', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'doraprince@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
 (1543, '2', 9916000, 'doraprince', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '火焰雨科技2', '2014-05-26 15:55:37', '127.0.0.1', 1, 'upload/201406/1401761084.png', NULL, '10628520@qq.com4', '', 'doraprince', '火焰雨科3　　　　　', '火焰雨科技5', 'PHP65', '10', '18617185205', '106285202', '', '', '', '0|1|1|1|1|1', 'answer|email'),
 (1544, '1', 0, '65465132', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-05-26 18:10:22', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'asdf@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '0|1|0|1|0|1', 'ask|comment|agree|reply'),
-(1546, '1', 0, 'doraprince1111', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-06-09 14:42:17', '127.0.0.1', 1, NULL, NULL, 'xiaoxiaoyi@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, NULL, '');
+(1546, '1', 0, 'doraprince1111', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-06-09 14:42:17', '127.0.0.1', 1, NULL, NULL, 'xiaoxiaoyi@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, NULL, ''),
+(1547, '1', 0, 'soothion1', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-06-11 07:28:07', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'xiaoxiaoyi@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, NULL, ''),
+(1548, '1', 0, 'soothion2', '8a5f1b8a54db96cec95bf3e67c7ae6f5', '', '2014-06-11 08:13:04', '127.0.0.1', 1, 'upload/noThumb.jpg', NULL, 'xiaoxiaoyi@sina.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, '1|1|1|1|1|1', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
