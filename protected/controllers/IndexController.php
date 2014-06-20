@@ -17,7 +17,7 @@ class IndexController extends Controller {
 
         //有问必答
         $askCriteria = new CDbCriteria();
-        $askCriteria->limit = 5;
+        $askCriteria->limit = 10;
         $askCriteria->order = 'recommend desc, addtime desc, id desc';
         $ask = Ask::model()->findAll($askCriteria);
 
