@@ -24,7 +24,20 @@ class Controller extends CController {
      */
     public $breadcrumbs = array();
     public $data = array();
-
+    
+    public function score($action){
+        if($num=Yii::app()->params['score'][$action]){
+            $id=Yii::app()->user->id;
+            $user=Users::model()->findByPk($id);
+            $score = new Score;
+            $score->uid = $id;
+            $score->action = '提交'.$action.'：+增加积分' . $num;
+            $score->score =$user->score - $num;
+            $user->score = $score->score;
+            $user->save();
+            $score->save();
+        }
+    }
     public function checkAuth($action,$id=0) {
         if (!$id){
             $id=Yii::app()->user->id;

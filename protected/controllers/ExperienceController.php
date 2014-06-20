@@ -59,6 +59,7 @@ class ExperienceController extends Controller {
                 $comment->type = '经验';
                 $comment->uid = Yii::app()->user->id;
                 $comment->save();
+                $this->score('agree');//积分增加
             } else
                 echo '<script>alert("请登录后操作");</script>';
         }
@@ -88,6 +89,7 @@ class ExperienceController extends Controller {
             $model->uid=$uid;
             $model->status=2;
             if($model->save()){
+                $this->score('contribute');//积分增加
                 $this->message('投稿成功,请等待管理员审核！');
             }
             else print_r($model->errors);

@@ -94,6 +94,8 @@ class UsersController extends Controller
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
+                        if(!empty($_POST['Users']['config']))
+                            $model->config=  implode('|', $_POST['Users']['config']);
                         if(!empty($_POST['Users']['auth']))
                             $model->auth=  implode('|', $_POST['Users']['auth']);
 			if($model->save())

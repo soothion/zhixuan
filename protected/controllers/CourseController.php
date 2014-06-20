@@ -52,6 +52,7 @@ class CourseController extends Controller {
         $id = $_GET['id'];
         $flag = 0; //是否允许浏览
         $course = Course::model()->findByPk($id);
+        $course->updateCounters(array('click'=>1000));
         if ($course->price) {
             if ($uid = Yii::app()->user->id) {
                 if (Order::model()->find('cid=:cid AND uid=:uid AND status=1', array(':cid' => $id, 'uid' => $uid)))
@@ -111,10 +112,6 @@ class CourseController extends Controller {
         else {
             $flag = 1;
         }
-        if (!$flag) {
-            echo '购买后才能浏览！';
-            die;
-        }
         if (isset($_POST['content'])) {
             $comment = new Comment;
             $comment->content = $_POST['content'];
@@ -122,6 +119,7 @@ class CourseController extends Controller {
             $comment->type = '课程';
             $comment->uid = Yii::app()->user->id;
             $comment->save();
+            $this->score('comment');//积分增加
         }
         $commentCDbCriteria = new CDbCriteria();
         $commentCDbCriteria->addCondition('cid=:id');
@@ -181,7 +179,7 @@ class CourseController extends Controller {
             $order->save();
         }
         if ($type == 2)
-            $price = $price * Yii::app()->params['firse'];
+            $price = $price * Yii::app()->params['first'];
         if ($model == 1) {
             //支付宝帐号：shzhixuan12580@163.com
             //合作者身份（pid): 2088901946732788 
@@ -219,7 +217,6 @@ class CourseController extends Controller {
                 $score->score = Users::model()->findByPk($uid)->score - $price;
 
                 $user->score = $score->score;
-                $user->save();
 
                 $order->status = 1;
                 if ($score->save() && $user->save() && $order->save())

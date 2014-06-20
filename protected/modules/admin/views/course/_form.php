@@ -47,11 +47,6 @@
 		<?php echo $form->error($model,'tag'); ?>
 	</div>
     
-	<div class="row">
-		<?php echo $form->labelEx($model,'des'); ?>
-		<?php echo $form->textField($model,'des',array('class'=>'span5','maxlength'=>100)); ?>
-		<?php echo $form->error($model,'des'); ?>
-	</div>
     
 	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>

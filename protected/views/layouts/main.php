@@ -70,8 +70,9 @@
             <?php echo $content; ?>
             <!--右侧栏开始-->
             <div class="sideBar">
+                <?php if(Yii::app()->controller->id=='index'&&$this->getAction()->getId()=='index'){?>
                 <div class="adBlock"><img src="<?php echo Yii::app()->request->baseUrl ?>/images/corese_ad.png" width="308" height="270" /></div>
-
+                <?php }?>
                 <ul class="CourseLogin block"  id="MenberLogins">
                     <?php if (Yii::app()->user->isGuest) { ?>
                     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/layer/layer.min.js"></script>

@@ -38,7 +38,7 @@
                 <li>
                     <h3><a href="<?php echo Yii::app()->createUrl('ask/detail', array('id' => $v->id)) ?>"><?php echo Helper::truncate_utf8_string($v->content, 32); ?></a></h3>
                     <p class="intro">
-                        <span><?php echo $v->user->username; ?></span> 发布于 <?php echo date('Y-m-d H:m:s', strtotime($v->addtime)); ?>  分类：<span><?php echo $v->type->title; ?></span>  标签：<span><?php echo $v->tag; ?></span>   评论 (<?php echo count($v->comment); ?>)     
+                        <span><a href="<?php echo Yii::app()->createUrl('member/info', array('id' => $v->user->id)) ?>"><?php echo $v->user->username; ?></a></span> 发布于 <?php echo date('Y-m-d H:m:s', strtotime($v->addtime)); ?>  分类：<span><?php echo $v->type->title; ?></span>  标签：<span><?php echo $v->tag; ?></span>   评论 (<?php echo count($v->comment); ?>)     
                     </p> 
                 </li>
             <?php } ?>  

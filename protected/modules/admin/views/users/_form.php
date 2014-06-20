@@ -120,12 +120,22 @@
 		<?php echo $form->error($model,'msn'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'config'); ?>
-		<?php echo $form->textField($model,'config',array('class'=>'span5','maxlength'=>100)); ?>
-		<?php echo $form->error($model,'config'); ?>
-	</div>
         
+        <div class="row">
+            <?php echo $form->labelEx($model, 'config'); ?>
+            <?php
+            $model->config = explode('|', $model->config);
+            echo $form->checkBoxList($model, 'config', array(
+                '1' => '邮箱',
+                '2' => '就职单位',
+                '3' => '职位',
+                '4' => '年龄',
+                '5' => '手机',
+                '6' => 'QQ')
+            );?>
+        <?php echo $form->error($model, 'auth'); ?>
+        </div>
+
         <div class="row">
             <?php echo $form->labelEx($model, 'auth'); ?>
             <?php

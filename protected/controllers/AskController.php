@@ -48,9 +48,13 @@ class AskController extends Controller {
             $model = new Ask;
             if (isset($_POST['content'])) {
                 $model->attributes = $_POST;
+                $model->verify=1;//默认审核
                 $model->uid = 58;
                 if ($model->validate() && $model->save()) //注2：$model->validate()就是在调用model.rules进行验证
-                    echo '提交成功';
+                {
+                     echo '提交成功';
+                     $this->score('ask');
+                }
                 else
                     echo '提交失败';
             }
@@ -79,6 +83,7 @@ class AskController extends Controller {
                     if ($model->validate() && $model->save())
                     {
                         echo '提交成功';
+                        $this->score('answer');
                         $aid=$_POST['aid'];
                         $user=Ask::model()->findByPk($aid)->user;
                         //发送邮件
@@ -128,6 +133,7 @@ str;
                 $comment->type = '问答';
                 $comment->uid = Yii::app()->user->id;
                 $comment->save();
+                $this->score('agree');//积分增加
             } else
                 echo '<script>alert("请登录后操作");</script>';
         }

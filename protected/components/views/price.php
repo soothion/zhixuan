@@ -21,7 +21,7 @@
     <p class="orderBtnRow"><a class="BtnGou" href="<?php echo Yii::app()->createUrl('course/order',array('type'=>1,'id'=>$course->id));?>" target="_blank">立即购买</a><span>己购人数:300人</span></p>
   </div>
   <div class="sideOrderModule block b1">
-    <p class="tit">百人优先分享权<span><?php echo ($course->price)*Yii::app()->params['firse']?></span> 元</p>
+    <p class="tit">百人优先分享权<span><?php echo ($course->price)*Yii::app()->params['first']?></span> 元</p>
     <p class="tips ft_line">什么是优先分享权：支持智课堂 无限期分享课程收益</p>
     <p class="orderBtnRow"><a class="BtnGou" href="<?php echo Yii::app()->createUrl('course/order',array('type'=>2,'id'=>$course->id));?>" target="_blank">立即购买</a><span>己购人数:300人</span></p>
   </div>

@@ -47,7 +47,7 @@ class Course extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('des, addtime', 'required'),
+			array('title, addtime', 'required'),
 			array('cid, click, recommend, language, price, agree, thank', 'numerical', 'integerOnly'=>true),
 			array('title, pic', 'length', 'max'=>80),
 			array('des', 'length', 'max'=>200),
@@ -92,6 +92,7 @@ class Course extends CActiveRecord
                         'tid'=> '课程类别',
                         'tag'=>'标签',
                         'time'=>'时长',
+                        'theme'=>'主题',
 			'content' => '内容',
 			'des' => '简介',
 			'pic' => '图片',

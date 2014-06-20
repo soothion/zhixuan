@@ -52,14 +52,13 @@ class IndexController extends Controller {
                 $model = Answer::model();
                 break;
         }
+        $message = '';
         if (!$this->checkAuth('agree')) {
             echo '<script>alert("没有权限");</script>';
             echo $model->findByPk($id)->agree . $message;
             die;
         }
-        $message = '';
-
-
+        
         if (isset(Yii::app()->session[$_POST['type']]) && in_array($id, Yii::app()->session[$_POST['type']])) {
             $message.='<script>alert("您已经点过了！");</script>';
         } else {
@@ -67,6 +66,7 @@ class IndexController extends Controller {
                 $message.='<script>alert("请先登录！");</script>';
             } else {
                 $model->updateCounters(array('agree' => 1), "id=$id");
+                $this->score('agree');//积分增加
                 $arr = Yii::app()->session[$_POST['type']] ? Yii::app()->session[$_POST['type']] : array();
                 array_push($arr, $id);
                 Yii::app()->session[$_POST['type']] = $arr;
@@ -103,6 +103,7 @@ class IndexController extends Controller {
             if (!$model->findAllByAttributes($attributes)) {
                 $model->attributes = $attributes;
                 $model->save();
+                $this->score('love');//积分增加
             } else {
                 $message.='<script>alert("您已经收藏过了！")</script>';
             }

@@ -111,11 +111,12 @@ return array(
         // this is used in contact page
         'adminEmail' => 'soothion@sina.com',
         'discount'=>0.5,//折扣价
-        'firse'=>2,//优先权价
+        'first'=>2,//优先权价
         'score' => array(
-            'askCommit' => 5,
-            'courseCommit' => 5,
-            'experienceCommit' => 5,
+            'agree'=>5,
+            'love'=>5,
+            'commit'=>5,
+            'ask'=>5,
             'contribute' => 10,
             'answer' => 10,
             'toRMB' => 0.1,

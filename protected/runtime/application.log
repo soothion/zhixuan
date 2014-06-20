@@ -5543,3 +5543,401 @@ Stack trace:
 REQUEST_URI=/zhixuan/ask
 HTTP_REFERER=http://localhost/zhixuan/ask
 ---
+2014/06/20 08:12:23 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:12:28 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:12:32 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:12:34 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:12:38 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:12:41 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:12:50 [error] [php] Undefined index: id (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:40)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (40)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:13:44 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:16:40 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:16:43 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:16:49 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:18:28 [error] [php] Undefined variable: model (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:42)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (42)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:18:58 [error] [php] Undefined variable: message (D:\wamp\www\zhixuan\protected\controllers\IndexController.php:57)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(286): IndexController->runAction()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#2 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): IndexController->run()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/index/agree
+in D:\wamp\www\zhixuan\protected\controllers\IndexController.php (57)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:49:01 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\LoginController.php (29)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:49:17 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:49:17 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:55:27 [error] [php] Object of class Score could not be converted to string (D:\wamp\www\zhixuan\protected\components\Controller.php:34)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(286): AskController->runAction()
+#2 D:\wamp\www\zhixuan\framework\web\CController.php(265): AskController->runActionWithFilters()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): AskController->run()
+#4 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/ask/ask
+in D:\wamp\www\zhixuan\protected\components\Controller.php (34)
+in D:\wamp\www\zhixuan\protected\controllers\AskController.php (55)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:55:34 [error] [php] Object of class Score could not be converted to string (D:\wamp\www\zhixuan\protected\components\Controller.php:34)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(286): AskController->runAction()
+#2 D:\wamp\www\zhixuan\framework\web\CController.php(265): AskController->runActionWithFilters()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): AskController->run()
+#4 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/ask/ask
+in D:\wamp\www\zhixuan\protected\components\Controller.php (34)
+in D:\wamp\www\zhixuan\protected\controllers\AskController.php (55)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 08:56:25 [error] [php] Undefined variable: price (D:\wamp\www\zhixuan\protected\components\Controller.php:35)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(286): AskController->runAction()
+#2 D:\wamp\www\zhixuan\framework\web\CController.php(265): AskController->runActionWithFilters()
+#3 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): AskController->run()
+#4 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/ask/ask
+in D:\wamp\www\zhixuan\protected\components\Controller.php (35)
+in D:\wamp\www\zhixuan\protected\controllers\AskController.php (55)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:04:37 [error] [php] explode() expects parameter 2 to be string, array given (D:\wamp\www\zhixuan\protected\modules\admin\views\users\_form.php:147)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CBaseController.php(95): UsersController->renderInternal()
+#1 D:\wamp\www\zhixuan\framework\web\CController.php(869): UsersController->renderFile()
+#2 D:\wamp\www\zhixuan\protected\modules\admin\views\users\update.php(18): UsersController->renderPartial()
+#3 D:\wamp\www\zhixuan\framework\web\CBaseController.php(126): require()
+#4 D:\wamp\www\zhixuan\framework\web\CBaseController.php(95): UsersController->renderInternal()
+#5 D:\wamp\www\zhixuan\framework\web\CController.php(869): UsersController->renderFile()
+#6 D:\wamp\www\zhixuan\framework\web\CController.php(782): UsersController->renderPartial()
+#7 D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php(107): UsersController->render()
+#8 unknown(0): UsersController->actionUpdate()
+#9 D:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#10 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#13 D:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 D:\wamp\www\zhixuan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 D:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#16 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 D:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#18 D:\wamp\www\zhixuan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#19 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): UsersController->run()
+#20 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/admin/users/update/id/1543
+in D:\wamp\www\zhixuan\protected\modules\admin\views\users\_form.php (147)
+in D:\wamp\www\zhixuan\protected\modules\admin\views\users\update.php (18)
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (107)
+2014/06/20 09:14:27 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:14:27 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:14:27 [error] [php] mb_strlen() expects parameter 1 to be string, array given (D:\wamp\www\zhixuan\framework\validators\CStringValidator.php:84)
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\base\CModel.php(159): CStringValidator->validate()
+#1 D:\wamp\www\zhixuan\framework\db\ar\CActiveRecord.php(794): Users->validate()
+#2 D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php(101): Users->save()
+#3 unknown(0): UsersController->actionUpdate()
+#4 D:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#8 D:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\wamp\www\zhixuan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 D:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#11 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 D:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\wamp\www\zhixuan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#14 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): UsersController->run()
+#15 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 D:\wamp\www\zhixuan\index.php(13): CWebApplication->run()
+REQUEST_URI=/zhixuan/admin/users/update/id/1543
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (101)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:22:34 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:22:34 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:22:48 [warning] [application] Failed to set unsafe attribute "thumb" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:22:48 [warning] [application] Failed to set unsafe attribute "auth" of "Users".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\UsersController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 D:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/admin/course/update/id/upload/201405/1400489949.jpg
+HTTP_REFERER=http://localhost/zhixuan/admin/course/update/id/23
+---
+2014/06/20 09:32:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 D:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/admin/course/update/id/upload/201405/1400489949.jpg
+HTTP_REFERER=http://localhost/zhixuan/admin/course/update/id/23
+---
+2014/06/20 09:37:13 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getAction".' in D:\wamp\www\zhixuan\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\zhixuan\protected\views\layouts\main.php(73): CComponent->__call('getAction', Array)
+#1 D:\wamp\www\zhixuan\protected\views\layouts\main.php(73): CWebApplication->getAction()
+#2 D:\wamp\www\zhixuan\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\zhi...')
+#3 D:\wamp\www\zhixuan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\zhi...', Array, true)
+#4 D:\wamp\www\zhixuan\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\zhi...', Array, true)
+#5 D:\wamp\www\zhixuan\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 D:\wamp\www\zhixuan\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\wamp\www\zhixuan\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 D:\wamp\www\zhixuan\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 D:\wamp\www\zhixuan\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 D:\wamp\www\zhixuan\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\zhi...')
+#11 D:\wamp\www\zhixuan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\zhi...', Array, true)
+#12 D:\wamp\www\zhixuan\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\zhi...', Array, true)
+#13 D:\wamp\www\zhixuan\protected\controllers\IndexController.php(29): CController->render('index', Array)
+#14 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(49): IndexController->actionIndex()
+#15 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\wamp\www\zhixuan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#20 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/zhixuan/index
+HTTP_REFERER=http://localhost/zhixuan/course
+---
+2014/06/20 09:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 D:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/admin/course/update/id/upload/201405/1400489949.jpg
+HTTP_REFERER=http://localhost/zhixuan/admin/course/update/id/9
+---
+2014/06/20 09:44:09 [warning] [application] Failed to set unsafe attribute "theme" of "Course".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:44:09 [warning] [application] Failed to set unsafe attribute "tag" of "Course".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:44:09 [warning] [application] Failed to set unsafe attribute "pic" of "Course".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:44:09 [warning] [application] Failed to set unsafe attribute "time" of "Course".
+in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php (96)
+in D:\wamp\www\zhixuan\index.php (13)
+2014/06/20 09:44:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php:169
+Stack trace:
+#0 D:\wamp\www\zhixuan\protected\modules\admin\controllers\CourseController.php(89): CourseController->loadModel('upload')
+#1 [internal function]: CourseController->actionUpdate('upload')
+#2 D:\wamp\www\zhixuan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CourseController), Array)
+#3 D:\wamp\www\zhixuan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CourseController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\zhixuan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\zhixuan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\wamp\www\zhixuan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\zhixuan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\zhixuan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\zhixuan\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\wamp\www\zhixuan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(282): CController->run('update')
+#13 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/course/up...')
+#14 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/zhixuan/admin/course/update/id/upload/noPic.jpg
+HTTP_REFERER=http://localhost/zhixuan/admin/course/update/id/9
+---
+2014/06/20 09:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/noPic.jpg".' in D:\wamp\www\zhixuan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\zhixuan\framework\web\CWebApplication.php(141): CWebApplication->runController('upload/noPic.jp...')
+#1 D:\wamp\www\zhixuan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\www\zhixuan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/zhixuan/upload/noPic.jpg
+HTTP_REFERER=http://localhost/zhixuan/course/index?page=3
+---

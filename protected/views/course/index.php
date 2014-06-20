@@ -3,7 +3,7 @@
     <div class="courseCommended">
         <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $recommendCourse->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$recommendCourse->pic; ?>" width="642" height="296" /></a></div>
         <div class="intro"> <h3><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $recommendCourse->id)) ?>"><?php echo $recommendCourse->title ?></a></h3>
-            <div class="desp"><?php echo $recommendCourse->des; ?></div>
+            <div class="desp"><?php echo Helper::truncate_utf8_string($recommendCourse->content, 100) ?></div>
             <div class="voteCtrl">有启发(<?php echo $recommendCourse->agree; ?>)</div>
         </div>
     </div>
@@ -28,7 +28,7 @@
             <li class="<?php if (!($k % 2 == 0)) echo 'br'; ?>">
                 <div class="courseCover"><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $v->id)) ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/'.$v->pic ?>" /></a></div>
                 <div class="intro">
-                    <span class="isFree"><?php echo ($v->free) == 1 ? '免费' : '收费'; ?></span> <h3><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $v->id)) ?>"><?php echo $v->title ?></a></h3>     
+                    <span class="isFree"><?php echo $v->price.'元'; ?></span> <h3><a href="<?php echo Yii::app()->createUrl('course/detail', array('id' => $v->id)) ?>"><?php echo $v->title ?></a></h3>     
                 </div>
                 <div class="voteCtrl">有启发(<?php echo $v->agree ?>)</div>
             </li>
